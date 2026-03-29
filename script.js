@@ -2,19 +2,15 @@ let previousData = [];
 let globalData = [];
 
 function loadData() {
-  fetch("./data.json?ts=" + Date.now())
+  return fetch("./data.json?ts=" + Date.now())
     .then(res => res.json())
     .then(data => {
 
-      // total points
       data.forEach(player => {
         player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
       });
 
-      // sort overall
       data.sort((a, b) => b.total - a.total);
-
-      // overall rank
       data.forEach((p, i) => p.rank = i + 1);
 
       globalData = data;
@@ -29,7 +25,6 @@ function renderLeaderboard(data) {
   container.innerHTML = "";
 
   data.forEach(player => {
-
     const div = document.createElement("div");
     div.className = "card";
 
@@ -56,59 +51,55 @@ function renderLeaderboard(data) {
     `;
 
     div.onclick = () => openModal(player);
-
     container.appendChild(div);
   });
 }
 
-/* 🔥 Calculate match-wise ranks */
+/* Match rank calculation */
 function getMatchRanks(matchName) {
   const players = [];
 
   globalData.forEach(player => {
     const match = player.matches.find(m => m.match === matchName);
     if (match) {
-      players.push({
-        name: player.name,
-        points: match.points
-      });
+      players.push({ name: player.name, points: match.points });
     }
   });
 
-  // sort by match points
   players.sort((a, b) => b.points - a.points);
-
-  // assign rank
   players.forEach((p, i) => p.rank = i + 1);
 
   return players;
 }
 
-/* 🔥 Modal with match ranks */
+/* MODAL */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
 
-  content.innerHTML = `
-    <h2>${player.name}</h2>
-    <p>Total Points: ${player.total}</p>
+  let html = `
+    <div class="modal-header">
+      <h2>${player.name}</h2>
+      <div class="total-points">Total Points: ${player.total}</div>
+    </div>
   `;
 
   player.matches.forEach(m => {
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
 
-    content.innerHTML += `
-      <div class="match-block">
-        <div class="match-header">🏏 ${m.match}</div>
-        <div class="match-row">
-          <span>Rank: #${playerRank}</span>
-          <span>Points: ${m.points}</span>
+    html += `
+      <div class="match-card">
+        <div class="match-title">🏏 ${m.match}</div>
+        <div class="match-info">
+          <span class="rank-badge">Rank #${playerRank}</span>
+          <span class="match-points">${m.points} pts</span>
         </div>
       </div>
     `;
   });
 
+  content.innerHTML = html;
   modal.style.display = "flex";
 }
 
@@ -122,14 +113,7 @@ window.onclick = function(e) {
 };
 
 function refreshData() {
-  const btn = document.querySelector(".refresh-btn");
-  btn.innerText = "⏳ Loading...";
-
   loadData();
-
-  setTimeout(() => {
-    btn.innerText = "🔄 Refresh";
-  }, 800);
 }
 
 loadData();
