@@ -3,35 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Leaderboard</title>
+  <title>DDHPL Leaderboard</title>
 
   <link rel="stylesheet" href="styles.css"/>
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="app">
 
-  <!-- Header -->
   <div class="header">
     <h1>🏏 DDHPL T20 League</h1>
     <p class="status">In Progress</p>
   </div>
 
-  <!-- Contest -->
   <div class="contest">
     <h2>DDHPL Contest</h2>
     <p>Limited Edition • Limited Entry</p>
   </div>
 
-  <!-- Leaderboard -->
   <div class="leaderboard">
     <div class="title">🏆 Leaderboard</div>
     <div id="list"></div>
   </div>
 
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">×</span>
+    <div id="modal-content"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>
