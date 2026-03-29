@@ -4,18 +4,14 @@ fetch("data.json")
 
     const container = document.getElementById("list");
 
-    // 🔥 Calculate total + rank
     data.forEach(player => {
       player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
     });
 
-    // Sort by total points
     data.sort((a, b) => b.total - a.total);
 
-    // Assign ranks
     data.forEach((p, i) => p.rank = i + 1);
 
-    // Render UI
     data.forEach(player => {
 
       const div = document.createElement("div");
@@ -40,9 +36,6 @@ fetch("data.json")
     });
   });
 
-
-/* MODAL */
-
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -51,16 +44,12 @@ function openModal(player) {
     <h2>${player.name}</h2>
     <p>Total Points: ${player.total}</p>
 
-    <div class="matches">
-      ${player.matches.map(m => `
-        <div class="match">
-          <div>
-            <strong>${m.match}</strong>
-          </div>
-          <div>${m.points}</div>
-        </div>
-      `).join("")}
-    </div>
+    ${player.matches.map(m => `
+      <div class="match">
+        <span><strong>${m.match}</strong></span>
+        <span>${m.points}</span>
+      </div>
+    `).join("")}
   `;
 
   modal.style.display = "flex";
