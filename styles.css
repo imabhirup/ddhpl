@@ -9,7 +9,6 @@ body {
   background: linear-gradient(135deg, #38bdf8, #e0f2fe);
 }
 
-/* Container */
 .app {
   max-width: 900px;
   margin: auto;
@@ -61,21 +60,19 @@ body {
   margin-bottom: 12px;
   box-shadow: 0 5px 12px rgba(0,0,0,0.07);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: 0.25s;
 }
 
 .card:hover {
   transform: translateY(-3px);
 }
 
-/* Left */
 .left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Avatar */
 .avatar {
   width: 46px;
   height: 46px;
@@ -85,7 +82,6 @@ body {
   border: 2px solid #38bdf8;
 }
 
-/* Text */
 .rank {
   font-size: 13px;
   font-weight: 600;
@@ -107,12 +103,38 @@ body {
 .rank-2 { border-left: 6px solid silver; }
 .rank-3 { border-left: 6px solid #cd7f32; }
 
+/* Committee */
+.committee {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  width: 140px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+}
+
 /* Modal */
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.5);
@@ -126,12 +148,6 @@ body {
   border-radius: 16px;
   width: 90%;
   max-width: 400px;
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
 }
 
 .match {
