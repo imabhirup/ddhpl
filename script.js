@@ -22,18 +22,22 @@ const data = [
 const container = document.getElementById("list");
 
 data.forEach(player => {
-  const div = document.createElement("div");
 
+  // ✅ Remove "- T1 / T2 / T3"
+  const cleanName = player.name.split("-")[0].trim();
+
+  const div = document.createElement("div");
   div.classList.add("card");
+
   if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
-  if (player.name.includes("abhirup")) div.classList.add("me");
+  if (cleanName.toLowerCase().includes("abhirup")) div.classList.add("me");
 
   div.innerHTML = `
     <div class="left">
       <div class="avatar"></div>
       <div>
         <div class="rank">#${player.rank}</div>
-        <div class="name">${player.name}</div>
+        <div class="name">${cleanName}</div>
       </div>
     </div>
     <div class="points">${player.points}</div>
@@ -55,6 +59,7 @@ new Chart(ctx, {
     }]
   },
   options: {
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: false
   }
 });
