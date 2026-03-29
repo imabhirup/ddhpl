@@ -23,8 +23,8 @@ const container = document.getElementById("list");
 
 data.forEach(player => {
 
-  // ✅ Remove "- T1 / T2 / T3"
-  const cleanName = player.name.split("-")[0].trim();
+  // remove "- T1"
+  const cleanName = player.name.replace(/ - .*/, "");
 
   const div = document.createElement("div");
   div.classList.add("card");
@@ -44,22 +44,4 @@ data.forEach(player => {
   `;
 
   container.appendChild(div);
-});
-
-/* Chart */
-const ctx = document.getElementById("chart");
-
-new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: data.map(p => "#" + p.rank),
-    datasets: [{
-      label: "Points",
-      data: data.map(p => p.points)
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false
-  }
 });
