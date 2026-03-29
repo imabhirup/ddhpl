@@ -1,7 +1,7 @@
 let previousData = [];
 
 function loadData() {
-  fetch("./data.json")
+  fetch("./data.json?ts=" + new Date().getTime())
     .then(res => res.json())
     .then(data => {
 
