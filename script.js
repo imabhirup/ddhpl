@@ -71,7 +71,14 @@ function renderLeaderboard(data) {
 
 /* Refresh */
 function refreshData() {
+  const btn = document.querySelector(".refresh-btn");
+  btn.innerText = "⏳ Loading...";
+
   loadData();
+
+  setTimeout(() => {
+    btn.innerText = "🔄 Refresh";
+  }, 800);
 }
 
 /* Modal */
