@@ -6,10 +6,10 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #38bdf8, #e0f2fe);
+  background: linear-gradient(135deg, #38bdf8, #e0f2fe);
 }
 
-/* App Container */
+/* Container */
 .app {
   max-width: 900px;
   margin: auto;
@@ -18,55 +18,71 @@ body {
 
 /* Header */
 .header {
-  background: #0284c7;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
   color: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+  font-size: 22px;
 }
 
 .status {
-  color: #bbf7d0;
+  margin-top: 5px;
   font-size: 14px;
+  color: #bbf7d0;
 }
 
-/* Contest */
+/* Contest Card */
 .contest {
   background: white;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.contest h2 {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.contest p {
+  color: #64748b;
+  font-size: 14px;
 }
 
 /* Leaderboard */
 .leaderboard {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .title {
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* Card */
+/* Player Card */
 .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 14px;
+  padding: 14px 16px;
   border-radius: 14px;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.07);
+  transition: all 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* Left section */
+/* Left side */
 .left {
   display: flex;
   align-items: center;
@@ -75,32 +91,36 @@ body {
 
 /* Avatar */
 .avatar {
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background-image: url("https://cdn-icons-png.flaticon.com/512/149/149071.png");
   background-size: cover;
+  border: 2px solid #38bdf8;
 }
 
 /* Text */
 .rank {
+  font-size: 13px;
   font-weight: 600;
-  font-size: 14px;
+  color: #0284c7;
 }
 
 .name {
   font-size: 15px;
-  color: #1e293b;
+  color: #0f172a;
 }
 
 .points {
   font-weight: 600;
   color: #0284c7;
+  font-size: 16px;
 }
 
-/* Top 3 special */
+/* Top 3 styling */
 .rank-1 {
   border-left: 6px solid gold;
+  background: linear-gradient(to right, #fffbe6, white);
 }
 .rank-2 {
   border-left: 6px solid silver;
@@ -109,22 +129,31 @@ body {
   border-left: 6px solid #cd7f32;
 }
 
-/* Highlight your row */
+/* Your row */
 .me {
-  background: #fef9c3;
+  background: #ecfeff;
+  border: 1px solid #38bdf8;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .app {
-    padding: 10px;
-  }
-
-  .card {
     padding: 12px;
   }
 
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .contest h2 {
+    font-size: 16px;
+  }
+
   .name {
+    font-size: 14px;
+  }
+
+  .points {
     font-size: 14px;
   }
 }
