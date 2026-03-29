@@ -23,9 +23,31 @@ body {
   border-radius: 18px;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .status {
   font-size: 14px;
   color: #bbf7d0;
+}
+
+/* Refresh Button */
+.refresh-btn {
+  background: white;
+  color: #0284c7;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #e0f2fe;
 }
 
 /* Contest */
@@ -60,8 +82,26 @@ body {
   transition: 0.25s;
 }
 
+/* Smooth Entry */
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card {
+  animation: cardEnter 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hover */
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .left {
@@ -96,6 +136,45 @@ body {
 .rank-1 { border-left: 5px solid gold; }
 .rank-2 { border-left: 5px solid silver; }
 .rank-3 { border-left: 5px solid #cd7f32; }
+
+/* Rank Movement */
+@keyframes moveUp {
+  0% { transform: translateY(20px); opacity: 0.5; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveDown {
+  0% { transform: translateY(-20px); opacity: 0.5; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.rank-up {
+  animation: moveUp 0.4s ease;
+}
+
+.rank-down {
+  animation: moveDown 0.4s ease;
+}
+
+/* Score Pulse */
+@keyframes pulseGlow {
+  0% {
+    background: #dcfce7;
+    box-shadow: 0 0 0px rgba(34,197,94,0.4);
+  }
+  50% {
+    background: #bbf7d0;
+    box-shadow: 0 0 14px rgba(34,197,94,0.6);
+  }
+  100% {
+    background: white;
+    box-shadow: none;
+  }
+}
+
+.updated {
+  animation: pulseGlow 1s ease;
+}
 
 /* Committee */
 .committee {
@@ -147,48 +226,4 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 6px 0;
-}
-
-/* Header layout */
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Refresh button */
-.refresh-btn {
-  background: white;
-  color: #0284c7;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.refresh-btn:hover {
-  background: #e0f2fe;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.card {
-  animation: fadeIn 0.4s ease;
-}
-
-/* Highlight updated */
-.updated {
-  background: #dcfce7 !important;
-  transition: background 0.5s;
 }
