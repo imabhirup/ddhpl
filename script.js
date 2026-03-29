@@ -46,7 +46,7 @@ function openModal(player) {
 
     ${player.matches.map(m => `
       <div class="match">
-        <span><strong>${m.match}</strong></span>
+        <span>${m.match}</span>
         <span>${m.points}</span>
       </div>
     `).join("")}
