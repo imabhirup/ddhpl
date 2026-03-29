@@ -1,28 +1,27 @@
 let previousData = [];
+let globalData = [];
 
 function loadData() {
-  fetch("./data.json?ts=" + new Date().getTime())
+  fetch("./data.json?ts=" + Date.now())
     .then(res => res.json())
     .then(data => {
 
-      const container = document.getElementById("list");
-
-      // total
+      // total points
       data.forEach(player => {
         player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
       });
 
-      // sort
+      // sort overall
       data.sort((a, b) => b.total - a.total);
 
-      // rank
+      // overall rank
       data.forEach((p, i) => p.rank = i + 1);
 
-      renderLeaderboard(data);
+      globalData = data;
 
+      renderLeaderboard(data);
       previousData = JSON.parse(JSON.stringify(data));
-    })
-    .catch(err => console.error(err));
+    });
 }
 
 function renderLeaderboard(data) {
@@ -38,18 +37,11 @@ function renderLeaderboard(data) {
 
     const old = previousData.find(p => p.name === player.name);
 
-    // Score update animation
-    if (old && old.total !== player.total) {
-      div.classList.add("updated");
-    }
+    if (old && old.total !== player.total) div.classList.add("updated");
 
-    // Rank movement animation
     if (old) {
-      if (player.rank < old.rank) {
-        div.classList.add("rank-up");
-      } else if (player.rank > old.rank) {
-        div.classList.add("rank-down");
-      }
+      if (player.rank < old.rank) div.classList.add("rank-up");
+      else if (player.rank > old.rank) div.classList.add("rank-down");
     }
 
     div.innerHTML = `
@@ -63,13 +55,72 @@ function renderLeaderboard(data) {
       <div class="points">${player.total}</div>
     `;
 
-    div.addEventListener("click", () => openModal(player));
+    div.onclick = () => openModal(player);
 
     container.appendChild(div);
   });
 }
 
-/* Refresh */
+/* 🔥 Calculate match-wise ranks */
+function getMatchRanks(matchName) {
+  const players = [];
+
+  globalData.forEach(player => {
+    const match = player.matches.find(m => m.match === matchName);
+    if (match) {
+      players.push({
+        name: player.name,
+        points: match.points
+      });
+    }
+  });
+
+  // sort by match points
+  players.sort((a, b) => b.points - a.points);
+
+  // assign rank
+  players.forEach((p, i) => p.rank = i + 1);
+
+  return players;
+}
+
+/* 🔥 Modal with match ranks */
+function openModal(player) {
+  const modal = document.getElementById("modal");
+  const content = document.getElementById("modal-content");
+
+  content.innerHTML = `
+    <h2>${player.name}</h2>
+    <p>Total Points: ${player.total}</p>
+  `;
+
+  player.matches.forEach(m => {
+    const ranks = getMatchRanks(m.match);
+    const playerRank = ranks.find(p => p.name === player.name)?.rank;
+
+    content.innerHTML += `
+      <div class="match-block">
+        <div class="match-header">🏏 ${m.match}</div>
+        <div class="match-row">
+          <span>Rank: #${playerRank}</span>
+          <span>Points: ${m.points}</span>
+        </div>
+      </div>
+    `;
+  });
+
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+window.onclick = function(e) {
+  const modal = document.getElementById("modal");
+  if (e.target === modal) modal.style.display = "none";
+};
+
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
   btn.innerText = "⏳ Loading...";
@@ -81,36 +132,4 @@ function refreshData() {
   }, 800);
 }
 
-/* Modal */
-function openModal(player) {
-  const modal = document.getElementById("modal");
-  const content = document.getElementById("modal-content");
-
-  content.innerHTML = `
-    <h2>${player.name}</h2>
-    <p>Total Points: ${player.total}</p>
-    ${player.matches.map(m => `
-      <div class="match">
-        <span>${m.match}</span>
-        <span>${m.points}</span>
-      </div>
-    `).join("")}
-  `;
-
-  modal.style.display = "flex";
-}
-
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
-
-/* Close on outside click */
-window.onclick = function(e) {
-  const modal = document.getElementById("modal");
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-};
-
-/* Initial load */
 loadData();
