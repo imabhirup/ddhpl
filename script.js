@@ -113,7 +113,19 @@ window.onclick = function(e) {
 };
 
 function refreshData() {
-  loadData();
+  const btn = document.querySelector(".refresh-btn");
+
+  btn.innerText = "⏳ Loading...";
+  btn.disabled = true;
+
+  loadData().then(() => {
+    btn.innerText = "✅ Updated";
+    
+    setTimeout(() => {
+      btn.innerText = "🔄 Refresh";
+      btn.disabled = false;
+    }, 1000);
+  });
 }
 
 loadData();
