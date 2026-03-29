@@ -5,7 +5,7 @@ body {
 }
 
 .app {
-  max-width: 420px;
+  max-width: 900px; /* desktop support */
   margin: auto;
   background: white;
   min-height: 100vh;
@@ -16,6 +16,7 @@ body {
   background: #0b3c5d;
   color: white;
   padding: 15px;
+  text-align: center;
 }
 
 .status {
@@ -27,6 +28,7 @@ body {
 .contest {
   padding: 15px;
   border-bottom: 1px solid #e2e8f0;
+  text-align: center;
 }
 
 /* Leaderboard */
@@ -67,12 +69,12 @@ body {
   font-weight: bold;
 }
 
-/* Top 3 highlight */
+/* Top 3 */
 .rank-1 { background: #e6f7ff; }
 .rank-2 { background: #f1f5f9; }
 .rank-3 { background: #fef3c7; }
 
-/* Your row highlight */
+/* Highlight user */
 .me {
   background: #fff7ed;
 }
@@ -80,4 +82,34 @@ body {
 /* Chart */
 .chart-box {
   padding: 15px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .app {
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .points {
+    font-size: 13px;
+  }
+}
+
+/* 💻 DESKTOP ENHANCEMENT */
+@media (min-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .points {
+    font-size: 16px;
+  }
 }
