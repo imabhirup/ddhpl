@@ -5,7 +5,9 @@ function loadData() {
     .then(res => res.json())
     .then(data => {
 
-      // calculate total
+      const container = document.getElementById("list");
+
+      // total
       data.forEach(player => {
         player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
       });
@@ -17,8 +19,10 @@ function loadData() {
       data.forEach((p, i) => p.rank = i + 1);
 
       renderLeaderboard(data);
+
       previousData = JSON.parse(JSON.stringify(data));
-    });
+    })
+    .catch(err => console.error(err));
 }
 
 function renderLeaderboard(data) {
@@ -32,10 +36,20 @@ function renderLeaderboard(data) {
 
     if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
 
-    // 🔥 detect change
     const old = previousData.find(p => p.name === player.name);
+
+    // Score update animation
     if (old && old.total !== player.total) {
       div.classList.add("updated");
+    }
+
+    // Rank movement animation
+    if (old) {
+      if (player.rank < old.rank) {
+        div.classList.add("rank-up");
+      } else if (player.rank > old.rank) {
+        div.classList.add("rank-down");
+      }
     }
 
     div.innerHTML = `
@@ -49,13 +63,13 @@ function renderLeaderboard(data) {
       <div class="points">${player.total}</div>
     `;
 
-    div.onclick = () => openModal(player);
+    div.addEventListener("click", () => openModal(player));
 
     container.appendChild(div);
   });
 }
 
-/* Refresh button */
+/* Refresh */
 function refreshData() {
   loadData();
 }
@@ -83,11 +97,13 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
-/* outside click */
+/* Close on outside click */
 window.onclick = function(e) {
   const modal = document.getElementById("modal");
-  if (e.target === modal) modal.style.display = "none";
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
 };
 
-/* initial load */
+/* Initial load */
 loadData();
