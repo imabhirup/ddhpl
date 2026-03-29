@@ -1,47 +1,66 @@
-fetch("./data.json")
-  .then(res => res.json())
-  .then(data => {
+let previousData = [];
 
-    const container = document.getElementById("list");
-    container.innerHTML = "";
+function loadData() {
+  fetch("./data.json")
+    .then(res => res.json())
+    .then(data => {
 
-    // total
-    data.forEach(player => {
-      player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
+      // calculate total
+      data.forEach(player => {
+        player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
+      });
+
+      // sort
+      data.sort((a, b) => b.total - a.total);
+
+      // rank
+      data.forEach((p, i) => p.rank = i + 1);
+
+      renderLeaderboard(data);
+      previousData = JSON.parse(JSON.stringify(data));
     });
+}
 
-    // sort
-    data.sort((a, b) => b.total - a.total);
+function renderLeaderboard(data) {
+  const container = document.getElementById("list");
+  container.innerHTML = "";
 
-    // rank
-    data.forEach((p, i) => p.rank = i + 1);
+  data.forEach(player => {
 
-    // render
-    data.forEach(player => {
+    const div = document.createElement("div");
+    div.className = "card";
 
-      const div = document.createElement("div");
-      div.className = "card";
+    if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
 
-      if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
+    // 🔥 detect change
+    const old = previousData.find(p => p.name === player.name);
+    if (old && old.total !== player.total) {
+      div.classList.add("updated");
+    }
 
-      div.innerHTML = `
-        <div class="left">
-          <div class="avatar"></div>
-          <div>
-            <div class="rank">Rank #${player.rank}</div>
-            <div class="name">${player.name}</div>
-          </div>
+    div.innerHTML = `
+      <div class="left">
+        <div class="avatar"></div>
+        <div>
+          <div class="rank">Rank #${player.rank}</div>
+          <div class="name">${player.name}</div>
         </div>
-        <div class="points">${player.total}</div>
-      `;
+      </div>
+      <div class="points">${player.total}</div>
+    `;
 
-      div.addEventListener("click", () => openModal(player));
+    div.onclick = () => openModal(player);
 
-      container.appendChild(div);
-    });
-  })
-  .catch(err => console.error(err));
+    container.appendChild(div);
+  });
+}
 
+/* Refresh button */
+function refreshData() {
+  loadData();
+}
+
+/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -64,9 +83,11 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
+/* outside click */
 window.onclick = function(e) {
   const modal = document.getElementById("modal");
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
+  if (e.target === modal) modal.style.display = "none";
 };
+
+/* initial load */
+loadData();
