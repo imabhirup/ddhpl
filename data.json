@@ -1,1 +1,121 @@
-{"matches": {"BLR vs HYD": {"users": ["user1", "user2"]}, "MUM vs KOL": {"users": ["user3", "user4"]}}}
+[
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 989.5 },
+      { "match": "MUM vs KOL", "points": 1697 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 985 },
+      { "match": "MUM vs KOL", "points": 1874 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 944.5 },
+      { "match": "MUM vs KOL", "points": 1886 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 917.5 },
+      { "match": "MUM vs KOL", "points": 1510 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 907 },
+      { "match": "MUM vs KOL", "points": 1989 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 905.5 },
+      { "match": "MUM vs KOL", "points": 1306 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 873.5 },
+      { "match": "MUM vs KOL", "points": 1917 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 859 },
+      { "match": "MUM vs KOL", "points": 1307 }
+    ]
+  },
+  {
+    "name": "AhanaWarriors",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 844.5 },
+      { "match": "MUM vs KOL", "points": 1411 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 828 },
+      { "match": "MUM vs KOL", "points": 1661 }
+    ]
+  },
+  {
+    "name": "Puja2920",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 814.5 },
+      { "match": "MUM vs KOL", "points": 1850 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 811.5 },
+      { "match": "MUM vs KOL", "points": 1691 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 783.5 },
+      { "match": "MUM vs KOL", "points": 1784 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 762 },
+      { "match": "MUM vs KOL", "points": 1434 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 739 },
+      { "match": "MUM vs KOL", "points": 1745 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 697.5 },
+      { "match": "MUM vs KOL", "points": 1661 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "BLR vs HYD", "points": 648.5 },
+      { "match": "MUM vs KOL", "points": 1390 }
+    ]
+  }
+]
