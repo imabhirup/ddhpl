@@ -5,26 +5,24 @@ fetch("./data.json")
     const container = document.getElementById("list");
     container.innerHTML = "";
 
-    // Calculate total
+    // total
     data.forEach(player => {
       player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
     });
 
-    // Sort
+    // sort
     data.sort((a, b) => b.total - a.total);
 
-    // Rank
+    // rank
     data.forEach((p, i) => p.rank = i + 1);
 
-    // Render
+    // render
     data.forEach(player => {
 
       const div = document.createElement("div");
       div.className = "card";
 
-      if (player.rank <= 3) {
-        div.classList.add(`rank-${player.rank}`);
-      }
+      if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
 
       div.innerHTML = `
         <div class="left">
@@ -37,32 +35,20 @@ fetch("./data.json")
         <div class="points">${player.total}</div>
       `;
 
-      // ✅ SAFE CLICK HANDLER
-      div.onclick = function () {
-        openModal(player);
-      };
+      div.addEventListener("click", () => openModal(player));
 
       container.appendChild(div);
     });
   })
-  .catch(err => console.error("Error loading JSON:", err));
-
-
-/* MODAL */
+  .catch(err => console.error(err));
 
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
 
-  if (!modal || !content) {
-    console.error("Modal not found");
-    return;
-  }
-
   content.innerHTML = `
     <h2>${player.name}</h2>
     <p>Total Points: ${player.total}</p>
-
     ${player.matches.map(m => `
       <div class="match">
         <span>${m.match}</span>
@@ -75,6 +61,12 @@ function openModal(player) {
 }
 
 function closeModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = "none";
+  document.getElementById("modal").style.display = "none";
 }
+
+window.onclick = function(e) {
+  const modal = document.getElementById("modal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
