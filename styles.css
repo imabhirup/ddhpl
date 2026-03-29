@@ -14,6 +14,25 @@ body {
   margin: auto;
   padding: 20px;
 }
+/* Match block in modal */
+.match-block {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f1f5f9;
+}
+
+.match-header {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0284c7;
+}
+
+.match-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
 
 /* Header */
 .header {
