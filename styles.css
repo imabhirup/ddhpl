@@ -294,3 +294,91 @@ body {
   text-align: right;
   font-weight: bold;
 }
+
+/* Header bottom */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+/* Update bar */
+.update-bar {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Podium */
+.podium-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.podium-item {
+  width: 90px;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.first { background: gold; height: 140px; }
+.second { background: silver; height: 120px; }
+.third { background: #cd7f32; height: 100px; }
+
+.podium-item .avatar {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-radius: 50%;
+  background: url("https://cdn-icons-png.flaticon.com/512/149/149071.png");
+  background-size: cover;
+}
+
+/* Leaderboard */
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.6fr;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.6fr;
+  align-items: center;
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+/* Fix alignment */
+.points {
+  text-align: right;
+  font-weight: 600;
+  min-width: 90px;
+}
+
+.rank {
+  text-align: right;
+  font-weight: 600;
+  min-width: 60px;
+}
+
+/* Refresh animation */
+.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
