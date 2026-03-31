@@ -16,12 +16,12 @@
   <div class="header">
     <div class="header-top">
       <h1>🏏 DDHPL T20 League</h1>
-      <button onclick="refreshData()" class="refresh-btn">🔄</button>
+      <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
     </div>
 
     <div class="header-bottom">
       <p class="status">🔴 Live</p>
-      <p id="matches-played"></p>
+      <p class="matches" id="matches-played"></p>
     </div>
   </div>
 
@@ -32,18 +32,17 @@
   </div>
 
   <!-- Update -->
-  <div id="update-bar" class="update-bar"></div>
-
-  <!-- 🏆 Podium -->
-  <div id="podium" class="podium"></div>
+  <div class="update-bar" id="update-bar"></div>
 
   <!-- Leaderboard -->
   <div class="leaderboard">
+
     <div class="leaderboard-header">
       <span>All Participants</span>
       <span>Points</span>
       <span>Rank</span>
     </div>
+
     <div id="list"></div>
   </div>
 
