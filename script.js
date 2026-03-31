@@ -6,56 +6,78 @@ function loadData() {
     .then(res => res.json())
     .then(data => {
 
+      // Calculate total points
       data.forEach(player => {
-        player.total = player.matches.reduce((sum, m) => sum + m.points, 0);
+        player.total = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
       });
 
+      // Sort & rank
       data.sort((a, b) => b.total - a.total);
       data.forEach((p, i) => p.rank = i + 1);
 
       globalData = data;
 
+      updateHeader(data);
       renderLeaderboard(data);
+
       previousData = JSON.parse(JSON.stringify(data));
     });
 }
 
+/* HEADER (Dynamic) */
+function updateHeader(data) {
+  const matchSet = new Set();
+
+  data.forEach(p => {
+    p.matches.forEach(m => matchSet.add(m.match));
+  });
+
+  document.getElementById("matches-played").innerText =
+    matchSet.size + " Matches Played";
+
+  const matches = [...matchSet];
+  const lastMatch = matches[matches.length - 1];
+
+  if (lastMatch) {
+    document.getElementById("update-bar").innerHTML =
+      `Leaderboard updated after <b>${lastMatch}</b>`;
+  }
+}
+
+/* Leaderboard */
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
 
   data.forEach(player => {
-    const div = document.createElement("div");
-    div.className = "card";
-
-    if (player.rank <= 3) div.classList.add(`rank-${player.rank}`);
+    const row = document.createElement("div");
+    row.className = "row";
 
     const old = previousData.find(p => p.name === player.name);
 
-    if (old && old.total !== player.total) div.classList.add("updated");
-
+    let movement = "";
     if (old) {
-      if (player.rank < old.rank) div.classList.add("rank-up");
-      else if (player.rank > old.rank) div.classList.add("rank-down");
+      if (player.rank < old.rank) movement = "⬆️";
+      else if (player.rank > old.rank) movement = "⬇️";
     }
 
-    div.innerHTML = `
+    row.innerHTML = `
       <div class="left">
-        <div class="avatar"></div>
-        <div>
-          <div class="rank">Rank #${player.rank}</div>
-          <div class="name">${player.name}</div>
-        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
+        <span class="name">${player.name}</span>
       </div>
-      <div class="points">${player.total}</div>
+
+      <div class="points">${player.total.toLocaleString()}</div>
+
+      <div class="rank">#${player.rank} ${movement}</div>
     `;
 
-    div.onclick = () => openModal(player);
-    container.appendChild(div);
+    row.onclick = () => openModal(player);
+    container.appendChild(row);
   });
 }
 
-/* Match rank calculation */
+/* Match rank */
 function getMatchRanks(matchName) {
   const players = [];
 
@@ -72,7 +94,7 @@ function getMatchRanks(matchName) {
   return players;
 }
 
-/* MODAL */
+/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -112,6 +134,7 @@ window.onclick = function(e) {
   if (e.target === modal) modal.style.display = "none";
 };
 
+/* Refresh */
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
 
@@ -120,7 +143,7 @@ function refreshData() {
 
   loadData().then(() => {
     btn.innerText = "✅ Updated";
-    
+
     setTimeout(() => {
       btn.innerText = "🔄 Refresh";
       btn.disabled = false;
