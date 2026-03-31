@@ -1,5 +1,6 @@
 let previousData = [];
 let globalData = [];
+const DEFAULT_TEAM_LOGO = "https://cdn-icons-png.flaticon.com/512/857/857455.png";
 const TEAM_LOGOS = {
   BLR: {
     name: "Royal Challengers Bengaluru",
@@ -30,6 +31,13 @@ const TEAM_LOGOS = {
 function getTeamsFromMatch(matchName) {
   const teams = matchName.split(" vs ").map(team => team.trim());
   return teams.length === 2 ? teams : [];
+}
+
+function getTeamLogoMarkup(teamCode, teamInfo) {
+  const teamName = teamInfo?.name || `${teamCode || "Unknown Team"}`;
+  const logoUrl = teamInfo?.logo || DEFAULT_TEAM_LOGO;
+
+  return `<img src="${logoUrl}" alt="${teamName} logo" class="team-logo" onerror="this.onerror=null;this.src='${DEFAULT_TEAM_LOGO}';">`;
 }
 
 function loadData() {
@@ -127,12 +135,12 @@ function openModal(player) {
         <div class="match-title">🏏 ${m.match}</div>
         <div class="teams-row">
           <div class="team-chip">
-            ${leftTeam ? `<img src="${leftTeam.logo}" alt="${leftTeam.name} logo" class="team-logo">` : ""}
+            ${getTeamLogoMarkup(teams[0], leftTeam)}
             <span>${teams[0] || ""}</span>
           </div>
           <span class="vs-text">vs</span>
           <div class="team-chip">
-            ${rightTeam ? `<img src="${rightTeam.logo}" alt="${rightTeam.name} logo" class="team-logo">` : ""}
+            ${getTeamLogoMarkup(teams[1], rightTeam)}
             <span>${teams[1] || ""}</span>
           </div>
         </div>
