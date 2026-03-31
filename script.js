@@ -1,5 +1,44 @@
 let previousData = [];
 let globalData = [];
+const DEFAULT_TEAM_LOGO = "https://cdn-icons-png.flaticon.com/512/857/857455.png";
+const TEAM_LOGOS = {
+  BLR: {
+    name: "Royal Challengers Bengaluru",
+    logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Royal_Challengers_Bangalore_Logo.svg"
+  },
+  HYD: {
+    name: "Sunrisers Hyderabad",
+    logo: "https://upload.wikimedia.org/wikipedia/en/8/81/Sunrisers_Hyderabad.svg"
+  },
+  MUM: {
+    name: "Mumbai Indians",
+    logo: "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg"
+  },
+  KOL: {
+    name: "Kolkata Knight Riders",
+    logo: "https://upload.wikimedia.org/wikipedia/en/1/12/Kolkata_Knight_Riders_Logo.svg"
+  },
+  RR: {
+    name: "Rajasthan Royals",
+    logo: "https://upload.wikimedia.org/wikipedia/en/6/60/Rajasthan_Royals_Logo.svg"
+  },
+  CSK: {
+    name: "Chennai Super Kings",
+    logo: "https://upload.wikimedia.org/wikipedia/en/2/2e/Chennai_Super_Kings_Logo.svg"
+  }
+};
+
+function getTeamsFromMatch(matchName) {
+  const teams = matchName.split(" vs ").map(team => team.trim());
+  return teams.length === 2 ? teams : [];
+}
+
+function getTeamLogoMarkup(teamCode, teamInfo) {
+  const teamName = teamInfo?.name || `${teamCode || "Unknown Team"}`;
+  const logoUrl = teamInfo?.logo || DEFAULT_TEAM_LOGO;
+
+  return `<img src="${logoUrl}" alt="${teamName} logo" class="team-logo" onerror="this.onerror=null;this.src='${DEFAULT_TEAM_LOGO}';">`;
+}
 
 function loadData() {
   return fetch("./data.json?ts=" + Date.now())
@@ -87,10 +126,24 @@ function openModal(player) {
   player.matches.forEach(m => {
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
+    const teams = getTeamsFromMatch(m.match);
+    const leftTeam = TEAM_LOGOS[teams[0]];
+    const rightTeam = TEAM_LOGOS[teams[1]];
 
     html += `
       <div class="match-card">
         <div class="match-title">🏏 ${m.match}</div>
+        <div class="teams-row">
+          <div class="team-chip">
+            ${getTeamLogoMarkup(teams[0], leftTeam)}
+            <span>${teams[0] || ""}</span>
+          </div>
+          <span class="vs-text">vs</span>
+          <div class="team-chip">
+            ${getTeamLogoMarkup(teams[1], rightTeam)}
+            <span>${teams[1] || ""}</span>
+          </div>
+        </div>
         <div class="match-info">
           <span class="rank-badge">Rank #${playerRank}</span>
           <span class="match-points">${m.points} pts</span>
