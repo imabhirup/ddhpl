@@ -231,3 +231,66 @@ body {
 .match-points {
   font-weight: 600;
 }
+
+/* Header bottom */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+/* Update bar */
+.update-bar {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Leaderboard header */
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  padding: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Row */
+.row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  align-items: center;
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.row:hover {
+  transform: translateY(-3px);
+}
+
+/* Avatar */
+.left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Points */
+.points {
+  text-align: right;
+  font-weight: bold;
+  color: #0284c7;
+}
+
+/* Rank */
+.rank {
+  text-align: right;
+  font-weight: bold;
+}
