@@ -1,23 +1,17 @@
 let previousData = [];
 let globalData = [];
 
-/* NAME FORMAT */
-function formatName(name) {
-  if (window.innerWidth <= 600 && name.length > 11) {
-    return name.substring(0, 11) + "...";
-  }
-  return name;
-}
-
 function loadData() {
   return fetch("./data.json?ts=" + Date.now())
     .then(res => res.json())
     .then(data => {
 
+      // Calculate total points
       data.forEach(player => {
         player.total = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
       });
 
+      // Sort & rank
       data.sort((a, b) => b.total - a.total);
       data.forEach((p, i) => p.rank = i + 1);
 
@@ -30,7 +24,7 @@ function loadData() {
     });
 }
 
-/* HEADER */
+/* HEADER (Dynamic) */
 function updateHeader(data) {
   const matchSet = new Set();
 
@@ -50,7 +44,7 @@ function updateHeader(data) {
   }
 }
 
-/* LEADERBOARD */
+/* Leaderboard */
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
@@ -70,10 +64,11 @@ function renderLeaderboard(data) {
     row.innerHTML = `
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
-        <span class="name">${formatName(player.name)}</span>
+        <span class="name">${player.name}</span>
       </div>
 
       <div class="points">${player.total.toLocaleString()}</div>
+
       <div class="rank">#${player.rank} ${movement}</div>
     `;
 
@@ -82,7 +77,7 @@ function renderLeaderboard(data) {
   });
 }
 
-/* MODAL */
+/* Match rank */
 function getMatchRanks(matchName) {
   const players = [];
 
@@ -99,6 +94,7 @@ function getMatchRanks(matchName) {
   return players;
 }
 
+/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -138,7 +134,7 @@ window.onclick = function(e) {
   if (e.target === modal) modal.style.display = "none";
 };
 
-/* REFRESH */
+/* Refresh */
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
 
