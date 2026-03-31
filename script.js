@@ -6,26 +6,25 @@ function loadData() {
     .then(res => res.json())
     .then(data => {
 
-      // total points
+      // Calculate total points
       data.forEach(player => {
         player.total = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
       });
 
-      // sort & rank
+      // Sort & rank
       data.sort((a, b) => b.total - a.total);
       data.forEach((p, i) => p.rank = i + 1);
 
       globalData = data;
 
       updateHeader(data);
-      renderPodium(data);
       renderLeaderboard(data);
 
       previousData = JSON.parse(JSON.stringify(data));
     });
 }
 
-/* HEADER */
+/* Header */
 function updateHeader(data) {
   const matchSet = new Set();
 
@@ -45,43 +44,6 @@ function updateHeader(data) {
   }
 }
 
-/* 🏆 PODIUM */
-function renderPodium(data) {
-  const podium = document.getElementById("podium");
-
-  if (data.length < 3) {
-    podium.innerHTML = "";
-    return;
-  }
-
-  const top3 = data.slice(0, 3);
-
-  podium.innerHTML = `
-    <div class="podium-container">
-      <div class="podium-item second">
-        <div class="avatar"></div>
-        <div class="name">${top3[1].name}</div>
-        <div class="points">${top3[1].total}</div>
-        <div class="rank">2</div>
-      </div>
-
-      <div class="podium-item first">
-        <div class="avatar"></div>
-        <div class="name">${top3[0].name}</div>
-        <div class="points">${top3[0].total}</div>
-        <div class="rank">1</div>
-      </div>
-
-      <div class="podium-item third">
-        <div class="avatar"></div>
-        <div class="name">${top3[2].name}</div>
-        <div class="points">${top3[2].total}</div>
-        <div class="rank">3</div>
-      </div>
-    </div>
-  `;
-}
-
 /* Leaderboard */
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
@@ -91,14 +53,6 @@ function renderLeaderboard(data) {
     const row = document.createElement("div");
     row.className = "row";
 
-    const old = previousData.find(p => p.name === player.name);
-
-    let movement = "";
-    if (old) {
-      if (player.rank < old.rank) movement = "⬆️";
-      else if (player.rank > old.rank) movement = "⬇️";
-    }
-
     row.innerHTML = `
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
@@ -106,7 +60,7 @@ function renderLeaderboard(data) {
       </div>
 
       <div class="points">${player.total.toLocaleString()}</div>
-      <div class="rank">#${player.rank} ${movement}</div>
+      <div class="rank">#${player.rank}</div>
     `;
 
     row.onclick = () => openModal(player);
@@ -167,7 +121,7 @@ window.onclick = function(e) {
   if (e.target.id === "modal") closeModal();
 };
 
-/* 🔄 Refresh */
+/* Refresh */
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
 
