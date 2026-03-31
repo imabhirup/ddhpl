@@ -6,25 +6,26 @@ function loadData() {
     .then(res => res.json())
     .then(data => {
 
-      // Calculate total points
+      // total points
       data.forEach(player => {
         player.total = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
       });
 
-      // Sort & rank
+      // sort & rank
       data.sort((a, b) => b.total - a.total);
       data.forEach((p, i) => p.rank = i + 1);
 
       globalData = data;
 
       updateHeader(data);
+      renderPodium(data);
       renderLeaderboard(data);
 
       previousData = JSON.parse(JSON.stringify(data));
     });
 }
 
-/* HEADER (Dynamic) */
+/* HEADER */
 function updateHeader(data) {
   const matchSet = new Set();
 
@@ -42,6 +43,43 @@ function updateHeader(data) {
     document.getElementById("update-bar").innerHTML =
       `Leaderboard updated after <b>${lastMatch}</b>`;
   }
+}
+
+/* 🏆 PODIUM */
+function renderPodium(data) {
+  const podium = document.getElementById("podium");
+
+  if (data.length < 3) {
+    podium.innerHTML = "";
+    return;
+  }
+
+  const top3 = data.slice(0, 3);
+
+  podium.innerHTML = `
+    <div class="podium-container">
+      <div class="podium-item second">
+        <div class="avatar"></div>
+        <div class="name">${top3[1].name}</div>
+        <div class="points">${top3[1].total}</div>
+        <div class="rank">2</div>
+      </div>
+
+      <div class="podium-item first">
+        <div class="avatar"></div>
+        <div class="name">${top3[0].name}</div>
+        <div class="points">${top3[0].total}</div>
+        <div class="rank">1</div>
+      </div>
+
+      <div class="podium-item third">
+        <div class="avatar"></div>
+        <div class="name">${top3[2].name}</div>
+        <div class="points">${top3[2].total}</div>
+        <div class="rank">3</div>
+      </div>
+    </div>
+  `;
 }
 
 /* Leaderboard */
@@ -68,7 +106,6 @@ function renderLeaderboard(data) {
       </div>
 
       <div class="points">${player.total.toLocaleString()}</div>
-
       <div class="rank">#${player.rank} ${movement}</div>
     `;
 
@@ -77,15 +114,13 @@ function renderLeaderboard(data) {
   });
 }
 
-/* Match rank */
+/* Modal */
 function getMatchRanks(matchName) {
   const players = [];
 
   globalData.forEach(player => {
     const match = player.matches.find(m => m.match === matchName);
-    if (match) {
-      players.push({ name: player.name, points: match.points });
-    }
+    if (match) players.push({ name: player.name, points: match.points });
   });
 
   players.sort((a, b) => b.points - a.points);
@@ -94,7 +129,6 @@ function getMatchRanks(matchName) {
   return players;
 }
 
-/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -130,25 +164,22 @@ function closeModal() {
 }
 
 window.onclick = function(e) {
-  const modal = document.getElementById("modal");
-  if (e.target === modal) modal.style.display = "none";
+  if (e.target.id === "modal") closeModal();
 };
 
-/* Refresh */
+/* 🔄 Refresh */
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
 
-  btn.innerText = "⏳ Loading...";
+  btn.classList.add("spinning");
   btn.disabled = true;
 
-  loadData().then(() => {
-    btn.innerText = "✅ Updated";
-
-    setTimeout(() => {
-      btn.innerText = "🔄 Refresh";
+  setTimeout(() => {
+    loadData().then(() => {
+      btn.classList.remove("spinning");
       btn.disabled = false;
-    }, 1000);
-  });
+    });
+  }, 600);
 }
 
 loadData();
