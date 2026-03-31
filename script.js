@@ -24,7 +24,7 @@ function loadData() {
     });
 }
 
-/* HEADER (Dynamic) */
+/* Header */
 function updateHeader(data) {
   const matchSet = new Set();
 
@@ -53,14 +53,6 @@ function renderLeaderboard(data) {
     const row = document.createElement("div");
     row.className = "row";
 
-    const old = previousData.find(p => p.name === player.name);
-
-    let movement = "";
-    if (old) {
-      if (player.rank < old.rank) movement = "⬆️";
-      else if (player.rank > old.rank) movement = "⬇️";
-    }
-
     row.innerHTML = `
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
@@ -68,8 +60,7 @@ function renderLeaderboard(data) {
       </div>
 
       <div class="points">${player.total.toLocaleString()}</div>
-
-      <div class="rank">#${player.rank} ${movement}</div>
+      <div class="rank">#${player.rank}</div>
     `;
 
     row.onclick = () => openModal(player);
