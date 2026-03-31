@@ -68,13 +68,15 @@ function renderLeaderboard(data) {
   });
 }
 
-/* Modal */
+/* Match rank */
 function getMatchRanks(matchName) {
   const players = [];
 
   globalData.forEach(player => {
     const match = player.matches.find(m => m.match === matchName);
-    if (match) players.push({ name: player.name, points: match.points });
+    if (match) {
+      players.push({ name: player.name, points: match.points });
+    }
   });
 
   players.sort((a, b) => b.points - a.points);
@@ -83,6 +85,7 @@ function getMatchRanks(matchName) {
   return players;
 }
 
+/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
@@ -118,22 +121,25 @@ function closeModal() {
 }
 
 window.onclick = function(e) {
-  if (e.target.id === "modal") closeModal();
+  const modal = document.getElementById("modal");
+  if (e.target === modal) modal.style.display = "none";
 };
 
 /* Refresh */
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
 
-  btn.classList.add("spinning");
+  btn.innerText = "⏳ Loading...";
   btn.disabled = true;
 
-  setTimeout(() => {
-    loadData().then(() => {
-      btn.classList.remove("spinning");
+  loadData().then(() => {
+    btn.innerText = "✅ Updated";
+
+    setTimeout(() => {
+      btn.innerText = "🔄 Refresh";
       btn.disabled = false;
-    });
-  }, 600);
+    }, 1000);
+  });
 }
 
 loadData();
