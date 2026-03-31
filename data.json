@@ -4,7 +4,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 989.5 },
       { "match": "MUM vs KOL", "points": 1697 },
-      { "match": "RR vs CSK", "points": 454 }
+      { "match": "RR vs CSK", "points": 454 },
+      { "match": "PBKS vs GT", "points": 738.5 }
     ]
   },
   {
@@ -12,7 +13,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 985 },
       { "match": "MUM vs KOL", "points": 1874 },
-      { "match": "RR vs CSK", "points": 573 }
+      { "match": "RR vs CSK", "points": 573 },
+      { "match": "PBKS vs GT", "points": 762.5 }
     ]
   },
   {
@@ -20,7 +22,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 944.5 },
       { "match": "MUM vs KOL", "points": 1886 },
-      { "match": "RR vs CSK", "points": 536 }
+      { "match": "RR vs CSK", "points": 536 },
+      { "match": "PBKS vs GT", "points": 632.5 }
     ]
   },
   {
@@ -28,7 +31,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 917.5 },
       { "match": "MUM vs KOL", "points": 1510 },
-      { "match": "RR vs CSK", "points": 508 }
+      { "match": "RR vs CSK", "points": 508 },
+      { "match": "PBKS vs GT", "points": 564 }
     ]
   },
   {
@@ -36,7 +40,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 907 },
       { "match": "MUM vs KOL", "points": 1989 },
-      { "match": "RR vs CSK", "points": 716 }
+      { "match": "RR vs CSK", "points": 716 },
+      { "match": "PBKS vs GT", "points": 706 }
     ]
   },
   {
@@ -44,7 +49,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 905.5 },
       { "match": "MUM vs KOL", "points": 1306 },
-      { "match": "RR vs CSK", "points": 703 }
+      { "match": "RR vs CSK", "points": 703 },
+      { "match": "PBKS vs GT", "points": 592 }
     ]
   },
   {
@@ -52,7 +58,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 873.5 },
       { "match": "MUM vs KOL", "points": 1917 },
-      { "match": "RR vs CSK", "points": 460 }
+      { "match": "RR vs CSK", "points": 460 },
+      { "match": "PBKS vs GT", "points": 745 }
     ]
   },
   {
@@ -60,7 +67,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 859 },
       { "match": "MUM vs KOL", "points": 1307 },
-      { "match": "RR vs CSK", "points": 591 }
+      { "match": "RR vs CSK", "points": 591 },
+      { "match": "PBKS vs GT", "points": 562 }
     ]
   },
   {
@@ -68,7 +76,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 844.5 },
       { "match": "MUM vs KOL", "points": 1411 },
-      { "match": "RR vs CSK", "points": 520 }
+      { "match": "RR vs CSK", "points": 520 },
+      { "match": "PBKS vs GT", "points": 632 }
     ]
   },
   {
@@ -76,7 +85,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 828 },
       { "match": "MUM vs KOL", "points": 1661 },
-      { "match": "RR vs CSK", "points": 569 }
+      { "match": "RR vs CSK", "points": 569 },
+      { "match": "PBKS vs GT", "points": 648.5 }
     ]
   },
   {
@@ -84,7 +94,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 814.5 },
       { "match": "MUM vs KOL", "points": 1850 },
-      { "match": "RR vs CSK", "points": 611 }
+      { "match": "RR vs CSK", "points": 611 },
+      { "match": "PBKS vs GT", "points": 588 }
     ]
   },
   {
@@ -92,7 +103,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 811.5 },
       { "match": "MUM vs KOL", "points": 1691 },
-      { "match": "RR vs CSK", "points": 566 }
+      { "match": "RR vs CSK", "points": 566 },
+      { "match": "PBKS vs GT", "points": 568 }
     ]
   },
   {
@@ -100,7 +112,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 783.5 },
       { "match": "MUM vs KOL", "points": 1784 },
-      { "match": "RR vs CSK", "points": 494 }
+      { "match": "RR vs CSK", "points": 494 },
+      { "match": "PBKS vs GT", "points": 747 }
     ]
   },
   {
@@ -108,7 +121,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 762 },
       { "match": "MUM vs KOL", "points": 1434 },
-      { "match": "RR vs CSK", "points": 447 }
+      { "match": "RR vs CSK", "points": 447 },
+      { "match": "PBKS vs GT", "points": 731 }
     ]
   },
   {
@@ -116,7 +130,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 739 },
       { "match": "MUM vs KOL", "points": 1745 },
-      { "match": "RR vs CSK", "points": 716 }
+      { "match": "RR vs CSK", "points": 716 },
+      { "match": "PBKS vs GT", "points": 706 }
     ]
   },
   {
@@ -124,7 +139,8 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 697.5 },
       { "match": "MUM vs KOL", "points": 1661 },
-      { "match": "RR vs CSK", "points": 832 }
+      { "match": "RR vs CSK", "points": 832 },
+      { "match": "PBKS vs GT", "points": 772 }
     ]
   },
   {
@@ -132,13 +148,15 @@
     "matches": [
       { "match": "BLR vs HYD", "points": 648.5 },
       { "match": "MUM vs KOL", "points": 1390 },
-      { "match": "RR vs CSK", "points": 535 }
+      { "match": "RR vs CSK", "points": 535 },
+      { "match": "PBKS vs GT", "points": 654.5 }
     ]
   },
   {
-    "name": "forceg7vsm55",
+    "name": "_dev____",
     "matches": [
-      { "match": "RR vs CSK", "points": 579 }
+      { "match": "RR vs CSK", "points": 579 },
+      { "match": "PBKS vs GT", "points": 548.5 }
     ]
   }
 ]
