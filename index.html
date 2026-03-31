@@ -6,7 +6,6 @@
   <title>DDHPL Leaderboard</title>
 
   <link rel="stylesheet" href="styles.css"/>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,12 +14,16 @@
 
   <!-- Header -->
   <div class="header">
-  <div class="header-top">
-    <h1>🏏 DDHPL T20 League</h1>
-    <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
+    <div class="header-top">
+      <h1>🏏 DDHPL T20 League</h1>
+      <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
+    </div>
+
+    <div class="header-bottom">
+      <p class="status">🔴 Live</p>
+      <p class="matches" id="matches-played"></p>
+    </div>
   </div>
-  <p class="status">🟢 In Progress</p>
-</div>
 
   <!-- Contest -->
   <div class="contest">
@@ -28,27 +31,19 @@
     <p>Limited Edition • Limited Entry</p>
   </div>
 
+  <!-- Update -->
+  <div class="update-bar" id="update-bar"></div>
+
   <!-- Leaderboard -->
   <div class="leaderboard">
-    <div class="title">🏆 Leaderboard</div>
-    <div id="list"></div>
-  </div>
 
-  <!-- Committee -->
-  <div class="committee">
-    <h3>⚡ Powered By</h3>
-
-    <div class="members">
-      <div class="member">
-        <img src="./abhirup.jpg" alt="iambhirup3">
-        <p>iambhirup3</p>
-      </div>
-
-      <div class="member">
-        <img src="./mallika.jpg" alt="rivalvar rani">
-        <p>rivalvar rani</p>
-      </div>
+    <div class="leaderboard-header">
+      <span>All Participants</span>
+      <span>Points</span>
+      <span>Rank</span>
     </div>
+
+    <div id="list"></div>
   </div>
 
 </div>
