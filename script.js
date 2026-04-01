@@ -12,8 +12,22 @@ function loadData() {
       });
 
       // Sort & rank
+      //data.sort((a, b) => b.total - a.total);
+      //data.forEach((p, i) => p.rank = i + 1);
       data.sort((a, b) => b.total - a.total);
-      data.forEach((p, i) => p.rank = i + 1);
+
+
+data.forEach((player, index) => {
+  if (index === 0) {
+    player.rank = 1;
+  } else {
+    if (player.total === data[index - 1].total) {
+      player.rank = data[index - 1].rank; // same rank
+    } else {
+      player.rank = index + 1; // skip rank automatically
+    }
+  }
+});
 
       globalData = data;
 
