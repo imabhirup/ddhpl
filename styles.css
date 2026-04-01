@@ -210,6 +210,11 @@ body {
   padding-right: 6px;
 }
 
+#modal-content {
+  min-height: 0;
+  overflow-y: auto;
+}
+
 .total-points {
   font-size: 14px;
   color: #64748b;
