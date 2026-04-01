@@ -1,6 +1,24 @@
 let previousData = [];
 let globalData = [];
 
+function applyCompetitionRanks(data, scoreSelector) {
+  data.forEach((player, index) => {
+    if (index === 0) {
+      player.rank = 1;
+      return;
+    }
+
+    const currentScore = scoreSelector(player);
+    const previousScore = scoreSelector(data[index - 1]);
+
+    if (currentScore === previousScore) {
+      player.rank = data[index - 1].rank; // same rank for tied scores
+    } else {
+      player.rank = index + 1; // skip rank automatically
+    }
+  });
+}
+
 function loadData() {
   return fetch("./data.json?ts=" + Date.now())
     .then(res => res.json())
@@ -15,19 +33,7 @@ function loadData() {
       //data.sort((a, b) => b.total - a.total);
       //data.forEach((p, i) => p.rank = i + 1);
       data.sort((a, b) => b.total - a.total);
-
-
-data.forEach((player, index) => {
-  if (index === 0) {
-    player.rank = 1;
-  } else {
-    if (player.total === data[index - 1].total) {
-      player.rank = data[index - 1].rank; // same rank
-    } else {
-      player.rank = index + 1; // skip rank automatically
-    }
-  }
-});
+      applyCompetitionRanks(data, player => player.total);
 
       globalData = data;
 
@@ -106,17 +112,7 @@ function getMatchRanks(matchName) {
   //players.forEach((p, i) => p.rank = i + 1);
   //data.sort((a, b) => b.total - a.total);
 
-players.forEach((player, index) => {
-  if (index === 0) {
-    player.rank = 1;
-  } else {
-    if (player.total === data[index - 1].total) {
-      player.rank = data[index - 1].rank; // same rank
-    } else {
-      player.rank = index + 1; // skip rank
-    }
-  }
-});
+  applyCompetitionRanks(players, player => player.points);
 
   return players;
 }
