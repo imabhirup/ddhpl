@@ -127,6 +127,7 @@ function openModal(player) {
       <h2>${player.name}</h2>
       <div class="total-points">Total Points: ${player.total}</div>
     </div>
+    <div class="matches-list">
   `;
 
   player.matches.forEach(m => {
@@ -143,6 +144,8 @@ function openModal(player) {
       </div>
     `;
   });
+
+  html += `</div>`;
 
   content.innerHTML = html;
   modal.style.display = "flex";

@@ -188,12 +188,26 @@ body {
   border-radius: 16px;
   width: 90%;
   max-width: 420px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Modal Header */
 .modal-header {
   text-align: center;
   margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+#modal-content {
+  min-height: 0;
+}
+
+.matches-list {
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
 .total-points {
