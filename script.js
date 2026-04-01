@@ -103,7 +103,20 @@ function getMatchRanks(matchName) {
   });
 
   players.sort((a, b) => b.points - a.points);
-  players.forEach((p, i) => p.rank = i + 1);
+  //players.forEach((p, i) => p.rank = i + 1);
+  //data.sort((a, b) => b.total - a.total);
+
+players.forEach((player, index) => {
+  if (index === 0) {
+    player.rank = 1;
+  } else {
+    if (player.total === data[index - 1].total) {
+      player.rank = data[index - 1].rank; // same rank
+    } else {
+      player.rank = index + 1; // skip rank
+    }
+  }
+});
 
   return players;
 }
