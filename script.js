@@ -26,7 +26,10 @@ function loadData() {
 
       // Calculate total points
       data.forEach(player => {
-        player.total = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
+        player.total = player.matches?.reduce((sum, m) => {
+          const factor = m.ampfactor ? m.ampfactor : 1;
+          return sum + (m.points * factor);
+        }, 0) || 0;
       });
 
       // Sort & rank
@@ -131,15 +134,24 @@ function openModal(player) {
   `;
 
   player.matches.forEach(m => {
+    
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
-
+  
+    const factor = m.ampfactor || 1;
+    const indvPoint = m.points * factor;
+  
+    const isBoosted = factor > 1;
+  
     html += `
-      <div class="match-card">
-        <div class="match-title">🏏 ${m.match}</div>
+      <div class="match-card ${isBoosted ? 'boosted' : ''}">
+        <div class="match-title">
+          🏏 ${m.match}
+          ${isBoosted ? `<span class="amp-badge">${factor}x</span>` : ''}
+        </div>
         <div class="match-info">
           <span class="rank-badge">Rank #${playerRank}</span>
-          <span class="match-points">${m.points} pts</span>
+          <span class="match-points">${indvPoint} pts</span>
         </div>
       </div>
     `;
