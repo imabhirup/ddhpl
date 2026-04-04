@@ -1,5 +1,19 @@
 [
   {
+  "name": "iamabhi3",
+  "matches": [
+    { "match": "BLR vs HYD", "points": 697.5 },
+    { "match": "MUM vs KOL", "points": 830.5, "ampfactor": 2 },
+    { "match": "RR vs CSK", "points": 832 },
+    { "match": "PBKS vs GT", "points": 772 },
+    { "match": "LSG vs DC", "points": 603.5 },
+    { "match": "HYD vs KOL", "points": 839.5, "ampfactor": 2 },
+    { "match": "CSK vs PBKS", "points": 739 },
+    { "match": "DC vs MI", "points": 513.5, "ampfactor": 2 },
+    { "match": "GT vs RR", "points": 861.5 }
+  ]
+},
+  {
     "name": "powerhitter11",
     "matches": [
       {
