@@ -26,7 +26,7 @@ jobs:
 
       # 4. Run scraper
       - name: Run scraper
-        run: node scrape.js
+        run: node scrape.mjs
 
       # 5. Commit updated JSON
       - name: Commit changes
