@@ -2,7 +2,7 @@ name: Update IPL Live Match
 
 on:
   schedule:
-    - cron: "*/2 * * * *"   # every 2 minutes
+    - cron: "* 10-19 * * *"   # every 2 minutes
   workflow_dispatch:
 
 jobs:
