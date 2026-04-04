@@ -2,213 +2,688 @@
   {
     "name": "powerhitter11",
     "matches": [
-      { "match": "BLR vs HYD", "points": 989.5 },
-      { "match": "MUM vs KOL", "points": 848.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 454 },
-      { "match": "PBKS vs GT", "points": 738.5 },
-      { "match": "LSG vs DC", "points": 493.5 },
-      { "match": "HYD vs KOL", "points": 950, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 778.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 989.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 848.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 454
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 738.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 493.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 950,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 778.5
+      },
+      {
+        "match": "DC vs MI",
+        "points": 479,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "hammers19",
     "matches": [
-      { "match": "BLR vs HYD", "points": 762 },
-      { "match": "MUM vs KOL", "points": 717, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 447 },
-      { "match": "PBKS vs GT", "points": 731 },
-      { "match": "LSG vs DC", "points": 618.5 },
-      { "match": "HYD vs KOL", "points": 944, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 812 }
+      {
+        "match": "BLR vs HYD",
+        "points": 762
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 717,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 447
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 731
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 618.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 944,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 812
+      },
+      {
+        "match": "DC vs MI",
+        "points": 428.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "BLR vs HYD", "points": 944.5 },
-      { "match": "MUM vs KOL", "points": 943, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 536 },
-      { "match": "PBKS vs GT", "points": 632.5 },
-      { "match": "LSG vs DC", "points": 474 },
-      { "match": "HYD vs KOL", "points": 870, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 825 }
+      {
+        "match": "BLR vs HYD",
+        "points": 944.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 943,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 536
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 632.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 474
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 870,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 825
+      },
+      {
+        "match": "DC vs MI",
+        "points": 477.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Rockstar110823",
     "matches": [
-      { "match": "BLR vs HYD", "points": 783.5 },
-      { "match": "MUM vs KOL", "points": 892, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 494 },
-      { "match": "PBKS vs GT", "points": 747 },
-      { "match": "LSG vs DC", "points": 506 },
-      { "match": "HYD vs KOL", "points": 868, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 871.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 783.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 892,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 494
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 747
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 506
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 868,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 871.5
+      },
+      {
+        "match": "DC vs MI",
+        "points": 601.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "BLR vs HYD", "points": 697.5 },
-      { "match": "MUM vs KOL", "points": 830.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 832 },
-      { "match": "PBKS vs GT", "points": 772 },
-      { "match": "LSG vs DC", "points": 603.5 },
-      { "match": "HYD vs KOL", "points": 839.5, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 739 }
+      {
+        "match": "BLR vs HYD",
+        "points": 697.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 830.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 832
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 772
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 603.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 839.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 739
+      },
+      {
+        "match": "DC vs MI",
+        "points": 513.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "BLR vs HYD", "points": 907 },
-      { "match": "MUM vs KOL", "points": 994.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 716 },
-      { "match": "PBKS vs GT", "points": 706 },
-      { "match": "LSG vs DC", "points": 503.5 },
-      { "match": "HYD vs KOL", "points": 823, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 759.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 907
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 994.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 716
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 706
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 503.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 823,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 759.5
+      },
+      {
+        "match": "DC vs MI",
+        "points": 391.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "AhanaWarriors",
     "matches": [
-      { "match": "BLR vs HYD", "points": 844.5 },
-      { "match": "MUM vs KOL", "points": 705.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 520 },
-      { "match": "PBKS vs GT", "points": 632 },
-      { "match": "LSG vs DC", "points": 506.5 },
-      { "match": "HYD vs KOL", "points": 820, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 711 }
+      {
+        "match": "BLR vs HYD",
+        "points": 844.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 705.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 520
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 632
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 506.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 820,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 711
+      }
     ]
   },
   {
     "name": "AllTimeWinner",
     "matches": [
-      { "match": "BLR vs HYD", "points": 739 },
-      { "match": "MUM vs KOL", "points": 872.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 716 },
-      { "match": "PBKS vs GT", "points": 706 },
-      { "match": "LSG vs DC", "points": 603.5 },
-      { "match": "HYD vs KOL", "points": 811, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 749.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 739
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 872.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 716
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 706
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 603.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 811,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 749.5
+      },
+      {
+        "match": "DC vs MI",
+        "points": 391.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "BLR vs HYD", "points": 985 },
-      { "match": "MUM vs KOL", "points": 937, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 573 },
-      { "match": "PBKS vs GT", "points": 762.5 },
-      { "match": "LSG vs DC", "points": 433 },
-      { "match": "HYD vs KOL", "points": 757, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 789 }
+      {
+        "match": "BLR vs HYD",
+        "points": 985
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 937,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 573
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 762.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 433
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 757,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 789
+      },
+      {
+        "match": "DC vs MI",
+        "points": 514.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "BLR vs HYD", "points": 917.5 },
-      { "match": "MUM vs KOL", "points": 755, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 508 },
-      { "match": "PBKS vs GT", "points": 564 },
-      { "match": "LSG vs DC", "points": 522.5 },
-      { "match": "HYD vs KOL", "points": 747, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 726.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 917.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 755,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 508
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 564
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 522.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 747,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 726.5
+      }
     ]
   },
   {
     "name": "Roktobeej",
     "matches": [
-      { "match": "BLR vs HYD", "points": 905.5 },
-      { "match": "MUM vs KOL", "points": 653, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 703 },
-      { "match": "PBKS vs GT", "points": 592 },
-      { "match": "LSG vs DC", "points": 595.5 },
-      { "match": "HYD vs KOL", "points": 745, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 901 }
+      {
+        "match": "BLR vs HYD",
+        "points": 905.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 653,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 703
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 592
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 595.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 745,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 901
+      },
+      {
+        "match": "DC vs MI",
+        "points": 478.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Puja2920",
     "matches": [
-      { "match": "BLR vs HYD", "points": 814.5 },
-      { "match": "MUM vs KOL", "points": 925, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 611 },
-      { "match": "PBKS vs GT", "points": 588 },
-      { "match": "LSG vs DC", "points": 445.5 },
-      { "match": "HYD vs KOL", "points": 711, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 832.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 814.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 925,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 611
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 588
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 445.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 711,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 832.5
+      }
     ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "BLR vs HYD", "points": 859 },
-      { "match": "MUM vs KOL", "points": 653.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 591 },
-      { "match": "PBKS vs GT", "points": 562 },
-      { "match": "LSG vs DC", "points": 503.5 },
-      { "match": "HYD vs KOL", "points": 706, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 830 }
+      {
+        "match": "BLR vs HYD",
+        "points": 859
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 653.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 591
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 562
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 503.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 706,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 830
+      },
+      {
+        "match": "DC vs MI",
+        "points": 643.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "BLR vs HYD", "points": 873.5 },
-      { "match": "MUM vs KOL", "points": 958.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 460 },
-      { "match": "PBKS vs GT", "points": 745 },
-      { "match": "LSG vs DC", "points": 557.5 },
-      { "match": "HYD vs KOL", "points": 687, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 824 }
+      {
+        "match": "BLR vs HYD",
+        "points": 873.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 958.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 460
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 745
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 557.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 687,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 824
+      },
+      {
+        "match": "DC vs MI",
+        "points": 471.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "TeamTannyi",
     "matches": [
-      { "match": "BLR vs HYD", "points": 811.5 },
-      { "match": "MUM vs KOL", "points": 845.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 566 },
-      { "match": "PBKS vs GT", "points": 568 },
-      { "match": "LSG vs DC", "points": 330 },
-      { "match": "HYD vs KOL", "points": 680, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 816 }
+      {
+        "match": "BLR vs HYD",
+        "points": 811.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 845.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 566
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 568
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 330
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 680,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 816
+      },
+      {
+        "match": "DC vs MI",
+        "points": 383.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "BLR vs HYD", "points": 648.5 },
-      { "match": "MUM vs KOL", "points": 695, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 535 },
-      { "match": "PBKS vs GT", "points": 654.5 },
-      { "match": "LSG vs DC", "points": 483.5 },
-      { "match": "CSK vs PBKS", "points": 914.5 }
+      {
+        "match": "BLR vs HYD",
+        "points": 648.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 695,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 535
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 654.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 483.5
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 914.5
+      },
+      {
+        "match": "DC vs MI",
+        "points": 584,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "_dev____",
     "matches": [
-      { "match": "RR vs CSK", "points": 579 },
-      { "match": "PBKS vs GT", "points": 548.5 },
-      { "match": "HYD vs KOL", "points": 671, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 752 }
+      {
+        "match": "RR vs CSK",
+        "points": 579
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 548.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 671,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 752
+      },
+      {
+        "match": "DC vs MI",
+        "points": 342.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "BLR vs HYD", "points": 828 },
-      { "match": "MUM vs KOL", "points": 830.5, "ampfactor": 2 },
-      { "match": "RR vs CSK", "points": 569 },
-      { "match": "PBKS vs GT", "points": 648.5 },
-      { "match": "LSG vs DC", "points": 609.5 },
-      { "match": "HYD vs KOL", "points": 639, "ampfactor": 2 },
-      { "match": "CSK vs PBKS", "points": 760 }
+      {
+        "match": "BLR vs HYD",
+        "points": 828
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 830.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 569
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 648.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 609.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 639,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 760
+      },
+      {
+        "match": "DC vs MI",
+        "points": 458.5,
+        "ampfactor": 2
+      }
     ]
   }
 ]
