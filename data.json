@@ -1,18 +1,52 @@
 [
   {
-  "name": "iamabhi3",
-  "matches": [
-    { "match": "BLR vs HYD", "points": 697.5 },
-    { "match": "MUM vs KOL", "points": 830.5, "ampfactor": 2 },
-    { "match": "RR vs CSK", "points": 832 },
-    { "match": "PBKS vs GT", "points": 772 },
-    { "match": "LSG vs DC", "points": 603.5 },
-    { "match": "HYD vs KOL", "points": 839.5, "ampfactor": 2 },
-    { "match": "CSK vs PBKS", "points": 739 },
-    { "match": "DC vs MI", "points": 513.5, "ampfactor": 2 },
-    { "match": "GT vs RR", "points": 861.5 }
-  ]
-},
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "BLR vs HYD",
+        "points": 697.5
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 830.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 832
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 772
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 603.5
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 839.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 739
+      },
+      {
+        "match": "DC vs MI",
+        "points": 513.5,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RR",
+        "points": 861.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 760
+      }
+    ]
+  },
   {
     "name": "powerhitter11",
     "matches": [
@@ -54,6 +88,10 @@
       {
         "match": "GT vs RR",
         "points": 945.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 584.5
       }
     ]
   },
@@ -98,6 +136,10 @@
       {
         "match": "GT vs RR",
         "points": 1135.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 635
       }
     ]
   },
@@ -142,6 +184,10 @@
       {
         "match": "GT vs RR",
         "points": 1008.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 653
       }
     ]
   },
@@ -181,6 +227,10 @@
       {
         "match": "GT vs RR",
         "points": 979.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 677.5
       }
     ]
   },
@@ -225,6 +275,10 @@
       {
         "match": "GT vs RR",
         "points": 972.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 613.5
       }
     ]
   },
@@ -269,6 +323,10 @@
       {
         "match": "GT vs RR",
         "points": 947.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 609.5
       }
     ]
   },
@@ -308,6 +366,10 @@
       {
         "match": "GT vs RR",
         "points": 913.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 677
       }
     ]
   },
@@ -352,6 +414,10 @@
       {
         "match": "GT vs RR",
         "points": 909.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 680.5
       }
     ]
   },
@@ -391,6 +457,10 @@
       {
         "match": "GT vs RR",
         "points": 905.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 675
       }
     ]
   },
@@ -435,6 +505,10 @@
       {
         "match": "GT vs RR",
         "points": 878.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 673
       }
     ]
   },
@@ -479,6 +553,10 @@
       {
         "match": "GT vs RR",
         "points": 866.5
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 695
       }
     ]
   },
@@ -523,6 +601,10 @@
       {
         "match": "GT vs RR",
         "points": 866
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 631.5
       }
     ]
   },
@@ -554,6 +636,10 @@
       {
         "match": "GT vs RR",
         "points": 812
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 444
       }
     ]
   },
@@ -598,6 +684,10 @@
       {
         "match": "GT vs RR",
         "points": 787
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 625
       }
     ]
   },
@@ -642,6 +732,10 @@
       {
         "match": "GT vs RR",
         "points": 787
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 725.5
       }
     ]
   },
@@ -681,6 +775,10 @@
       {
         "match": "GT vs RR",
         "points": 758
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 714.5
       }
     ]
   },
@@ -725,6 +823,10 @@
       {
         "match": "GT vs RR",
         "points": 727
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 574
       }
     ]
   }
