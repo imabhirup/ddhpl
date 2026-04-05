@@ -4,76 +4,112 @@ const dataPath = "./data.json";
 const currentPath = "./current.json";
 
 const data = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-let current = [];
 
+let current = [];
 try {
   current = JSON.parse(fs.readFileSync(currentPath, "utf-8"));
 } catch (e) {
-  console.log("⚠️ current.json missing or invalid. Skipping update.");
-  process.exit(0);
+  console.log("⚠️ current.json missing, treating as empty.");
 }
 
-// ✅ HANDLE BLANK current.json
-if (!Array.isArray(current) || current.length === 0) {
-  console.log("ℹ️ current.json is empty. No updates applied.");
-  process.exit(0);
-}
-
-// Extract match info safely
-const newMatchName = current[0]?.matches?.[0]?.match;
-const newAmpFactor = current[0]?.matches?.[0]?.ampfactor;
-
-// If match name missing → skip
-if (!newMatchName) {
-  console.log("⚠️ No match found in current.json. Skipping.");
-  process.exit(0);
-}
-
-// Convert existing players to map
+// Convert players to map
 const dataMap = new Map();
 data.forEach(player => {
   dataMap.set(player.name, player);
 });
 
-// Step 1: Add/update players from current.json
-current.forEach(currPlayer => {
-  if (!dataMap.has(currPlayer.name)) {
-    dataMap.set(currPlayer.name, {
-      name: currPlayer.name,
-      matches: []
-    });
-  }
+// ✅ STEP 1: Collect ALL matches + ampfactor map
+const matchMap = new Map();
 
-  const player = dataMap.get(currPlayer.name);
-
-  // 🚫 Prevent duplicate match append
-  if (player.matches.some(m => m.match === newMatchName)) return;
-
-  const matchData = currPlayer.matches?.[0];
-
-  player.matches.push({
-    match: newMatchName,
-    points: matchData?.points ?? 0,
-    ...(newAmpFactor ? { ampfactor: newAmpFactor } : {})
+data.forEach(player => {
+  player.matches.forEach(m => {
+    if (!matchMap.has(m.match)) {
+      matchMap.set(m.match, m.ampfactor || null);
+    }
   });
 });
 
-// Step 2: Handle missing players → assign 0
-dataMap.forEach(player => {
-  const alreadyPlayed = player.matches.some(m => m.match === newMatchName);
+// ===============================
+// ✅ CASE A: current.json HAS DATA
+// ===============================
+if (Array.isArray(current) && current.length > 0) {
+  const newMatchName = current[0]?.matches?.[0]?.match;
+  const newAmpFactor = current[0]?.matches?.[0]?.ampfactor;
 
-  if (!alreadyPlayed) {
+  if (!newMatchName) {
+    console.log("⚠️ Invalid current.json. Skipping.");
+    process.exit(0);
+  }
+
+  // Prevent duplicate match
+  const alreadyExists = data.some(p =>
+    p.matches.some(m => m.match === newMatchName)
+  );
+
+  if (alreadyExists) {
+    console.log("ℹ️ Match already exists. Skipping.");
+    process.exit(0);
+  }
+
+  // Add new match to players
+  current.forEach(currPlayer => {
+    if (!dataMap.has(currPlayer.name)) {
+      dataMap.set(currPlayer.name, {
+        name: currPlayer.name,
+        matches: []
+      });
+    }
+
+    const player = dataMap.get(currPlayer.name);
+    const matchData = currPlayer.matches?.[0];
+
     player.matches.push({
       match: newMatchName,
-      points: 0,
+      points: matchData?.points ?? 0,
       ...(newAmpFactor ? { ampfactor: newAmpFactor } : {})
     });
-  }
-});
+  });
 
-// Step 3: Save updated data
+  // Add missing players with 0
+  dataMap.forEach(player => {
+    const hasMatch = player.matches.some(m => m.match === newMatchName);
+    if (!hasMatch) {
+      player.matches.push({
+        match: newMatchName,
+        points: 0,
+        ...(newAmpFactor ? { ampfactor: newAmpFactor } : {})
+      });
+    }
+  });
+
+  console.log("✅ New match appended");
+}
+
+// =====================================
+// ✅ CASE B: current.json is EMPTY
+// =====================================
+else {
+  console.log("ℹ️ current.json empty → normalizing data.json");
+
+  dataMap.forEach(player => {
+    const playerMatches = new Set(player.matches.map(m => m.match));
+
+    matchMap.forEach((amp, matchName) => {
+      if (!playerMatches.has(matchName)) {
+        player.matches.push({
+          match: matchName,
+          points: 0,
+          ...(amp ? { ampfactor: amp } : {})
+        });
+      }
+    });
+  });
+
+  console.log("✅ Missing matches filled with 0 points");
+}
+
+// Save updated data
 const updatedData = Array.from(dataMap.values());
-
 fs.writeFileSync(dataPath, JSON.stringify(updatedData, null, 2));
 
-console.log("✅ data.json updated successfully");
+console.log("✅ data.json finalized");
