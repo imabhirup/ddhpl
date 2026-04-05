@@ -225,17 +225,17 @@
         "points": 832.5
       },
       {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
         "match": "GT vs RR",
         "points": 979.5
       },
       {
         "match": "HYD vs LKN",
         "points": 677.5
-      },
-      {
-        "match": "DC vs MI",
-        "points": 0,
-        "ampfactor": 2
       }
     ]
   },
@@ -369,17 +369,17 @@
         "points": 726.5
       },
       {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
         "match": "GT vs RR",
         "points": 913.5
       },
       {
         "match": "HYD vs LKN",
         "points": 677
-      },
-      {
-        "match": "DC vs MI",
-        "points": 0,
-        "ampfactor": 2
       }
     ]
   },
@@ -456,6 +456,11 @@
         "points": 483.5
       },
       {
+        "match": "HYD vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
         "match": "CSK vs PBKS",
         "points": 914.5
       },
@@ -471,11 +476,6 @@
       {
         "match": "HYD vs LKN",
         "points": 675
-      },
-      {
-        "match": "HYD vs KOL",
-        "points": 0,
-        "ampfactor": 2
       }
     ]
   },
@@ -627,12 +627,25 @@
     "name": "_dev____",
     "matches": [
       {
+        "match": "BLR vs HYD",
+        "points": 0
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
         "match": "RR vs CSK",
         "points": 579
       },
       {
         "match": "PBKS vs GT",
         "points": 548.5
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 0
       },
       {
         "match": "HYD vs KOL",
@@ -655,19 +668,6 @@
       {
         "match": "HYD vs LKN",
         "points": 444
-      },
-      {
-        "match": "BLR vs HYD",
-        "points": 0
-      },
-      {
-        "match": "MUM vs KOL",
-        "points": 0,
-        "ampfactor": 2
-      },
-      {
-        "match": "LSG vs DC",
-        "points": 0
       }
     ]
   },
@@ -801,17 +801,17 @@
         "points": 711
       },
       {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
         "match": "GT vs RR",
         "points": 758
       },
       {
         "match": "HYD vs LKN",
         "points": 714.5
-      },
-      {
-        "match": "DC vs MI",
-        "points": 0,
-        "ampfactor": 2
       }
     ]
   },
