@@ -12,46 +12,50 @@ try {
   console.log("⚠️ current.json missing, treating as empty.");
 }
 
-// Convert players to map
-const dataMap = new Map();
-data.forEach(player => {
-  dataMap.set(player.name, player);
-});
-
-// ✅ STEP 1: Collect ALL matches + ampfactor map
-const matchMap = new Map();
+// ===============================
+// STEP 1: Build GLOBAL MATCH ORDER
+// ===============================
+const matchOrder = [];
+const matchAmpMap = new Map();
 
 data.forEach(player => {
   player.matches.forEach(m => {
-    if (!matchMap.has(m.match)) {
-      matchMap.set(m.match, m.ampfactor || null);
+    if (!matchOrder.includes(m.match)) {
+      matchOrder.push(m.match);
+    }
+    if (!matchAmpMap.has(m.match)) {
+      matchAmpMap.set(m.match, m.ampfactor || null);
     }
   });
 });
 
+// Convert players to map
+const dataMap = new Map();
+data.forEach(player => dataMap.set(player.name, player));
+
 // ===============================
-// ✅ CASE A: current.json HAS DATA
+// CASE A: current.json HAS DATA
 // ===============================
 if (Array.isArray(current) && current.length > 0) {
   const newMatchName = current[0]?.matches?.[0]?.match;
   const newAmpFactor = current[0]?.matches?.[0]?.ampfactor;
 
   if (!newMatchName) {
-    console.log("⚠️ Invalid current.json. Skipping.");
+    console.log("⚠️ Invalid current.json");
     process.exit(0);
   }
 
-  // Prevent duplicate match
-  const alreadyExists = data.some(p =>
-    p.matches.some(m => m.match === newMatchName)
-  );
-
-  if (alreadyExists) {
-    console.log("ℹ️ Match already exists. Skipping.");
+  // Prevent duplicate
+  if (matchOrder.includes(newMatchName)) {
+    console.log("ℹ️ Match already exists");
     process.exit(0);
   }
 
-  // Add new match to players
+  // Add new match at END of sequence
+  matchOrder.push(newMatchName);
+  matchAmpMap.set(newMatchName, newAmpFactor || null);
+
+  // Add/update players
   current.forEach(currPlayer => {
     if (!dataMap.has(currPlayer.name)) {
       dataMap.set(currPlayer.name, {
@@ -69,47 +73,38 @@ if (Array.isArray(current) && current.length > 0) {
       ...(newAmpFactor ? { ampfactor: newAmpFactor } : {})
     });
   });
+}
 
-  // Add missing players with 0
-  dataMap.forEach(player => {
-    const hasMatch = player.matches.some(m => m.match === newMatchName);
-    if (!hasMatch) {
-      player.matches.push({
-        match: newMatchName,
+// ===============================
+// FINAL STEP: REBUILD ALL PLAYERS
+// ===============================
+dataMap.forEach(player => {
+  const playerMatchMap = new Map();
+  player.matches.forEach(m => {
+    playerMatchMap.set(m.match, m);
+  });
+
+  const rebuiltMatches = [];
+
+  matchOrder.forEach(matchName => {
+    if (playerMatchMap.has(matchName)) {
+      rebuiltMatches.push(playerMatchMap.get(matchName));
+    } else {
+      rebuiltMatches.push({
+        match: matchName,
         points: 0,
-        ...(newAmpFactor ? { ampfactor: newAmpFactor } : {})
+        ...(matchAmpMap.get(matchName)
+          ? { ampfactor: matchAmpMap.get(matchName) }
+          : {})
       });
     }
   });
 
-  console.log("✅ New match appended");
-}
+  player.matches = rebuiltMatches;
+});
 
-// =====================================
-// ✅ CASE B: current.json is EMPTY
-// =====================================
-else {
-  console.log("ℹ️ current.json empty → normalizing data.json");
-
-  dataMap.forEach(player => {
-    const playerMatches = new Set(player.matches.map(m => m.match));
-
-    matchMap.forEach((amp, matchName) => {
-      if (!playerMatches.has(matchName)) {
-        player.matches.push({
-          match: matchName,
-          points: 0,
-          ...(amp ? { ampfactor: amp } : {})
-        });
-      }
-    });
-  });
-
-  console.log("✅ Missing matches filled with 0 points");
-}
-
-// Save updated data
+// Save
 const updatedData = Array.from(dataMap.values());
 fs.writeFileSync(dataPath, JSON.stringify(updatedData, null, 2));
 
-console.log("✅ data.json finalized");
+console.log("✅ Sequence preserved & data normalized");
