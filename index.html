@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DDHPL Leaderboard</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <h1>🏏 DDHPL T20 League</h1>
+      <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
+    </div>
+
+    <div class="header-bottom">
+      <p class="status">🔴 Live</p>
+      <p class="matches" id="matches-played"></p>
+    </div>
+  </div>
+
+  <!-- Contest -->
+  <div class="contest">
+    <h2>DDHPL Contest</h2>
+    <p>Limited Edition • Limited Entry</p>
+  </div>
+
+  <!-- Update -->
+  <div class="update-bar" id="update-bar"></div>
+
+  <!-- Leaderboard -->
+  <div class="leaderboard">
+
+    <div class="leaderboard-header">
+      <span>All Participants</span>
+      <span>Points</span>
+      <span>Rank</span>
+    </div>
+
+    <div id="list"></div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">×</span>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
