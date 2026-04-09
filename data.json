@@ -52,6 +52,10 @@
       {
         "match": "RR vs MI",
         "points": 652.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 1109
       }
     ]
   },
@@ -108,6 +112,10 @@
       {
         "match": "RR vs MI",
         "points": 479.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 856
       }
     ]
   },
@@ -164,6 +172,10 @@
       {
         "match": "RR vs MI",
         "points": 630.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 732.5
       }
     ]
   },
@@ -220,6 +232,10 @@
       {
         "match": "RR vs MI",
         "points": 705
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 865
       }
     ]
   },
@@ -276,6 +292,10 @@
       {
         "match": "RR vs MI",
         "points": 544.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 872
       }
     ]
   },
@@ -332,6 +352,10 @@
       {
         "match": "RR vs MI",
         "points": 519.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 870
       }
     ]
   },
@@ -388,6 +412,10 @@
       {
         "match": "RR vs MI",
         "points": 469
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 892
       }
     ]
   },
@@ -444,6 +472,10 @@
       {
         "match": "RR vs MI",
         "points": 638
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 877
       }
     ]
   },
@@ -500,6 +532,10 @@
       {
         "match": "RR vs MI",
         "points": 592.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 914.5
       }
     ]
   },
@@ -556,6 +592,10 @@
       {
         "match": "RR vs MI",
         "points": 685.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 884
       }
     ]
   },
@@ -612,6 +652,10 @@
       {
         "match": "RR vs MI",
         "points": 602.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 931
       }
     ]
   },
@@ -668,6 +712,10 @@
       {
         "match": "RR vs MI",
         "points": 537.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 1047
       }
     ]
   },
@@ -724,6 +772,10 @@
       {
         "match": "RR vs MI",
         "points": 588
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 1034
       }
     ]
   },
@@ -780,6 +832,10 @@
       {
         "match": "RR vs MI",
         "points": 611.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 0
       }
     ]
   },
@@ -836,6 +892,10 @@
       {
         "match": "RR vs MI",
         "points": 607.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 985
       }
     ]
   },
@@ -892,6 +952,10 @@
       {
         "match": "RR vs MI",
         "points": 601
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 990
       }
     ]
   },
@@ -948,6 +1012,10 @@
       {
         "match": "RR vs MI",
         "points": 561.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 1031
       }
     ]
   },
@@ -1004,6 +1072,10 @@
       {
         "match": "RR vs MI",
         "points": 591.5
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 1040
       }
     ]
   }
