@@ -56,6 +56,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 1109
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 561.5
       }
     ]
   },
@@ -116,6 +120,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 856
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 480.5
       }
     ]
   },
@@ -176,6 +184,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 732.5
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 573
       }
     ]
   },
@@ -236,6 +248,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 865
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 536
       }
     ]
   },
@@ -296,6 +312,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 872
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 551.5
       }
     ]
   },
@@ -356,6 +376,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 870
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 586.5
       }
     ]
   },
@@ -416,6 +440,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 892
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 582.5
       }
     ]
   },
@@ -476,6 +504,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 877
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 564.5
       }
     ]
   },
@@ -536,6 +568,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 914.5
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 601.5
       }
     ]
   },
@@ -596,6 +632,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 884
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 489
       }
     ]
   },
@@ -656,6 +696,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 931
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 570.5
       }
     ]
   },
@@ -716,6 +760,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 1047
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 611
       }
     ]
   },
@@ -776,6 +824,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 1034
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 631.5
       }
     ]
   },
@@ -835,6 +887,10 @@
       },
       {
         "match": "DEL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "KKR vs LSG",
         "points": 0
       }
     ]
@@ -896,6 +952,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 985
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 478
       }
     ]
   },
@@ -956,6 +1016,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 990
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 581.5
       }
     ]
   },
@@ -1016,6 +1080,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 1031
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 643
       }
     ]
   },
@@ -1076,6 +1144,10 @@
       {
         "match": "DEL vs GUJ",
         "points": 1040
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 603.5
       }
     ]
   }
