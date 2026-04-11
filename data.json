@@ -60,6 +60,11 @@
       {
         "match": "KKR vs LSG",
         "points": 561.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 971,
+        "ampfactor": 2
       }
     ]
   },
@@ -124,6 +129,11 @@
       {
         "match": "KKR vs LSG",
         "points": 480.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 739,
+        "ampfactor": 2
       }
     ]
   },
@@ -188,6 +198,11 @@
       {
         "match": "KKR vs LSG",
         "points": 573
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 854.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -252,6 +267,11 @@
       {
         "match": "KKR vs LSG",
         "points": 536
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 839,
+        "ampfactor": 2
       }
     ]
   },
@@ -316,6 +336,11 @@
       {
         "match": "KKR vs LSG",
         "points": 551.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 833.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -380,6 +405,11 @@
       {
         "match": "KKR vs LSG",
         "points": 586.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 859.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -444,6 +474,11 @@
       {
         "match": "KKR vs LSG",
         "points": 582.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 763,
+        "ampfactor": 2
       }
     ]
   },
@@ -508,6 +543,11 @@
       {
         "match": "KKR vs LSG",
         "points": 564.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 788,
+        "ampfactor": 2
       }
     ]
   },
@@ -572,6 +612,11 @@
       {
         "match": "KKR vs LSG",
         "points": 601.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 730.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -636,6 +681,11 @@
       {
         "match": "KKR vs LSG",
         "points": 489
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 827,
+        "ampfactor": 2
       }
     ]
   },
@@ -700,6 +750,11 @@
       {
         "match": "KKR vs LSG",
         "points": 570.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 782,
+        "ampfactor": 2
       }
     ]
   },
@@ -764,6 +819,11 @@
       {
         "match": "KKR vs LSG",
         "points": 611
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 786.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -828,6 +888,11 @@
       {
         "match": "KKR vs LSG",
         "points": 631.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 856,
+        "ampfactor": 2
       }
     ]
   },
@@ -892,6 +957,11 @@
       {
         "match": "KKR vs LSG",
         "points": 0
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 912,
+        "ampfactor": 2
       }
     ]
   },
@@ -956,6 +1026,11 @@
       {
         "match": "KKR vs LSG",
         "points": 478
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 965,
+        "ampfactor": 2
       }
     ]
   },
@@ -1020,6 +1095,11 @@
       {
         "match": "KKR vs LSG",
         "points": 581.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 935.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1084,6 +1164,11 @@
       {
         "match": "KKR vs LSG",
         "points": 643
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 776.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1148,6 +1233,11 @@
       {
         "match": "KKR vs LSG",
         "points": 603.5
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 882,
+        "ampfactor": 2
       }
     ]
   }
