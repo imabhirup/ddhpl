@@ -69,6 +69,10 @@
       {
         "match": "PUN vs HYD",
         "points": 908.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 810
       }
     ]
   },
@@ -142,6 +146,10 @@
       {
         "match": "PUN vs HYD",
         "points": 856.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 1139
       }
     ]
   },
@@ -215,6 +223,10 @@
       {
         "match": "PUN vs HYD",
         "points": 792.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 911.5
       }
     ]
   },
@@ -288,6 +300,10 @@
       {
         "match": "PUN vs HYD",
         "points": 930.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 778
       }
     ]
   },
@@ -361,6 +377,10 @@
       {
         "match": "PUN vs HYD",
         "points": 804.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 529.5
       }
     ]
   },
@@ -434,6 +454,10 @@
       {
         "match": "PUN vs HYD",
         "points": 1014.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 808.5
       }
     ]
   },
@@ -507,6 +531,10 @@
       {
         "match": "PUN vs HYD",
         "points": 1040.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 901.5
       }
     ]
   },
@@ -580,6 +608,10 @@
       {
         "match": "PUN vs HYD",
         "points": 812.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 868.5
       }
     ]
   },
@@ -653,6 +685,10 @@
       {
         "match": "PUN vs HYD",
         "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 962.5
       }
     ]
   },
@@ -726,6 +762,10 @@
       {
         "match": "PUN vs HYD",
         "points": 936.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 791.5
       }
     ]
   },
@@ -799,6 +839,10 @@
       {
         "match": "PUN vs HYD",
         "points": 997.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 980
       }
     ]
   },
@@ -872,6 +916,10 @@
       {
         "match": "PUN vs HYD",
         "points": 998.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 693.5
       }
     ]
   },
@@ -945,6 +993,10 @@
       {
         "match": "PUN vs HYD",
         "points": 1052.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 901
       }
     ]
   },
@@ -1017,6 +1069,10 @@
       },
       {
         "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
         "points": 0
       }
     ]
@@ -1091,6 +1147,10 @@
       {
         "match": "PUN vs HYD",
         "points": 916.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 762.5
       }
     ]
   },
@@ -1164,6 +1224,10 @@
       {
         "match": "PUN vs HYD",
         "points": 916.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 762.5
       }
     ]
   },
@@ -1236,6 +1300,10 @@
       },
       {
         "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
         "points": 0
       }
     ]
@@ -1310,6 +1378,87 @@
       {
         "match": "PUN vs HYD",
         "points": 838.5
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 806
+      }
+    ]
+  },
+  {
+    "name": "_dev__",
+    "matches": [
+      {
+        "match": "BLR vs HYD",
+        "points": 0
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 0
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 0
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RR",
+        "points": 0
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 0
+      },
+      {
+        "match": "RCB vs CSK",
+        "points": 0
+      },
+      {
+        "match": "RR vs MI",
+        "points": 0
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 0
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 716
       }
     ]
   }
