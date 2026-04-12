@@ -23,7 +23,6 @@ function loadData() {
   return fetch("./data.json?ts=" + Date.now())
     .then(res => res.json())
     .then(data => {
-
       // Calculate total points
       data.forEach(player => {
         player.total = player.matches?.reduce((sum, m) => {
@@ -33,8 +32,6 @@ function loadData() {
       });
 
       // Sort & rank
-      //data.sort((a, b) => b.total - a.total);
-      //data.forEach((p, i) => p.rank = i + 1);
       data.sort((a, b) => b.total - a.total);
       applyCompetitionRanks(data, player => player.total);
 
@@ -112,37 +109,95 @@ function getMatchRanks(matchName) {
   });
 
   players.sort((a, b) => b.points - a.points);
-  //players.forEach((p, i) => p.rank = i + 1);
-  //data.sort((a, b) => b.total - a.total);
-
   applyCompetitionRanks(players, player => player.points);
 
   return players;
+}
+
+function formatPoints(value) {
+  const rounded = Math.round(value * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+}
+
+function getTooltipAttr(text) {
+  return text ? `title="${text}"` : "";
+}
+
+function calculateConsistency(points, avg) {
+  if (points.length <= 1) return 100;
+  const variance = points.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / points.length;
+  const stdDev = Math.sqrt(variance);
+  const normalized = avg ? stdDev / avg : 1;
+  const consistency = 100 - (normalized * 100);
+  return Math.max(0, Math.min(100, consistency));
 }
 
 /* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
+  const matchesData = [...player.matches].reverse();
+
+  const allPoints = player.matches.map(m => m.points * (m.ampfactor || 1));
+  const rawPoints = matchesData.map(m => m.points);
+  const validPoints = matchesData
+    .filter(m => m.points > 0)
+    .map(m => m.points);
+
+  const avg = allPoints.length
+    ? allPoints.reduce((sum, point) => sum + point, 0) / allPoints.length
+    : 0;
+  const best = rawPoints.length ? Math.max(...rawPoints) : 0;
+  const worst = validPoints.length ? Math.min(...validPoints) : 0;
+  const consistency = calculateConsistency(allPoints, avg);
+
+  const bestMatch = matchesData.find(m => m.points === best)?.match || "-";
+  const worstMatch = matchesData.find(m => m.points === worst)?.match || "-";
+  const avgTooltip = "Average = Total points ÷ matches";
+  const consistencyTooltip = "Consistency = 100 - (Standard Deviation / Average × 100)";
 
   let html = `
     <div class="modal-header">
       <h2>${player.name}</h2>
-      <div class="total-points">Total Points: ${player.total}</div>
+      <div class="total-points">${formatPoints(player.total)} pts</div>
     </div>
+
+    <div class="analytics-section">
+      <div class="analytics-card">
+        <div class="analytics-title">🧠 Insights</div>
+        <div class="insights-grid">
+          <div class="insight-item">
+            <span class="insight-label">🔥 Best</span>
+            <span class="insight-value">${formatPoints(best)} (${bestMatch})</span>
+          </div>
+          <div class="insight-item">
+            <span class="insight-label">❄️ Worst</span>
+            <span class="insight-value">${formatPoints(worst)} (${worstMatch})</span>
+          </div>
+          <div class="insight-item" ${getTooltipAttr(avgTooltip)}>
+            <span class="insight-label">🎯 Avg</span>
+            <span class="insight-value">${formatPoints(avg)} pts</span>
+          </div>
+          <div class="insight-item" ${getTooltipAttr(consistencyTooltip)}>
+            <span class="insight-label">⚡ Consistency</span>
+            <span class="insight-value">${Math.round(consistency)}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="matches-list">
   `;
 
-  player.matches.forEach(m => {
-    
+  matchesData.forEach(m => {
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
-  
+
     const factor = m.ampfactor || 1;
     const indvPoint = m.points * factor;
-  
+
     const isBoosted = factor > 1;
-  
+
     html += `
       <div class="match-card ${isBoosted ? 'boosted' : ''}">
         <div class="match-title">
@@ -151,7 +206,7 @@ function openModal(player) {
         </div>
         <div class="match-info">
           <span class="rank-badge">Rank #${playerRank}</span>
-          <span class="match-points">${indvPoint} pts</span>
+          <span class="match-points">${formatPoints(indvPoint)} pts</span>
         </div>
       </div>
     `;
@@ -161,15 +216,22 @@ function openModal(player) {
 
   content.innerHTML = html;
   modal.style.display = "flex";
+  requestAnimationFrame(() => {
+    modal.classList.add("open");
+  });
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  const modal = document.getElementById("modal");
+  modal.classList.remove("open");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 180);
 }
 
 window.onclick = function(e) {
   const modal = document.getElementById("modal");
-  if (e.target === modal) modal.style.display = "none";
+  if (e.target === modal) closeModal();
 };
 
 /* Refresh */
