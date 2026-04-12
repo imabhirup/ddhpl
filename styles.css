@@ -224,6 +224,8 @@ body {
 #modal-content {
   padding: 16px;
   overflow-y: auto;
+  max-height: 80vh;
+  scroll-behavior: smooth;
 }
 
 /* Modal Header */
@@ -395,8 +397,8 @@ body {
 }
 
 .matches-list {
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: none !important;
+  overflow: visible !important;
   padding-right: 2px;
 }
 
@@ -516,8 +518,42 @@ body {
 }
 
 @media (max-width: 640px) {
+  .modal-box {
+    width: 95vw;
+    max-width: none;
+    border-radius: 14px;
+  }
+
+  .bar-chart {
+    display: flex;
+    overflow-x: auto;
+    gap: 14px;
+    padding: 10px 4px;
+    scrollbar-width: none;
+  }
+
+  .bar-chart::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bar-item {
+    min-width: 50px;
+    flex-shrink: 0;
+  }
+
   .insights-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .analytics-card {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .analytics-title {
+    font-size: 13px;
+    margin-bottom: 8px;
   }
 
   .modal-header {
