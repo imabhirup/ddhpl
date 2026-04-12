@@ -119,6 +119,10 @@ function formatPoints(value) {
   return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
+function getTooltipAttr(text) {
+  return text ? `title="${text}"` : "";
+}
+
 function calculateConsistency(points, avg) {
   if (points.length <= 1) return 100;
   const variance = points.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / points.length;
@@ -132,17 +136,25 @@ function calculateConsistency(points, avg) {
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
+  const matchesData = [...player.matches].reverse();
 
   const allPoints = player.matches.map(m => m.points * (m.ampfactor || 1));
+  const rawPoints = matchesData.map(m => m.points);
+  const validPoints = matchesData
+    .filter(m => m.points > 0)
+    .map(m => m.points);
+
   const avg = allPoints.length
     ? allPoints.reduce((sum, point) => sum + point, 0) / allPoints.length
     : 0;
-  const best = allPoints.length ? Math.max(...allPoints) : 0;
-  const worst = allPoints.length ? Math.min(...allPoints) : 0;
+  const best = rawPoints.length ? Math.max(...rawPoints) : 0;
+  const worst = validPoints.length ? Math.min(...validPoints) : 0;
   const consistency = calculateConsistency(allPoints, avg);
 
-  const bestMatch = player.matches[allPoints.indexOf(best)]?.match || "-";
-  const worstMatch = player.matches[allPoints.indexOf(worst)]?.match || "-";
+  const bestMatch = matchesData.find(m => m.points === best)?.match || "-";
+  const worstMatch = matchesData.find(m => m.points === worst)?.match || "-";
+  const avgTooltip = "Average = Total points ÷ matches";
+  const consistencyTooltip = "Consistency = 100 - (Standard Deviation / Average × 100)";
 
   let html = `
     <div class="modal-header">
@@ -162,11 +174,11 @@ function openModal(player) {
             <span class="insight-label">❄️ Worst</span>
             <span class="insight-value">${formatPoints(worst)} (${worstMatch})</span>
           </div>
-          <div class="insight-item" title="Average = Total points ÷ number of matches">
+          <div class="insight-item" ${getTooltipAttr(avgTooltip)}>
             <span class="insight-label">🎯 Avg</span>
             <span class="insight-value">${formatPoints(avg)} pts</span>
           </div>
-          <div class="insight-item" title="Consistency = 100 - (Standard Deviation / Average × 100)">
+          <div class="insight-item" ${getTooltipAttr(consistencyTooltip)}>
             <span class="insight-label">⚡ Consistency</span>
             <span class="insight-value">${Math.round(consistency)}%</span>
           </div>
@@ -177,7 +189,7 @@ function openModal(player) {
     <div class="matches-list">
   `;
 
-  player.matches.forEach(m => {
+  matchesData.forEach(m => {
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
 
