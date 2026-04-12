@@ -77,6 +77,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 809
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 973.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -158,6 +163,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 679.5
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 722,
+        "ampfactor": 2
       }
     ]
   },
@@ -239,6 +249,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 823
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 698.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -320,6 +335,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 786.5
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 894,
+        "ampfactor": 2
       }
     ]
   },
@@ -401,6 +421,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 810
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 856.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -482,6 +507,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 884
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 903.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -563,6 +593,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 725
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 883.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -644,6 +679,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 766
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 813,
+        "ampfactor": 2
       }
     ]
   },
@@ -725,6 +765,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 739
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 827.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -806,6 +851,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 748
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 842.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -887,6 +937,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 799
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 950,
+        "ampfactor": 2
       }
     ]
   },
@@ -968,6 +1023,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 734.5
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 906.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1049,6 +1109,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 864
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 853,
+        "ampfactor": 2
       }
     ]
   },
@@ -1130,6 +1195,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 791
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 701.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1211,6 +1281,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 788
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 934.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1292,6 +1367,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 652
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 936.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1373,6 +1453,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 0
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1454,6 +1539,11 @@
       {
         "match": "LKN vs GUJ",
         "points": 840
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 801.5,
+        "ampfactor": 2
       }
     ]
   }
