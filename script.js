@@ -201,7 +201,7 @@ function openModal(player) {
             <span class="insight-label">❄️ Worst</span>
             <span class="insight-value">${formatPoints(worst)} (${worstMatch})</span>
           </div>
-          <div class="insight-item" title="Average = Sum of all match points ÷ total matches">
+          <div class="insight-item" title="Average = Total points ÷ number of matches">
             <span class="insight-label">🎯 Avg</span>
             <span class="insight-value">${formatPoints(avg)} pts</span>
           </div>
