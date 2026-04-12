@@ -281,17 +281,20 @@ body {
 }
 
 .bar-chart {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));
-  gap: 8px;
-  align-items: end;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 6px;
+  align-items: flex-end;
+  scroll-behavior: smooth;
 }
 
 .bar-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 0;
+  min-width: 40px;
+  flex-shrink: 0;
   gap: 4px;
 }
 
@@ -352,6 +355,25 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  position: relative;
+  cursor: help;
+}
+
+.insight-item:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 0;
+  background: #0F2A3D;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.25;
+  padding: 6px;
+  border-radius: 6px;
+  width: 180px;
+  z-index: 10;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+  white-space: normal;
 }
 
 .insight-label {
