@@ -1073,7 +1073,7 @@
       },
       {
         "match": "CHE vs DEL",
-        "points": 0
+        "points": 716
       }
     ]
   },
@@ -1382,83 +1382,6 @@
       {
         "match": "CHE vs DEL",
         "points": 806
-      }
-    ]
-  },
-  {
-    "name": "_dev__",
-    "matches": [
-      {
-        "match": "BLR vs HYD",
-        "points": 0
-      },
-      {
-        "match": "MUM vs KOL",
-        "points": 0,
-        "ampfactor": 2
-      },
-      {
-        "match": "RR vs CSK",
-        "points": 0
-      },
-      {
-        "match": "PBKS vs GT",
-        "points": 0
-      },
-      {
-        "match": "LSG vs DC",
-        "points": 0
-      },
-      {
-        "match": "HYD vs KOL",
-        "points": 0,
-        "ampfactor": 2
-      },
-      {
-        "match": "CSK vs PBKS",
-        "points": 0
-      },
-      {
-        "match": "DC vs MI",
-        "points": 0,
-        "ampfactor": 2
-      },
-      {
-        "match": "GT vs RR",
-        "points": 0
-      },
-      {
-        "match": "HYD vs LKN",
-        "points": 0
-      },
-      {
-        "match": "RCB vs CSK",
-        "points": 0
-      },
-      {
-        "match": "RR vs MI",
-        "points": 0
-      },
-      {
-        "match": "DEL vs GUJ",
-        "points": 0
-      },
-      {
-        "match": "KKR vs LSG",
-        "points": 0
-      },
-      {
-        "match": "RR vs RCB",
-        "points": 0,
-        "ampfactor": 2
-      },
-      {
-        "match": "PUN vs HYD",
-        "points": 0
-      },
-      {
-        "match": "CHE vs DEL",
-        "points": 716
       }
     ]
   }
