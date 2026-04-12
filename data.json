@@ -73,6 +73,10 @@
       {
         "match": "CHE vs DEL",
         "points": 810
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 809
       }
     ]
   },
@@ -150,6 +154,10 @@
       {
         "match": "CHE vs DEL",
         "points": 1139
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 679.5
       }
     ]
   },
@@ -227,6 +235,10 @@
       {
         "match": "CHE vs DEL",
         "points": 911.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 823
       }
     ]
   },
@@ -304,6 +316,10 @@
       {
         "match": "CHE vs DEL",
         "points": 778
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 786.5
       }
     ]
   },
@@ -381,6 +397,10 @@
       {
         "match": "CHE vs DEL",
         "points": 529.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 810
       }
     ]
   },
@@ -458,6 +478,10 @@
       {
         "match": "CHE vs DEL",
         "points": 808.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 884
       }
     ]
   },
@@ -535,6 +559,10 @@
       {
         "match": "CHE vs DEL",
         "points": 901.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 725
       }
     ]
   },
@@ -612,6 +640,10 @@
       {
         "match": "CHE vs DEL",
         "points": 868.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 766
       }
     ]
   },
@@ -689,6 +721,10 @@
       {
         "match": "CHE vs DEL",
         "points": 962.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 739
       }
     ]
   },
@@ -766,6 +802,10 @@
       {
         "match": "CHE vs DEL",
         "points": 791.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 748
       }
     ]
   },
@@ -843,6 +883,10 @@
       {
         "match": "CHE vs DEL",
         "points": 980
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 799
       }
     ]
   },
@@ -920,6 +964,10 @@
       {
         "match": "CHE vs DEL",
         "points": 693.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 734.5
       }
     ]
   },
@@ -997,6 +1045,10 @@
       {
         "match": "CHE vs DEL",
         "points": 901
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 864
       }
     ]
   },
@@ -1074,6 +1126,10 @@
       {
         "match": "CHE vs DEL",
         "points": 716
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 791
       }
     ]
   },
@@ -1151,6 +1207,10 @@
       {
         "match": "CHE vs DEL",
         "points": 762.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 788
       }
     ]
   },
@@ -1228,6 +1288,10 @@
       {
         "match": "CHE vs DEL",
         "points": 762.5
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 652
       }
     ]
   },
@@ -1304,6 +1368,10 @@
       },
       {
         "match": "CHE vs DEL",
+        "points": 0
+      },
+      {
+        "match": "LKN vs GUJ",
         "points": 0
       }
     ]
@@ -1382,6 +1450,10 @@
       {
         "match": "CHE vs DEL",
         "points": 806
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 840
       }
     ]
   }
