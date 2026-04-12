@@ -119,36 +119,6 @@ function formatPoints(value) {
   return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
-function buildBarChart(player, matches, points, avg) {
-  if (!matches.length) {
-    return '<div class="chart-empty">No matches available.</div>';
-  }
-
-  const max = Math.max(...points) || 1;
-
-  const bars = points.map((point, index) => {
-    const ratio = Math.max((point / max) * 100, 4);
-    const matchObj = player.matches.find(m => m.match === matches[index]);
-    const rank = getMatchRanks(matches[index]).find(p => p.name === player.name)?.rank || "-";
-    const tone = point > avg ? "#22C55E" : point < avg ? "#EF4444" : "#F59E0B";
-
-    const factor = matchObj?.ampfactor || 1;
-
-    return `
-      <div class="bar-item">
-        <div class="bar-value">${formatPoints(point)}</div>
-        <div class="bar-track">
-          ${factor > 1 ? `<span class="bar-badge">${factor}x</span>` : ""}
-          <div class="bar-fill" style="height:${ratio.toFixed(2)}%;background:${tone};" title="${matches[index]} • ${formatPoints(point)} pts • Rank #${rank}${factor > 1 ? ` • ${factor}x Applied` : ""}"></div>
-        </div>
-        <div class="bar-label">${matches[index]}</div>
-      </div>
-    `;
-  }).join("");
-
-  return `<div class="bar-chart" style="height:120px;">${bars}</div>`;
-}
-
 function calculateConsistency(points, avg) {
   if (points.length <= 1) return 100;
   const variance = points.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / points.length;
@@ -171,10 +141,6 @@ function openModal(player) {
   const worst = allPoints.length ? Math.min(...allPoints) : 0;
   const consistency = calculateConsistency(allPoints, avg);
 
-  const lastMatches = player.matches.slice(-10);
-  const matches = lastMatches.map(m => m.match);
-  const points = lastMatches.map(m => m.points * (m.ampfactor || 1));
-
   const bestMatch = player.matches[allPoints.indexOf(best)]?.match || "-";
   const worstMatch = player.matches[allPoints.indexOf(worst)]?.match || "-";
 
@@ -185,11 +151,6 @@ function openModal(player) {
     </div>
 
     <div class="analytics-section">
-      <div class="analytics-card">
-        <div class="analytics-title">📊 Match-wise Points</div>
-        ${buildBarChart(player, matches, points, avg)}
-      </div>
-
       <div class="analytics-card">
         <div class="analytics-title">🧠 Insights</div>
         <div class="insights-grid">
