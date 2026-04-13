@@ -82,6 +82,10 @@
         "match": "MI vs RCB",
         "points": 973.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 431
       }
     ]
   },
@@ -168,6 +172,10 @@
         "match": "MI vs RCB",
         "points": 722,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 544.5
       }
     ]
   },
@@ -254,6 +262,10 @@
         "match": "MI vs RCB",
         "points": 698.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 729
       }
     ]
   },
@@ -340,6 +352,10 @@
         "match": "MI vs RCB",
         "points": 894,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 434.5
       }
     ]
   },
@@ -426,6 +442,10 @@
         "match": "MI vs RCB",
         "points": 856.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 505.5
       }
     ]
   },
@@ -512,6 +532,10 @@
         "match": "MI vs RCB",
         "points": 903.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 780
       }
     ]
   },
@@ -598,6 +622,10 @@
         "match": "MI vs RCB",
         "points": 883.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 538.5
       }
     ]
   },
@@ -684,6 +712,10 @@
         "match": "MI vs RCB",
         "points": 813,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 718
       }
     ]
   },
@@ -770,6 +802,10 @@
         "match": "MI vs RCB",
         "points": 827.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 593
       }
     ]
   },
@@ -856,6 +892,10 @@
         "match": "MI vs RCB",
         "points": 842.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 485
       }
     ]
   },
@@ -942,6 +982,10 @@
         "match": "MI vs RCB",
         "points": 950,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 681.5
       }
     ]
   },
@@ -1028,6 +1072,10 @@
         "match": "MI vs RCB",
         "points": 906.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 684
       }
     ]
   },
@@ -1114,6 +1162,10 @@
         "match": "MI vs RCB",
         "points": 853,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 604.5
       }
     ]
   },
@@ -1200,6 +1252,10 @@
         "match": "MI vs RCB",
         "points": 701.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 602
       }
     ]
   },
@@ -1286,6 +1342,10 @@
         "match": "MI vs RCB",
         "points": 934.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 724
       }
     ]
   },
@@ -1372,6 +1432,10 @@
         "match": "MI vs RCB",
         "points": 936.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 718
       }
     ]
   },
@@ -1458,6 +1522,10 @@
         "match": "MI vs RCB",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 0
       }
     ]
   },
@@ -1544,6 +1612,10 @@
         "match": "MI vs RCB",
         "points": 801.5,
         "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 686.5
       }
     ]
   }
