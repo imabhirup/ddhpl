@@ -102,18 +102,18 @@ body {
 }
 
 .hall-of-fame {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .hall-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hall-of-fame h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #0f172a;
   font-weight: 700;
 }
@@ -124,88 +124,87 @@ body {
 }
 
 .hall-nav {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border: none;
-  border-radius: 8px;
+  border-radius: 7px;
   background: #ffffff;
   color: #0369a1;
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.18);
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.18);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hall-nav:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 6px 14px rgba(2, 132, 199, 0.3);
 }
 
 .hall-carousel {
   overflow: hidden;
-  border-radius: 14px;
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
 .hall-track {
   display: flex;
+  gap: 10px;
   transition: transform 0.45s ease;
   will-change: transform;
 }
 
-.hall-slide {
-  min-width: 100%;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 12px;
-  min-height: 90px;
-  padding: 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(14, 165, 233, 0.14);
+.hof-card {
+  flex: 0 0 calc((100% - 20px) / 3);
+  min-width: 0;
+  height: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(14, 165, 233, 0.15);
   background: linear-gradient(135deg, #f0f9ff, #ffffff);
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
-  opacity: 0.92;
-  transform: scale(0.985);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.hall-slide.is-active {
-  opacity: 1;
-  transform: scale(1);
+.hof-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.24);
 }
 
-.hall-slide:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 24px rgba(14, 165, 233, 0.24);
-  opacity: 1;
+.hof-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .hall-icon {
-  width: 42px;
-  height: 42px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(145deg, #dbeafe, #e0f2fe);
-  font-size: 20px;
-  box-shadow: inset 0 0 0 1px rgba(14, 165, 233, 0.12);
+  font-size: 11px;
 }
 
-.hall-content h4 {
-  font-size: 15px;
-  line-height: 1.2;
+.hof-top h4 {
+  font-size: 11px;
+  line-height: 1.15;
   color: #0f172a;
   font-weight: 700;
-  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hall-player {
   color: #075985;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -213,14 +212,13 @@ body {
 }
 
 .hall-stat {
-  font-size: 12px;
+  font-size: 11px;
   color: #64748b;
-  font-weight: 600;
-  text-align: right;
-  white-space: nowrap;
+  line-height: 1;
 }
 
 /* Leaderboard */
+
 
 .leaderboard {
   margin-top: 22px;
@@ -615,7 +613,18 @@ body {
   box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
 }
 
+
+@media (max-width: 960px) {
+  .hof-card {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
 @media (max-width: 640px) {
+  .hof-card {
+    flex-basis: 100%;
+  }
+
   .contest {
     padding: 18px;
   }
@@ -626,24 +635,11 @@ body {
   }
 
   .hall-of-fame {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .hall-carousel {
     max-width: 100%;
-  }
-
-  .hall-slide {
-    min-height: 84px;
-    grid-template-columns: auto 1fr;
-    gap: 10px;
-    padding: 12px;
-  }
-
-  .hall-stat {
-    grid-column: 2;
-    text-align: left;
-    font-size: 11px;
   }
 
   .modal-box {

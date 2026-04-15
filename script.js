@@ -262,32 +262,84 @@ function initHallOfFameCarousel() {
 
   if (!carousel || !track || !prevBtn || !nextBtn) return;
 
-  const slides = Array.from(track.children);
-  if (!slides.length) return;
+  const originalSlides = Array.from(track.children);
+  if (!originalSlides.length) return;
 
-  let index = 0;
+  let slidesPerView = 3;
+  let currentIndex = 0;
   let autoRotateTimer = null;
+  let slideStep = 0;
   let touchStartX = 0;
-  let touchEndX = 0;
 
-  function updateCarousel() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    slides.forEach((slide, slideIndex) => {
-      slide.classList.toggle("is-active", slideIndex === index);
-      slide.setAttribute("aria-hidden", slideIndex === index ? "false" : "true");
+  function getSlidesPerView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 960) return 2;
+    return 3;
+  }
+
+  function markAccessibility() {
+    const cards = Array.from(track.children);
+    cards.forEach((card, index) => {
+      const activeStart = currentIndex;
+      const activeEnd = currentIndex + slidesPerView - 1;
+      const isVisible = index >= activeStart && index <= activeEnd;
+      card.setAttribute("aria-hidden", isVisible ? "false" : "true");
     });
   }
 
-  function goToSlide(nextIndex) {
-    const total = slides.length;
-    index = (nextIndex + total) % total;
-    updateCarousel();
+  function calculateSlideStep() {
+    const cards = track.children;
+    if (cards.length < 2) {
+      slideStep = cards[0]?.getBoundingClientRect().width || carousel.clientWidth;
+      return;
+    }
+
+    slideStep = cards[1].offsetLeft - cards[0].offsetLeft;
+  }
+
+  function applyPosition(withTransition = true) {
+    track.style.transition = withTransition ? "transform 0.45s ease" : "none";
+    track.style.transform = `translateX(-${currentIndex * slideStep}px)`;
+    markAccessibility();
+  }
+
+  function buildInfiniteTrack() {
+    track.querySelectorAll(".clone-slide").forEach((clone) => clone.remove());
+
+    slidesPerView = getSlidesPerView();
+    const cloneCount = Math.min(slidesPerView, originalSlides.length);
+
+    const headClones = originalSlides.slice(0, cloneCount).map((slide) => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add("clone-slide");
+      clone.removeAttribute("id");
+      return clone;
+    });
+
+    const tailClones = originalSlides.slice(-cloneCount).map((slide) => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add("clone-slide");
+      clone.removeAttribute("id");
+      return clone;
+    });
+
+    tailClones.forEach((clone) => track.insertBefore(clone, track.firstChild));
+    headClones.forEach((clone) => track.appendChild(clone));
+
+    currentIndex = cloneCount;
+    calculateSlideStep();
+    applyPosition(false);
+  }
+
+  function moveTo(nextIndex) {
+    currentIndex = nextIndex;
+    applyPosition(true);
   }
 
   function startAutoRotate() {
     stopAutoRotate();
     autoRotateTimer = setInterval(() => {
-      goToSlide(index + 1);
+      moveTo(currentIndex + 1);
     }, 3000);
   }
 
@@ -297,13 +349,28 @@ function initHallOfFameCarousel() {
     autoRotateTimer = null;
   }
 
+  track.addEventListener("transitionend", () => {
+    const cloneCount = Math.min(slidesPerView, originalSlides.length);
+    const maxOriginalIndex = cloneCount + originalSlides.length - 1;
+
+    if (currentIndex > maxOriginalIndex) {
+      currentIndex = cloneCount;
+      applyPosition(false);
+    }
+
+    if (currentIndex < cloneCount) {
+      currentIndex = maxOriginalIndex;
+      applyPosition(false);
+    }
+  });
+
   prevBtn.addEventListener("click", () => {
-    goToSlide(index - 1);
+    moveTo(currentIndex - 1);
     startAutoRotate();
   });
 
   nextBtn.addEventListener("click", () => {
-    goToSlide(index + 1);
+    moveTo(currentIndex + 1);
     startAutoRotate();
   });
 
@@ -317,18 +384,29 @@ function initHallOfFameCarousel() {
   }, { passive: true });
 
   carousel.addEventListener("touchend", (event) => {
-    touchEndX = event.changedTouches[0].screenX;
+    const touchEndX = event.changedTouches[0].screenX;
     const delta = touchEndX - touchStartX;
 
     if (Math.abs(delta) < 30) return;
 
-    if (delta < 0) goToSlide(index + 1);
-    else goToSlide(index - 1);
+    if (delta < 0) moveTo(currentIndex + 1);
+    else moveTo(currentIndex - 1);
 
     startAutoRotate();
   }, { passive: true });
 
-  updateCarousel();
+  window.addEventListener("resize", () => {
+    const nextSlidesPerView = getSlidesPerView();
+    if (nextSlidesPerView === slidesPerView) {
+      calculateSlideStep();
+      applyPosition(false);
+      return;
+    }
+
+    buildInfiniteTrack();
+  });
+
+  buildInfiniteTrack();
   startAutoRotate();
 }
 
