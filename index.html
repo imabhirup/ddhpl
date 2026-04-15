@@ -26,10 +26,62 @@
   </div>
 
   <!-- Contest -->
-  <div class="contest">
-    <h2>DDHPL Contest</h2>
-    <p>Limited Edition • Limited Entry</p>
-  </div>
+  <section class="contest" aria-label="DDHPL Contest">
+    <div class="contest-top">
+      <div>
+        <h2>DDHPL Contest</h2>
+        <p>Limited Edition • Limited Entry</p>
+      </div>
+      <span class="contest-badge">🔥 Live Contest</span>
+    </div>
+
+    <div class="hall-of-fame" aria-label="Hall of Fame">
+      <h3>🏆 Hall of Fame</h3>
+      <div class="achievements-grid">
+        <article class="achievement-card" id="achievement-champion">
+          <div class="achievement-icon">🥇</div>
+          <h4>Champion</h4>
+          <p class="achievement-player" id="champion-name">Highest total points</p>
+          <p class="achievement-stat" id="champion-total">Name + total</p>
+        </article>
+
+        <article class="achievement-card" id="achievement-highest-score">
+          <div class="achievement-icon">⚡</div>
+          <h4>Highest Score</h4>
+          <p class="achievement-player" id="highest-score-name">Best single match</p>
+          <p class="achievement-stat" id="highest-score-points">Name + points</p>
+        </article>
+
+        <article class="achievement-card" id="achievement-consistency-king">
+          <div class="achievement-icon">🔥</div>
+          <h4>Consistency King</h4>
+          <p class="achievement-player" id="consistency-king-name">Lowest variance</p>
+          <p class="achievement-stat">Name</p>
+        </article>
+
+        <article class="achievement-card" id="achievement-amp-master">
+          <div class="achievement-icon">🎯</div>
+          <h4>Amp Master</h4>
+          <p class="achievement-player" id="amp-master-name">Best avg in ampfactor matches</p>
+          <p class="achievement-stat">Name</p>
+        </article>
+
+        <article class="achievement-card" id="achievement-explosive-player">
+          <div class="achievement-icon">💣</div>
+          <h4>Explosive Player</h4>
+          <p class="achievement-player" id="explosive-player-name">Most 900+ scores</p>
+          <p class="achievement-stat" id="explosive-player-count">Name + count</p>
+        </article>
+
+        <article class="achievement-card" id="achievement-unlucky-player">
+          <div class="achievement-icon">😬</div>
+          <h4>Unlucky Player</h4>
+          <p class="achievement-player" id="unlucky-player-name">Lowest avg (ignore 0 scores)</p>
+          <p class="achievement-stat">Name</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- Update -->
   <div class="update-bar" id="update-bar"></div>
