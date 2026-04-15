@@ -252,3 +252,84 @@ function refreshData() {
 }
 
 loadData();
+
+
+function initHallOfFameCarousel() {
+  const carousel = document.getElementById("hall-carousel");
+  const track = document.getElementById("hall-track");
+  const prevBtn = document.getElementById("hall-prev");
+  const nextBtn = document.getElementById("hall-next");
+
+  if (!carousel || !track || !prevBtn || !nextBtn) return;
+
+  const slides = Array.from(track.children);
+  if (!slides.length) return;
+
+  let index = 0;
+  let autoRotateTimer = null;
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("is-active", slideIndex === index);
+      slide.setAttribute("aria-hidden", slideIndex === index ? "false" : "true");
+    });
+  }
+
+  function goToSlide(nextIndex) {
+    const total = slides.length;
+    index = (nextIndex + total) % total;
+    updateCarousel();
+  }
+
+  function startAutoRotate() {
+    stopAutoRotate();
+    autoRotateTimer = setInterval(() => {
+      goToSlide(index + 1);
+    }, 3000);
+  }
+
+  function stopAutoRotate() {
+    if (!autoRotateTimer) return;
+    clearInterval(autoRotateTimer);
+    autoRotateTimer = null;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    goToSlide(index - 1);
+    startAutoRotate();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    goToSlide(index + 1);
+    startAutoRotate();
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoRotate);
+  carousel.addEventListener("mouseleave", startAutoRotate);
+  carousel.addEventListener("focusin", stopAutoRotate);
+  carousel.addEventListener("focusout", startAutoRotate);
+
+  carousel.addEventListener("touchstart", (event) => {
+    touchStartX = event.changedTouches[0].screenX;
+  }, { passive: true });
+
+  carousel.addEventListener("touchend", (event) => {
+    touchEndX = event.changedTouches[0].screenX;
+    const delta = touchEndX - touchStartX;
+
+    if (Math.abs(delta) < 30) return;
+
+    if (delta < 0) goToSlide(index + 1);
+    else goToSlide(index - 1);
+
+    startAutoRotate();
+  }, { passive: true });
+
+  updateCarousel();
+  startAutoRotate();
+}
+
+initHallOfFameCarousel();

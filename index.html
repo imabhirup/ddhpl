@@ -36,49 +36,70 @@
     </div>
 
     <div class="hall-of-fame" aria-label="Hall of Fame">
-      <h3>🏆 Hall of Fame</h3>
-      <div class="achievements-grid">
-        <article class="achievement-card" id="achievement-champion">
-          <div class="achievement-icon">🥇</div>
-          <h4>Champion</h4>
-          <p class="achievement-player" id="champion-name">Highest total points</p>
-          <p class="achievement-stat" id="champion-total">Name + total</p>
-        </article>
+      <div class="hall-header">
+        <h3>🏆 Hall of Fame</h3>
+        <div class="hall-controls" aria-label="Hall of Fame Controls">
+          <button class="hall-nav prev" id="hall-prev" type="button" aria-label="Previous achievement">◀</button>
+          <button class="hall-nav next" id="hall-next" type="button" aria-label="Next achievement">▶</button>
+        </div>
+      </div>
 
-        <article class="achievement-card" id="achievement-highest-score">
-          <div class="achievement-icon">⚡</div>
-          <h4>Highest Score</h4>
-          <p class="achievement-player" id="highest-score-name">Best single match</p>
-          <p class="achievement-stat" id="highest-score-points">Name + points</p>
-        </article>
+      <div class="hall-carousel" id="hall-carousel">
+        <div class="hall-track" id="hall-track">
+          <article class="hall-slide" id="achievement-champion" data-title="Champion" data-player="iamabhi3" data-stat="Total: 15000 pts">
+            <div class="hall-icon">🥇</div>
+            <div class="hall-content">
+              <h4>Champion</h4>
+              <p class="hall-player" id="champion-name">iamabhi3</p>
+            </div>
+            <p class="hall-stat" id="champion-total">Total: 15000 pts</p>
+          </article>
 
-        <article class="achievement-card" id="achievement-consistency-king">
-          <div class="achievement-icon">🔥</div>
-          <h4>Consistency King</h4>
-          <p class="achievement-player" id="consistency-king-name">Lowest variance</p>
-          <p class="achievement-stat">Name</p>
-        </article>
+          <article class="hall-slide" id="achievement-highest-score" data-title="Highest Score" data-player="powerhitter11" data-stat="1139 pts">
+            <div class="hall-icon">⚡</div>
+            <div class="hall-content">
+              <h4>Highest Score</h4>
+              <p class="hall-player" id="highest-score-name">powerhitter11</p>
+            </div>
+            <p class="hall-stat" id="highest-score-points">1139 pts</p>
+          </article>
 
-        <article class="achievement-card" id="achievement-amp-master">
-          <div class="achievement-icon">🎯</div>
-          <h4>Amp Master</h4>
-          <p class="achievement-player" id="amp-master-name">Best avg in ampfactor matches</p>
-          <p class="achievement-stat">Name</p>
-        </article>
+          <article class="hall-slide" id="achievement-consistency-king" data-title="Consistency King" data-player="Rockstar110823" data-stat="Lowest variance">
+            <div class="hall-icon">🔥</div>
+            <div class="hall-content">
+              <h4>Consistency King</h4>
+              <p class="hall-player" id="consistency-king-name">Rockstar110823</p>
+            </div>
+            <p class="hall-stat">Lowest variance</p>
+          </article>
 
-        <article class="achievement-card" id="achievement-explosive-player">
-          <div class="achievement-icon">💣</div>
-          <h4>Explosive Player</h4>
-          <p class="achievement-player" id="explosive-player-name">Most 900+ scores</p>
-          <p class="achievement-stat" id="explosive-player-count">Name + count</p>
-        </article>
+          <article class="hall-slide" id="achievement-amp-master" data-title="Amp Master" data-player="PaglaChidiXI" data-stat="Best amp avg">
+            <div class="hall-icon">🎯</div>
+            <div class="hall-content">
+              <h4>Amp Master</h4>
+              <p class="hall-player" id="amp-master-name">PaglaChidiXI</p>
+            </div>
+            <p class="hall-stat">Best amp avg</p>
+          </article>
 
-        <article class="achievement-card" id="achievement-unlucky-player">
-          <div class="achievement-icon">😬</div>
-          <h4>Unlucky Player</h4>
-          <p class="achievement-player" id="unlucky-player-name">Lowest avg (ignore 0 scores)</p>
-          <p class="achievement-stat">Name</p>
-        </article>
+          <article class="hall-slide" id="achievement-explosive-player" data-title="Explosive Player" data-player="Pan_0_Tea" data-stat="5 matches">
+            <div class="hall-icon">💣</div>
+            <div class="hall-content">
+              <h4>Explosive Player</h4>
+              <p class="hall-player" id="explosive-player-name">Pan_0_Tea</p>
+            </div>
+            <p class="hall-stat" id="explosive-player-count">5 matches</p>
+          </article>
+
+          <article class="hall-slide" id="achievement-unlucky-player" data-title="Unlucky Player" data-player="TeamTannyi" data-stat="Lowest avg">
+            <div class="hall-icon">😬</div>
+            <div class="hall-content">
+              <h4>Unlucky Player</h4>
+              <p class="hall-player" id="unlucky-player-name">TeamTannyi</p>
+            </div>
+            <p class="hall-stat">Lowest avg</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
