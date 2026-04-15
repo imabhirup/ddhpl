@@ -318,7 +318,7 @@ function calculateHallOfFame(playersData) {
     explosivePlayer: explosivePlayer ? {
       name: explosivePlayer.name,
       count: explosivePlayer.explosiveCount,
-      stat: `${explosivePlayer.explosiveCount} high scores`
+      stat: `${explosivePlayer.explosiveCount} scores > 900`
     } : null,
     lowestPerformer: lowestPerformer ? {
       name: lowestPerformer.name,
