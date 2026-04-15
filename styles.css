@@ -51,13 +51,175 @@ body {
 
 /* Contest */
 .contest {
-  background: white;
   margin-top: 18px;
-  padding: 18px;
-  border-radius: 18px;
+  padding: 22px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #e0f2fe 0%, #ffffff 58%, #f8fbff 100%);
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  box-shadow: 0 14px 34px rgba(2, 132, 199, 0.12);
+  animation: fadeInContest 0.6s ease;
+}
+
+@keyframes fadeInContest {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contest-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contest h2 {
+  color: #0c4a6e;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.contest > .contest-top p {
+  margin-top: 4px;
+  color: #0f172a;
+  opacity: 0.75;
+}
+
+.contest-badge {
+  background: linear-gradient(135deg, #0284c7, #0ea5e9);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.28);
+  white-space: nowrap;
+}
+
+.hall-of-fame {
+  margin-top: 10px;
+}
+
+.hall-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.hall-of-fame h3 {
+  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.hall-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.hall-nav {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #0369a1;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.18);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hall-nav:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(2, 132, 199, 0.3);
+}
+
+.hall-carousel {
+  overflow: hidden;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hall-track {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.hof-card {
+  flex: 0 0 calc((100% - 20px) / 3);
+  min-width: 0;
+  height: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  background: linear-gradient(135deg, #f0f9ff, #ffffff);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.hof-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.24);
+}
+
+.hof-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hall-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #dbeafe, #e0f2fe);
+  font-size: 11px;
+}
+
+.hof-top h4 {
+  font-size: 11px;
+  line-height: 1.15;
+  color: #0f172a;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hall-player {
+  color: #075985;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hall-stat {
+  font-size: 11px;
+  color: #64748b;
+  line-height: 1;
 }
 
 /* Leaderboard */
+
+
 .leaderboard {
   margin-top: 22px;
 }
@@ -451,7 +613,35 @@ body {
   box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
 }
 
+
+@media (max-width: 960px) {
+  .hof-card {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
 @media (max-width: 640px) {
+  .hof-card {
+    flex-basis: 100%;
+  }
+
+  .contest {
+    padding: 18px;
+  }
+
+  .contest-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hall-of-fame {
+    margin-top: 10px;
+  }
+
+  .hall-carousel {
+    max-width: 100%;
+  }
+
   .modal-box {
     width: 95vw;
     max-width: none;
