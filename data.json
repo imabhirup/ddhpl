@@ -90,6 +90,10 @@
       {
         "match": "CHE vs KOL",
         "points": 848
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 668.5
       }
     ]
   },
@@ -184,6 +188,10 @@
       {
         "match": "CHE vs KOL",
         "points": 682.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 715.5
       }
     ]
   },
@@ -278,6 +286,10 @@
       {
         "match": "CHE vs KOL",
         "points": 820.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 543.5
       }
     ]
   },
@@ -372,6 +384,10 @@
       {
         "match": "CHE vs KOL",
         "points": 668
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 494
       }
     ]
   },
@@ -466,6 +482,10 @@
       {
         "match": "CHE vs KOL",
         "points": 605.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 671
       }
     ]
   },
@@ -560,6 +580,10 @@
       {
         "match": "CHE vs KOL",
         "points": 564
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 610.5
       }
     ]
   },
@@ -654,6 +678,10 @@
       {
         "match": "CHE vs KOL",
         "points": 581.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 511
       }
     ]
   },
@@ -748,6 +776,10 @@
       {
         "match": "CHE vs KOL",
         "points": 0
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 503.5
       }
     ]
   },
@@ -842,6 +874,10 @@
       {
         "match": "CHE vs KOL",
         "points": 761.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 631
       }
     ]
   },
@@ -936,6 +972,10 @@
       {
         "match": "CHE vs KOL",
         "points": 630.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 679
       }
     ]
   },
@@ -1030,6 +1070,10 @@
       {
         "match": "CHE vs KOL",
         "points": 607.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 566
       }
     ]
   },
@@ -1124,6 +1168,10 @@
       {
         "match": "CHE vs KOL",
         "points": 602
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 733
       }
     ]
   },
@@ -1218,6 +1266,10 @@
       {
         "match": "CHE vs KOL",
         "points": 601
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 715.5
       }
     ]
   },
@@ -1312,6 +1364,10 @@
       {
         "match": "CHE vs KOL",
         "points": 645.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 0
       }
     ]
   },
@@ -1406,6 +1462,10 @@
       {
         "match": "CHE vs KOL",
         "points": 520.5
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 679
       }
     ]
   },
@@ -1500,6 +1560,10 @@
       {
         "match": "CHE vs KOL",
         "points": 697
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 652
       }
     ]
   },
@@ -1593,6 +1657,10 @@
       },
       {
         "match": "CHE vs KOL",
+        "points": 0
+      },
+      {
+        "match": "RCB vs LSG",
         "points": 0
       }
     ]
@@ -1688,6 +1756,10 @@
       {
         "match": "CHE vs KOL",
         "points": 780
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 0
       }
     ]
   }
