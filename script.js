@@ -167,108 +167,129 @@ function calculateStdDev(values) {
 function calculateHallOfFame(playersData) {
   const players = Array.isArray(playersData) ? playersData : [];
 
-  const baseStats = players.map((player, index) => {
+  const stats = players.map((player, index) => {
     const matches = Array.isArray(player?.matches) ? player.matches : [];
-    const normalized = matches.map((match) => ({
+    const normalized = matches.map((match, matchIndex) => ({
+      order: matchIndex,
       match: match?.match || "Unknown Match",
       points: toNumber(match?.points, 0),
       ampfactor: getMatchFactor(match)
     }));
 
     const weightedTotal = normalized.reduce((sum, match) => sum + (match.points * match.ampfactor), 0);
-    const avg = normalized.length
+    const avgAll = normalized.length
       ? normalized.reduce((sum, match) => sum + match.points, 0) / normalized.length
       : 0;
-    const std = calculateStdDev(normalized.map((match) => match.points));
-    const ampMatches = normalized.filter((match) => match.ampfactor === 2);
-    const explosiveCount = normalized.filter((match) => match.points >= 900).length;
-    const unluckyMatches = normalized.filter((match) => match.points > 0);
-    const unluckyAvg = unluckyMatches.length
-      ? unluckyMatches.reduce((sum, match) => sum + match.points, 0) / unluckyMatches.length
+
+    const positiveMatches = normalized.filter((match) => match.points > 0);
+    const positiveAvg = positiveMatches.length
+      ? positiveMatches.reduce((sum, match) => sum + match.points, 0) / positiveMatches.length
       : Number.POSITIVE_INFINITY;
+
+    const consistentMatches = positiveMatches.filter((match) => {
+      const lower = positiveAvg * 0.8;
+      const upper = positiveAvg * 1.2;
+      return match.points >= lower && match.points <= upper;
+    }).length;
+
+    const consistency = positiveMatches.length
+      ? (consistentMatches / positiveMatches.length) * 100
+      : Number.NEGATIVE_INFINITY;
 
     return {
       index,
       name: player?.name || "Unknown",
       matches: normalized,
       weightedTotal,
-      avg,
-      std,
-      ampMatches,
-      explosiveCount,
-      unluckyAvg
+      avgAll,
+      positiveMatches,
+      positiveAvg,
+      consistency,
+      explosiveCount: normalized.filter((match) => match.points >= 900).length,
+      missedCount: normalized.filter((match) => match.points === 0).length
     };
   });
 
   const allMatches = [];
-  baseStats.forEach((player) => {
-    player.matches.forEach((match, matchIndex) => {
-      allMatches.push({
+  const positiveScoreMatches = [];
+
+  stats.forEach((player) => {
+    player.matches.forEach((match) => {
+      const record = {
         playerIndex: player.index,
         playerName: player.name,
         points: match.points,
         match: match.match,
-        order: matchIndex
-      });
+        order: match.order
+      };
+
+      allMatches.push(record);
+      if (match.points > 0) {
+        positiveScoreMatches.push(record);
+      }
     });
   });
 
-  const champion = [...baseStats]
-    .sort((a, b) => (b.weightedTotal - a.weightedTotal) || (a.index - b.index))[0];
+  const champion = [...stats]
+    .sort((a, b) => (b.weightedTotal - a.weightedTotal) || (b.avgAll - a.avgAll) || (a.index - b.index))[0];
 
   const highestScore = [...allMatches]
     .sort((a, b) => (b.points - a.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
 
-  const lowestScore = [...allMatches]
+  const lowestScore = [...positiveScoreMatches]
     .sort((a, b) => (a.points - b.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
 
-  const consistencyKing = baseStats
-    .filter((player) => player.matches.length > 0)
-    .sort((a, b) => (a.std - b.std) || (b.avg - a.avg) || (a.index - b.index))[0];
+  const consistencyKing = stats
+    .filter((player) => player.positiveMatches.length > 0)
+    .sort((a, b) => (b.consistency - a.consistency) || (b.positiveAvg - a.positiveAvg) || (a.index - b.index))[0];
 
-  const ampMaster = baseStats
-    .filter((player) => player.ampMatches.length >= 3)
-    .sort((a, b) => {
-      const avgA = a.ampMatches.reduce((sum, match) => sum + match.points, 0) / a.ampMatches.length;
-      const avgB = b.ampMatches.reduce((sum, match) => sum + match.points, 0) / b.ampMatches.length;
-      return (avgB - avgA) || (b.ampMatches.length - a.ampMatches.length) || (a.index - b.index);
-    })[0];
-
-  const explosivePlayer = baseStats
+  const explosivePlayer = [...stats]
     .sort((a, b) => (b.explosiveCount - a.explosiveCount) || (a.index - b.index))[0];
 
-  const unluckyPlayer = baseStats
-    .filter((player) => Number.isFinite(player.unluckyAvg))
-    .sort((a, b) => (a.unluckyAvg - b.unluckyAvg) || (a.index - b.index))[0];
+  const lowestPerformer = stats
+    .filter((player) => Number.isFinite(player.positiveAvg))
+    .sort((a, b) => (a.positiveAvg - b.positiveAvg) || (a.index - b.index))[0];
+
+  const mostMissed = [...stats]
+    .sort((a, b) => (b.missedCount - a.missedCount) || (a.index - b.index))[0];
 
   return {
     champion: champion ? {
       name: champion.name,
+      total: champion.weightedTotal,
       stat: formatHallPoints(champion.weightedTotal)
     } : null,
     highestScore: highestScore ? {
       name: highestScore.playerName,
+      points: highestScore.points,
+      match: highestScore.match,
       stat: `${formatHallPoints(highestScore.points)} (${highestScore.match})`
     } : null,
     lowestScore: lowestScore ? {
       name: lowestScore.playerName,
+      points: lowestScore.points,
+      match: lowestScore.match,
       stat: `${formatHallPoints(lowestScore.points)} (${lowestScore.match})`
     } : null,
     consistencyKing: consistencyKing ? {
       name: consistencyKing.name,
-      stat: `σ ${formatPoints(consistencyKing.std)} • ${formatHallAverage(consistencyKing.avg)}`
-    } : null,
-    ampMaster: ampMaster ? {
-      name: ampMaster.name,
-      stat: `${formatHallAverage(ampMaster.ampMatches.reduce((sum, match) => sum + match.points, 0) / ampMaster.ampMatches.length)} (${ampMaster.ampMatches.length} amp)`
+      consistency: Math.round(consistencyKing.consistency),
+      stat: `${Math.round(consistencyKing.consistency)}% consistent`
     } : null,
     explosivePlayer: explosivePlayer ? {
       name: explosivePlayer.name,
-      stat: `${explosivePlayer.explosiveCount} × 900+`
+      count: explosivePlayer.explosiveCount,
+      stat: `${explosivePlayer.explosiveCount} high scores`
     } : null,
-    unluckyPlayer: unluckyPlayer ? {
-      name: unluckyPlayer.name,
-      stat: formatHallAverage(unluckyPlayer.unluckyAvg)
+    lowestPerformer: lowestPerformer ? {
+      name: lowestPerformer.name,
+      avg: lowestPerformer.positiveAvg,
+      stat: `avg ${formatPoints(lowestPerformer.positiveAvg)} pts`
+    } : null,
+    mostMissed: mostMissed ? {
+      name: mostMissed.name,
+      missedCount: mostMissed.missedCount,
+      stat: `${mostMissed.missedCount} missed matches`
     } : null
   };
 }
@@ -281,9 +302,9 @@ function renderHallOfFame(playersData) {
     { key: "highestScore", playerSelector: "#highest-score-name", statSelector: "#highest-score-points" },
     { key: "lowestScore", playerSelector: "#lowest-score-name", statSelector: "#lowest-score-points" },
     { key: "consistencyKing", playerSelector: "#consistency-king-name", statSelector: "#consistency-king-stat" },
-    { key: "ampMaster", playerSelector: "#amp-master-name", statSelector: "#amp-master-stat" },
     { key: "explosivePlayer", playerSelector: "#explosive-player-name", statSelector: "#explosive-player-count" },
-    { key: "unluckyPlayer", playerSelector: "#unlucky-player-name", statSelector: "#unlucky-player-stat" }
+    { key: "lowestPerformer", playerSelector: "#lowest-performer-name", statSelector: "#lowest-performer-stat" },
+    { key: "mostMissed", playerSelector: "#most-missed-name", statSelector: "#most-missed-stat" }
   ];
 
   cardMap.forEach(({ key, playerSelector, statSelector }) => {
@@ -309,10 +330,15 @@ function renderHallOfFame(playersData) {
 
     const primaryPlayerEl = document.querySelector(playerSelector);
     const primaryStatEl = document.querySelector(statSelector);
-    if (result) {
-      if (primaryPlayerEl) primaryPlayerEl.textContent = result.name;
-      if (primaryStatEl) primaryStatEl.textContent = result.stat;
+
+    if (!result) {
+      if (primaryPlayerEl) primaryPlayerEl.textContent = "--";
+      if (primaryStatEl) primaryStatEl.textContent = "--";
+      return;
     }
+
+    if (primaryPlayerEl) primaryPlayerEl.textContent = result.name;
+    if (primaryStatEl) primaryStatEl.textContent = result.stat;
   });
 }
 
