@@ -130,13 +130,29 @@ function getTooltipAttr(text) {
   return text ? `title="${text}"` : "";
 }
 
-function calculateConsistency(points, avg) {
-  if (points.length <= 1) return 100;
-  const variance = points.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / points.length;
-  const stdDev = Math.sqrt(variance);
-  const normalized = avg ? stdDev / avg : 1;
-  const consistency = 100 - (normalized * 100);
-  return Math.max(0, Math.min(100, consistency));
+function calculateConsistency(points, options = {}) {
+  const { minMatches = 1, ignoreZero = true } = options;
+
+  const validPoints = (Array.isArray(points) ? points : [])
+    .map((point) => toNumber(point, 0))
+    .filter((point) => (ignoreZero ? point > 0 : true));
+
+  if (validPoints.length < minMatches) return null;
+
+  const avg = validPoints.reduce((sum, point) => sum + point, 0) / validPoints.length;
+  if (!Number.isFinite(avg) || avg <= 0) return null;
+
+  const variance = validPoints.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / validPoints.length;
+  const sd = Math.sqrt(variance);
+  const rawConsistency = 100 - ((sd / avg) * 100);
+  const clampedConsistency = Math.max(0, Math.min(100, rawConsistency));
+
+  return {
+    consistency: Math.round(clampedConsistency),
+    avg,
+    sd,
+    count: validPoints.length
+  };
 }
 
 
@@ -177,19 +193,13 @@ function getConsistencyKing(playersData) {
 
     if (validPoints.length < 5) return;
 
-    const avg = validPoints.reduce((sum, points) => sum + points, 0) / validPoints.length;
-    if (!Number.isFinite(avg) || avg <= 0) return;
-
-    const variance = validPoints.reduce((sum, points) => sum + Math.pow(points - avg, 2), 0) / validPoints.length;
-    const sd = Math.sqrt(variance);
-
-    const rawConsistency = 100 - ((sd / avg) * 100);
-    const clampedConsistency = Math.max(0, Math.min(100, rawConsistency));
+    const consistencyStats = calculateConsistency(validPoints, { minMatches: 5, ignoreZero: true });
+    if (!consistencyStats) return;
 
     eligible.push({
       name: player?.name || "Unknown",
-      consistency: Math.round(clampedConsistency),
-      avg,
+      consistency: consistencyStats.consistency,
+      avg: consistencyStats.avg,
       index
     });
   });
@@ -388,12 +398,12 @@ function openModal(player) {
     : 0;
   const best = rawPoints.length ? Math.max(...rawPoints) : 0;
   const worst = validPoints.length ? Math.min(...validPoints) : 0;
-  const consistency = calculateConsistency(allPoints, avg);
+  const consistencyStats = calculateConsistency(rawPoints, { minMatches: 1, ignoreZero: true });
 
   const bestMatch = matchesData.find(m => m.points === best)?.match || "-";
   const worstMatch = matchesData.find(m => m.points === worst)?.match || "-";
   const avgTooltip = "Average = Total points ÷ matches";
-  const consistencyTooltip = "Consistency = 100 - (Standard Deviation / Average × 100)";
+  const consistencyTooltip = "Consistency = 100 - (SD / Avg × 100), using only matches with points > 0";
 
   let html = `
     <div class="modal-header">
@@ -419,7 +429,7 @@ function openModal(player) {
           </div>
           <div class="insight-item" ${getTooltipAttr(consistencyTooltip)}>
             <span class="insight-label">⚡ Consistency</span>
-            <span class="insight-value">${Math.round(consistency)}%</span>
+            <span class="insight-value">${consistencyStats ? `${consistencyStats.consistency}%` : "N/A"}</span>
           </div>
         </div>
       </div>
