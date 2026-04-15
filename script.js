@@ -1,5 +1,6 @@
 let previousData = [];
 let globalData = [];
+let hallCarouselInitialized = false;
 
 function applyCompetitionRanks(data, scoreSelector) {
   data.forEach((player, index) => {
@@ -39,6 +40,12 @@ function loadData() {
 
       updateHeader(data);
       renderLeaderboard(data);
+      renderHallOfFame(data);
+
+      if (!hallCarouselInitialized) {
+        initHallOfFameCarousel();
+        hallCarouselInitialized = true;
+      }
 
       previousData = JSON.parse(JSON.stringify(data));
     });
@@ -130,6 +137,183 @@ function calculateConsistency(points, avg) {
   const normalized = avg ? stdDev / avg : 1;
   const consistency = 100 - (normalized * 100);
   return Math.max(0, Math.min(100, consistency));
+}
+
+
+function toNumber(value, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function getMatchFactor(match) {
+  return toNumber(match?.ampfactor, 1) || 1;
+}
+
+function formatHallPoints(value) {
+  return `${formatPoints(value)} pts`;
+}
+
+function formatHallAverage(value) {
+  return `${formatPoints(value)} avg`;
+}
+
+function calculateStdDev(values) {
+  if (!values.length) return Number.POSITIVE_INFINITY;
+  const avg = values.reduce((sum, value) => sum + value, 0) / values.length;
+  const variance = values.reduce((sum, value) => sum + Math.pow(value - avg, 2), 0) / values.length;
+  return Math.sqrt(variance);
+}
+
+function calculateHallOfFame(playersData) {
+  const players = Array.isArray(playersData) ? playersData : [];
+
+  const baseStats = players.map((player, index) => {
+    const matches = Array.isArray(player?.matches) ? player.matches : [];
+    const normalized = matches.map((match) => ({
+      match: match?.match || "Unknown Match",
+      points: toNumber(match?.points, 0),
+      ampfactor: getMatchFactor(match)
+    }));
+
+    const weightedTotal = normalized.reduce((sum, match) => sum + (match.points * match.ampfactor), 0);
+    const avg = normalized.length
+      ? normalized.reduce((sum, match) => sum + match.points, 0) / normalized.length
+      : 0;
+    const std = calculateStdDev(normalized.map((match) => match.points));
+    const ampMatches = normalized.filter((match) => match.ampfactor === 2);
+    const explosiveCount = normalized.filter((match) => match.points >= 900).length;
+    const unluckyMatches = normalized.filter((match) => match.points > 0);
+    const unluckyAvg = unluckyMatches.length
+      ? unluckyMatches.reduce((sum, match) => sum + match.points, 0) / unluckyMatches.length
+      : Number.POSITIVE_INFINITY;
+
+    return {
+      index,
+      name: player?.name || "Unknown",
+      matches: normalized,
+      weightedTotal,
+      avg,
+      std,
+      ampMatches,
+      explosiveCount,
+      unluckyAvg
+    };
+  });
+
+  const allMatches = [];
+  baseStats.forEach((player) => {
+    player.matches.forEach((match, matchIndex) => {
+      allMatches.push({
+        playerIndex: player.index,
+        playerName: player.name,
+        points: match.points,
+        match: match.match,
+        order: matchIndex
+      });
+    });
+  });
+
+  const champion = [...baseStats]
+    .sort((a, b) => (b.weightedTotal - a.weightedTotal) || (a.index - b.index))[0];
+
+  const highestScore = [...allMatches]
+    .sort((a, b) => (b.points - a.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
+
+  const lowestScore = [...allMatches]
+    .sort((a, b) => (a.points - b.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
+
+  const consistencyKing = baseStats
+    .filter((player) => player.matches.length > 0)
+    .sort((a, b) => (a.std - b.std) || (b.avg - a.avg) || (a.index - b.index))[0];
+
+  const ampMaster = baseStats
+    .filter((player) => player.ampMatches.length >= 3)
+    .sort((a, b) => {
+      const avgA = a.ampMatches.reduce((sum, match) => sum + match.points, 0) / a.ampMatches.length;
+      const avgB = b.ampMatches.reduce((sum, match) => sum + match.points, 0) / b.ampMatches.length;
+      return (avgB - avgA) || (b.ampMatches.length - a.ampMatches.length) || (a.index - b.index);
+    })[0];
+
+  const explosivePlayer = baseStats
+    .sort((a, b) => (b.explosiveCount - a.explosiveCount) || (a.index - b.index))[0];
+
+  const unluckyPlayer = baseStats
+    .filter((player) => Number.isFinite(player.unluckyAvg))
+    .sort((a, b) => (a.unluckyAvg - b.unluckyAvg) || (a.index - b.index))[0];
+
+  return {
+    champion: champion ? {
+      name: champion.name,
+      stat: formatHallPoints(champion.weightedTotal)
+    } : null,
+    highestScore: highestScore ? {
+      name: highestScore.playerName,
+      stat: `${formatHallPoints(highestScore.points)} (${highestScore.match})`
+    } : null,
+    lowestScore: lowestScore ? {
+      name: lowestScore.playerName,
+      stat: `${formatHallPoints(lowestScore.points)} (${lowestScore.match})`
+    } : null,
+    consistencyKing: consistencyKing ? {
+      name: consistencyKing.name,
+      stat: `σ ${formatPoints(consistencyKing.std)} • ${formatHallAverage(consistencyKing.avg)}`
+    } : null,
+    ampMaster: ampMaster ? {
+      name: ampMaster.name,
+      stat: `${formatHallAverage(ampMaster.ampMatches.reduce((sum, match) => sum + match.points, 0) / ampMaster.ampMatches.length)} (${ampMaster.ampMatches.length} amp)`
+    } : null,
+    explosivePlayer: explosivePlayer ? {
+      name: explosivePlayer.name,
+      stat: `${explosivePlayer.explosiveCount} × 900+`
+    } : null,
+    unluckyPlayer: unluckyPlayer ? {
+      name: unluckyPlayer.name,
+      stat: formatHallAverage(unluckyPlayer.unluckyAvg)
+    } : null
+  };
+}
+
+function renderHallOfFame(playersData) {
+  const hallData = calculateHallOfFame(playersData);
+
+  const cardMap = [
+    { key: "champion", playerSelector: "#champion-name", statSelector: "#champion-total" },
+    { key: "highestScore", playerSelector: "#highest-score-name", statSelector: "#highest-score-points" },
+    { key: "lowestScore", playerSelector: "#lowest-score-name", statSelector: "#lowest-score-points" },
+    { key: "consistencyKing", playerSelector: "#consistency-king-name", statSelector: "#consistency-king-stat" },
+    { key: "ampMaster", playerSelector: "#amp-master-name", statSelector: "#amp-master-stat" },
+    { key: "explosivePlayer", playerSelector: "#explosive-player-name", statSelector: "#explosive-player-count" },
+    { key: "unluckyPlayer", playerSelector: "#unlucky-player-name", statSelector: "#unlucky-player-stat" }
+  ];
+
+  cardMap.forEach(({ key, playerSelector, statSelector }) => {
+    const result = hallData[key];
+    const cards = document.querySelectorAll(`[data-achievement="${key}"]`);
+
+    cards.forEach((card) => {
+      const playerEl = card.querySelector('.hall-player');
+      const statEl = card.querySelector('.hall-stat');
+
+      if (!result) {
+        card.style.visibility = "hidden";
+        card.style.opacity = "0";
+        card.setAttribute("aria-hidden", "true");
+        return;
+      }
+
+      card.style.visibility = "visible";
+      card.style.opacity = "1";
+      if (playerEl) playerEl.textContent = result.name;
+      if (statEl) statEl.textContent = result.stat;
+    });
+
+    const primaryPlayerEl = document.querySelector(playerSelector);
+    const primaryStatEl = document.querySelector(statSelector);
+    if (result) {
+      if (primaryPlayerEl) primaryPlayerEl.textContent = result.name;
+      if (primaryStatEl) primaryStatEl.textContent = result.stat;
+    }
+  });
 }
 
 /* Modal */
@@ -410,4 +594,3 @@ function initHallOfFameCarousel() {
   startAutoRotate();
 }
 
-initHallOfFameCarousel();
