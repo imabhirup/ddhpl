@@ -164,6 +164,46 @@ function calculateStdDev(values) {
   return Math.sqrt(variance);
 }
 
+
+function getConsistencyKing(playersData) {
+  const players = Array.isArray(playersData) ? playersData : [];
+  const eligible = [];
+
+  players.forEach((player, index) => {
+    const matches = Array.isArray(player?.matches) ? player.matches : [];
+    const validPoints = matches
+      .map((match) => toNumber(match?.points, 0))
+      .filter((points) => points > 0);
+
+    if (validPoints.length < 5) return;
+
+    const avg = validPoints.reduce((sum, points) => sum + points, 0) / validPoints.length;
+    if (!Number.isFinite(avg) || avg <= 0) return;
+
+    const variance = validPoints.reduce((sum, points) => sum + Math.pow(points - avg, 2), 0) / validPoints.length;
+    const sd = Math.sqrt(variance);
+
+    const rawConsistency = 100 - ((sd / avg) * 100);
+    const clampedConsistency = Math.max(0, Math.min(100, rawConsistency));
+
+    eligible.push({
+      name: player?.name || "Unknown",
+      consistency: Math.round(clampedConsistency),
+      avg,
+      index
+    });
+  });
+
+  if (!eligible.length) return null;
+
+  eligible.sort((a, b) => (b.consistency - a.consistency) || (b.avg - a.avg) || (a.index - b.index));
+  return {
+    name: eligible[0].name,
+    consistency: eligible[0].consistency,
+    avg: eligible[0].avg
+  };
+}
+
 function calculateHallOfFame(playersData) {
   const players = Array.isArray(playersData) ? playersData : [];
 
@@ -186,15 +226,6 @@ function calculateHallOfFame(playersData) {
       ? positiveMatches.reduce((sum, match) => sum + match.points, 0) / positiveMatches.length
       : Number.POSITIVE_INFINITY;
 
-    const consistentMatches = positiveMatches.filter((match) => {
-      const lower = positiveAvg * 0.8;
-      const upper = positiveAvg * 1.2;
-      return match.points >= lower && match.points <= upper;
-    }).length;
-
-    const consistency = positiveMatches.length
-      ? (consistentMatches / positiveMatches.length) * 100
-      : Number.NEGATIVE_INFINITY;
 
     return {
       index,
@@ -204,7 +235,6 @@ function calculateHallOfFame(playersData) {
       avgAll,
       positiveMatches,
       positiveAvg,
-      consistency,
       explosiveCount: normalized.filter((match) => match.points >= 900).length,
       missedCount: normalized.filter((match) => match.points === 0).length
     };
@@ -239,9 +269,7 @@ function calculateHallOfFame(playersData) {
   const lowestScore = [...positiveScoreMatches]
     .sort((a, b) => (a.points - b.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
 
-  const consistencyKing = stats
-    .filter((player) => player.positiveMatches.length > 0)
-    .sort((a, b) => (b.consistency - a.consistency) || (b.positiveAvg - a.positiveAvg) || (a.index - b.index))[0];
+  const consistencyKing = getConsistencyKing(playersData);
 
   const explosivePlayer = [...stats]
     .sort((a, b) => (b.explosiveCount - a.explosiveCount) || (a.index - b.index))[0];
@@ -273,8 +301,9 @@ function calculateHallOfFame(playersData) {
     } : null,
     consistencyKing: consistencyKing ? {
       name: consistencyKing.name,
-      consistency: Math.round(consistencyKing.consistency),
-      stat: `${Math.round(consistencyKing.consistency)}% consistent`
+      consistency: consistencyKing.consistency,
+      avg: consistencyKing.avg,
+      stat: `${consistencyKing.consistency}% consistent`
     } : null,
     explosivePlayer: explosivePlayer ? {
       name: explosivePlayer.name,
