@@ -94,6 +94,10 @@
       {
         "match": "RCB vs LSG",
         "points": 668.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 600.5
       }
     ]
   },
@@ -192,6 +196,10 @@
       {
         "match": "RCB vs LSG",
         "points": 715.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 923
       }
     ]
   },
@@ -290,6 +298,10 @@
       {
         "match": "RCB vs LSG",
         "points": 543.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 590.5
       }
     ]
   },
@@ -388,6 +400,10 @@
       {
         "match": "RCB vs LSG",
         "points": 494
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 832.5
       }
     ]
   },
@@ -486,6 +502,10 @@
       {
         "match": "RCB vs LSG",
         "points": 671
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 597.5
       }
     ]
   },
@@ -584,6 +604,10 @@
       {
         "match": "RCB vs LSG",
         "points": 610.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 807.5
       }
     ]
   },
@@ -682,6 +706,10 @@
       {
         "match": "RCB vs LSG",
         "points": 511
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 784
       }
     ]
   },
@@ -780,6 +808,10 @@
       {
         "match": "RCB vs LSG",
         "points": 503.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 0
       }
     ]
   },
@@ -878,6 +910,10 @@
       {
         "match": "RCB vs LSG",
         "points": 631
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 768
       }
     ]
   },
@@ -976,6 +1012,10 @@
       {
         "match": "RCB vs LSG",
         "points": 679
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 598.5
       }
     ]
   },
@@ -1074,6 +1114,10 @@
       {
         "match": "RCB vs LSG",
         "points": 566
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 789
       }
     ]
   },
@@ -1172,6 +1216,10 @@
       {
         "match": "RCB vs LSG",
         "points": 733
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 892
       }
     ]
   },
@@ -1270,6 +1318,10 @@
       {
         "match": "RCB vs LSG",
         "points": 715.5
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 923
       }
     ]
   },
@@ -1368,6 +1420,10 @@
       {
         "match": "RCB vs LSG",
         "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 611
       }
     ]
   },
@@ -1466,6 +1522,10 @@
       {
         "match": "RCB vs LSG",
         "points": 679
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 598.5
       }
     ]
   },
@@ -1564,6 +1624,10 @@
       {
         "match": "RCB vs LSG",
         "points": 652
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 598.5
       }
     ]
   },
@@ -1661,6 +1725,10 @@
       },
       {
         "match": "RCB vs LSG",
+        "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
         "points": 0
       }
     ]
@@ -1760,6 +1828,10 @@
       {
         "match": "RCB vs LSG",
         "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 545.5
       }
     ]
   }
