@@ -102,6 +102,11 @@
       {
         "match": "GT vs KKR",
         "points": 948.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 930.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -208,6 +213,11 @@
       {
         "match": "GT vs KKR",
         "points": 950
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 735.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -314,6 +324,11 @@
       {
         "match": "GT vs KKR",
         "points": 665
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 817.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -420,6 +435,11 @@
       {
         "match": "GT vs KKR",
         "points": 737
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 727.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -526,6 +546,11 @@
       {
         "match": "GT vs KKR",
         "points": 0
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -632,6 +657,11 @@
       {
         "match": "GT vs KKR",
         "points": 805.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 815.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -738,6 +768,11 @@
       {
         "match": "GT vs KKR",
         "points": 828.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 720.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -844,6 +879,11 @@
       {
         "match": "GT vs KKR",
         "points": 682.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 764.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -950,6 +990,11 @@
       {
         "match": "GT vs KKR",
         "points": 784.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 585.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1056,6 +1101,11 @@
       {
         "match": "GT vs KKR",
         "points": 771.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 663,
+        "ampfactor": 2
       }
     ]
   },
@@ -1162,6 +1212,11 @@
       {
         "match": "GT vs KKR",
         "points": 614
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 812.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1268,6 +1323,11 @@
       {
         "match": "GT vs KKR",
         "points": 888.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 730.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1374,6 +1434,11 @@
       {
         "match": "GT vs KKR",
         "points": 950
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 735.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1480,6 +1545,11 @@
       {
         "match": "GT vs KKR",
         "points": 822
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 877.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1586,6 +1656,11 @@
       {
         "match": "GT vs KKR",
         "points": 748.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 736.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1692,6 +1767,11 @@
       {
         "match": "GT vs KKR",
         "points": 750.5
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 731.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1798,6 +1878,11 @@
       {
         "match": "GT vs KKR",
         "points": 0
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1904,6 +1989,11 @@
       {
         "match": "GT vs KKR",
         "points": 708
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 946.5,
+        "ampfactor": 2
       }
     ]
   }
