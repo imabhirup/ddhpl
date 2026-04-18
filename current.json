@@ -1,98 +1,98 @@
 [
   {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "RCB vs DC", "points": 946.5, "ampfactor": 2 }
-    ]
-  },
-  {
     "name": "iamabhi3",
     "matches": [
-      { "match": "RCB vs DC", "points": 930.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      { "match": "RCB vs DC", "points": 877.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "RCB vs DC", "points": 817.5, "ampfactor": 2 }
+      { "match": "SRH vs CSK", "points": 940.5 }
     ]
   },
   {
     "name": "TeamTannyi",
     "matches": [
-      { "match": "RCB vs DC", "points": 815.5, "ampfactor": 2 }
+      { "match": "SRH vs CSK", "points": 875 }
     ]
   },
   {
-    "name": "hammers19",
+    "name": "_dev____",
     "matches": [
-      { "match": "RCB vs DC", "points": 812.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "RCB vs DC", "points": 764.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "RCB vs DC", "points": 736.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "RCB vs DC", "points": 735.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "RCB vs DC", "points": 735.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "RCB vs DC", "points": 731.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "RCB vs DC", "points": 730.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "RCB vs DC", "points": 727.5, "ampfactor": 2 }
+      { "match": "SRH vs CSK", "points": 859.5 }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "RCB vs DC", "points": 720.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "RCB vs DC", "points": 663, "ampfactor": 2 }
+      { "match": "SRH vs CSK", "points": 821.5 }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "RCB vs DC", "points": 585.5, "ampfactor": 2 }
+      { "match": "SRH vs CSK", "points": 818.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 797 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 796 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 796 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 788.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 770 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 768 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 742.5 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 727 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 678.5 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 678 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "SRH vs CSK", "points": 558.5 }
     ]
   }
 ]
