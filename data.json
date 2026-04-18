@@ -98,6 +98,10 @@
       {
         "match": "MUM vs PUN",
         "points": 600.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 948.5
       }
     ]
   },
@@ -200,6 +204,10 @@
       {
         "match": "MUM vs PUN",
         "points": 923
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 950
       }
     ]
   },
@@ -302,6 +310,10 @@
       {
         "match": "MUM vs PUN",
         "points": 590.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 665
       }
     ]
   },
@@ -404,6 +416,10 @@
       {
         "match": "MUM vs PUN",
         "points": 832.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 737
       }
     ]
   },
@@ -506,6 +522,10 @@
       {
         "match": "MUM vs PUN",
         "points": 597.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 0
       }
     ]
   },
@@ -608,6 +628,10 @@
       {
         "match": "MUM vs PUN",
         "points": 807.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 805.5
       }
     ]
   },
@@ -710,6 +734,10 @@
       {
         "match": "MUM vs PUN",
         "points": 784
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 828.5
       }
     ]
   },
@@ -812,6 +840,10 @@
       {
         "match": "MUM vs PUN",
         "points": 0
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 682.5
       }
     ]
   },
@@ -914,6 +946,10 @@
       {
         "match": "MUM vs PUN",
         "points": 768
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 784.5
       }
     ]
   },
@@ -1016,6 +1052,10 @@
       {
         "match": "MUM vs PUN",
         "points": 598.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 771.5
       }
     ]
   },
@@ -1118,6 +1158,10 @@
       {
         "match": "MUM vs PUN",
         "points": 789
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 614
       }
     ]
   },
@@ -1220,6 +1264,10 @@
       {
         "match": "MUM vs PUN",
         "points": 892
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 888.5
       }
     ]
   },
@@ -1322,6 +1370,10 @@
       {
         "match": "MUM vs PUN",
         "points": 923
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 950
       }
     ]
   },
@@ -1424,6 +1476,10 @@
       {
         "match": "MUM vs PUN",
         "points": 611
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 822
       }
     ]
   },
@@ -1526,6 +1582,10 @@
       {
         "match": "MUM vs PUN",
         "points": 598.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 748.5
       }
     ]
   },
@@ -1628,6 +1688,10 @@
       {
         "match": "MUM vs PUN",
         "points": 598.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 750.5
       }
     ]
   },
@@ -1729,6 +1793,10 @@
       },
       {
         "match": "MUM vs PUN",
+        "points": 0
+      },
+      {
+        "match": "GT vs KKR",
         "points": 0
       }
     ]
@@ -1832,6 +1900,10 @@
       {
         "match": "MUM vs PUN",
         "points": 545.5
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 708
       }
     ]
   }

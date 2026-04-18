@@ -1,18 +1,98 @@
 [
-  { "name": "Pan_0_Tea", "matches": [{ "match": "GT vs KKR", "points": 950 }] },
-  { "name": "powerhitter11", "matches": [{ "match": "GT vs KKR", "points": 950 }] },
-  { "name": "iamabhi3", "matches": [{ "match": "GT vs KKR", "points": 948.5 }] },
-  { "name": "srijonichallengers", "matches": [{ "match": "GT vs KKR", "points": 888.5 }] },
-  { "name": "PaglaChidiXI", "matches": [{ "match": "GT vs KKR", "points": 828.5 }] },
-  { "name": "_dev____", "matches": [{ "match": "GT vs KKR", "points": 822 }] },
-  { "name": "TeamTannyi", "matches": [{ "match": "GT vs KKR", "points": 805.5 }] },
-  { "name": "Deadphool", "matches": [{ "match": "GT vs KKR", "points": 784.5 }] },
-  { "name": "Petano_Party", "matches": [{ "match": "GT vs KKR", "points": 771.5 }] },
-  { "name": "AllTimeWinner", "matches": [{ "match": "GT vs KKR", "points": 750.5 }] },
-  { "name": "abhijoy02", "matches": [{ "match": "GT vs KKR", "points": 748.5 }] },
-  { "name": "Rockstar110823", "matches": [{ "match": "GT vs KKR", "points": 737 }] },
-  { "name": "Roktobeej", "matches": [{ "match": "GT vs KKR", "points": 708 }] },
-  { "name": "Bapekhyadanomayetarano", "matches": [{ "match": "GT vs KKR", "points": 682.5 }] },
-  { "name": "2305Avengers", "matches": [{ "match": "GT vs KKR", "points": 665 }] },
-  { "name": "hammers19", "matches": [{ "match": "GT vs KKR", "points": 614 }] }
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "RCB vs DC", "points": 946.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "RCB vs DC", "points": 930.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      { "match": "RCB vs DC", "points": 877.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "RCB vs DC", "points": 817.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "RCB vs DC", "points": 815.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "RCB vs DC", "points": 812.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "RCB vs DC", "points": 764.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "RCB vs DC", "points": 736.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "RCB vs DC", "points": 735.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "RCB vs DC", "points": 735.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "RCB vs DC", "points": 731.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "RCB vs DC", "points": 730.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "RCB vs DC", "points": 727.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "RCB vs DC", "points": 720.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "RCB vs DC", "points": 663, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "RCB vs DC", "points": 585.5, "ampfactor": 2 }
+    ]
+  }
 ]
