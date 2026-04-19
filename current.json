@@ -1,86 +1,92 @@
 [
   {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "KKR vs RR", "points": 858 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "KKR vs RR", "points": 853.5 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "KKR vs RR", "points": 853.5 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "KKR vs RR", "points": 823 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "KKR vs RR", "points": 805.5 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "KKR vs RR", "points": 791 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "KKR vs RR", "points": 773 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "KKR vs RR", "points": 770.5 }
-    ]
-  },
-  {
     "name": "iamabhi3",
     "matches": [
-      { "match": "KKR vs RR", "points": 755 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "KKR vs RR", "points": 715.5 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "KKR vs RR", "points": 700 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "KKR vs RR", "points": 688 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "KKR vs RR", "points": 688 }
+      { "match": "PBKS vs LSG", "points": 1002.5, "ampfactor": 2 }
     ]
   },
   {
     "name": "Rockstar110823",
     "matches": [
-      { "match": "KKR vs RR", "points": 591 }
+      { "match": "PBKS vs LSG", "points": 988, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 959, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 958, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 952, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 948.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 948.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 944, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 924, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 918, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 908, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 906, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 878, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 856, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "PBKS vs LSG", "points": 811, "ampfactor": 2 }
     ]
   }
 ]
