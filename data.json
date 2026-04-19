@@ -111,6 +111,10 @@
       {
         "match": "SRH vs CSK",
         "points": 940.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 755
       }
     ]
   },
@@ -226,6 +230,10 @@
       {
         "match": "SRH vs CSK",
         "points": 796
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 688
       }
     ]
   },
@@ -341,6 +349,10 @@
       {
         "match": "SRH vs CSK",
         "points": 770
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 858
       }
     ]
   },
@@ -456,6 +468,10 @@
       {
         "match": "SRH vs CSK",
         "points": 797
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 591
       }
     ]
   },
@@ -570,6 +586,10 @@
       },
       {
         "match": "SRH vs CSK",
+        "points": 0
+      },
+      {
+        "match": "KKR vs RR",
         "points": 0
       }
     ]
@@ -686,6 +706,10 @@
       {
         "match": "SRH vs CSK",
         "points": 875
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 805.5
       }
     ]
   },
@@ -801,6 +825,10 @@
       {
         "match": "SRH vs CSK",
         "points": 821.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 715.5
       }
     ]
   },
@@ -916,6 +944,10 @@
       {
         "match": "SRH vs CSK",
         "points": 742.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 0
       }
     ]
   },
@@ -1031,6 +1063,10 @@
       {
         "match": "SRH vs CSK",
         "points": 818.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 791
       }
     ]
   },
@@ -1146,6 +1182,10 @@
       {
         "match": "SRH vs CSK",
         "points": 678.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 823
       }
     ]
   },
@@ -1261,6 +1301,10 @@
       {
         "match": "SRH vs CSK",
         "points": 788.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 770.5
       }
     ]
   },
@@ -1376,6 +1420,10 @@
       {
         "match": "SRH vs CSK",
         "points": 768
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 700
       }
     ]
   },
@@ -1491,6 +1539,10 @@
       {
         "match": "SRH vs CSK",
         "points": 796
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 688
       }
     ]
   },
@@ -1606,6 +1658,10 @@
       {
         "match": "SRH vs CSK",
         "points": 859.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 0
       }
     ]
   },
@@ -1721,6 +1777,10 @@
       {
         "match": "SRH vs CSK",
         "points": 678
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 853.5
       }
     ]
   },
@@ -1836,6 +1896,10 @@
       {
         "match": "SRH vs CSK",
         "points": 558.5
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 853.5
       }
     ]
   },
@@ -1950,6 +2014,10 @@
       },
       {
         "match": "SRH vs CSK",
+        "points": 0
+      },
+      {
+        "match": "KKR vs RR",
         "points": 0
       }
     ]
@@ -2066,6 +2134,10 @@
       {
         "match": "SRH vs CSK",
         "points": 727
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 773
       }
     ]
   }
