@@ -1,92 +1,98 @@
 [
   {
-    "name": "iamabhi3",
+    "name": "abhijoy02",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 1002.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 988, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 959, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 958, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 952, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 948.5, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 741 }
     ]
   },
   {
     "name": "powerhitter11",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 948.5, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 708 }
     ]
   },
   {
-    "name": "hammers19",
+    "name": "Pan_0_Tea",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 944, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 708 }
     ]
   },
   {
-    "name": "Deadphool",
+    "name": "_dev___",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 924, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 918, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "PBKS vs LSG", "points": 908, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 697.5 }
     ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 906, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 695.5 }
     ]
   },
   {
-    "name": "PaglaChidiXI",
+    "name": "AllTimeWinner",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 878, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 637.5 }
     ]
   },
   {
-    "name": "Roktobeej",
+    "name": "Rockstar110823",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 856, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 636 }
     ]
   },
   {
     "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "PBKS vs LSG", "points": 811, "ampfactor": 2 }
+      { "match": "GUJ vs MUM", "points": 618.5 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 601.5 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 599.5 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 558.5 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 554.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 550 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 528.5 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 513.5 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "GUJ vs MUM", "points": 399.5 }
     ]
   }
 ]
