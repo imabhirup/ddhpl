@@ -120,6 +120,10 @@
         "match": "PBKS vs LSG",
         "points": 1002.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 550
       }
     ]
   },
@@ -244,6 +248,10 @@
         "match": "PBKS vs LSG",
         "points": 948.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 708
       }
     ]
   },
@@ -368,6 +376,10 @@
         "match": "PBKS vs LSG",
         "points": 906,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 695.5
       }
     ]
   },
@@ -492,6 +504,10 @@
         "match": "PBKS vs LSG",
         "points": 988,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 636
       }
     ]
   },
@@ -616,6 +632,10 @@
         "match": "PBKS vs LSG",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 0
       }
     ]
   },
@@ -740,6 +760,10 @@
         "match": "PBKS vs LSG",
         "points": 952,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 554.5
       }
     ]
   },
@@ -864,6 +888,10 @@
         "match": "PBKS vs LSG",
         "points": 878,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 399.5
       }
     ]
   },
@@ -988,6 +1016,10 @@
         "match": "PBKS vs LSG",
         "points": 811,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 618.5
       }
     ]
   },
@@ -1112,6 +1144,10 @@
         "match": "PBKS vs LSG",
         "points": 924,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 513.5
       }
     ]
   },
@@ -1236,6 +1272,10 @@
         "match": "PBKS vs LSG",
         "points": 959,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 601.5
       }
     ]
   },
@@ -1360,6 +1400,10 @@
         "match": "PBKS vs LSG",
         "points": 944,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 558.5
       }
     ]
   },
@@ -1484,6 +1528,10 @@
         "match": "PBKS vs LSG",
         "points": 958,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 599.5
       }
     ]
   },
@@ -1608,6 +1656,10 @@
         "match": "PBKS vs LSG",
         "points": 948.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 708
       }
     ]
   },
@@ -1732,6 +1784,10 @@
         "match": "PBKS vs LSG",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 0
       }
     ]
   },
@@ -1856,6 +1912,10 @@
         "match": "PBKS vs LSG",
         "points": 908,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 741
       }
     ]
   },
@@ -1980,6 +2040,10 @@
         "match": "PBKS vs LSG",
         "points": 918,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 637.5
       }
     ]
   },
@@ -2104,6 +2168,10 @@
         "match": "PBKS vs LSG",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 0
       }
     ]
   },
@@ -2228,6 +2296,138 @@
         "match": "PBKS vs LSG",
         "points": 856,
         "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 528.5
+      }
+    ]
+  },
+  {
+    "name": "_dev___",
+    "matches": [
+      {
+        "match": "BLR vs HYD",
+        "points": 0
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 0
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 0
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RR",
+        "points": 0
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 0
+      },
+      {
+        "match": "RCB vs CSK",
+        "points": 0
+      },
+      {
+        "match": "RR vs MI",
+        "points": 0
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 0
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 0
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 0
+      },
+      {
+        "match": "CHE vs KOL",
+        "points": 0
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 0
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 0
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "SRH vs CSK",
+        "points": 0
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs LSG",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 697.5
       }
     ]
   }
