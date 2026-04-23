@@ -124,6 +124,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 550
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 858.5
       }
     ]
   },
@@ -252,6 +256,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 708
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 835.5
       }
     ]
   },
@@ -380,6 +388,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 695.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 741.5
       }
     ]
   },
@@ -508,6 +520,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 636
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 1058.5
       }
     ]
   },
@@ -635,6 +651,10 @@
       },
       {
         "match": "GUJ vs MUM",
+        "points": 0
+      },
+      {
+        "match": "SRH vs DC",
         "points": 0
       }
     ]
@@ -764,6 +784,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 554.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 885.5
       }
     ]
   },
@@ -892,6 +916,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 399.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 975.5
       }
     ]
   },
@@ -1020,6 +1048,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 618.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 922.5
       }
     ]
   },
@@ -1148,6 +1180,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 513.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 890.5
       }
     ]
   },
@@ -1276,6 +1312,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 601.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 815.5
       }
     ]
   },
@@ -1404,6 +1444,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 558.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 913.5
       }
     ]
   },
@@ -1532,6 +1576,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 599.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 915.5
       }
     ]
   },
@@ -1660,6 +1708,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 708
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 835.5
       }
     ]
   },
@@ -1787,6 +1839,10 @@
       },
       {
         "match": "GUJ vs MUM",
+        "points": 0
+      },
+      {
+        "match": "SRH vs DC",
         "points": 0
       }
     ]
@@ -1916,6 +1972,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 741
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 736.5
       }
     ]
   },
@@ -2044,6 +2104,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 637.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 858.5
       }
     ]
   },
@@ -2171,6 +2235,10 @@
       },
       {
         "match": "GUJ vs MUM",
+        "points": 0
+      },
+      {
+        "match": "SRH vs DC",
         "points": 0
       }
     ]
@@ -2300,6 +2368,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 528.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 961.5
       }
     ]
   },
@@ -2428,6 +2500,10 @@
       {
         "match": "GUJ vs MUM",
         "points": 697.5
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 0
       }
     ]
   }
