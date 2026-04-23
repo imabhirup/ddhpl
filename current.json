@@ -1,92 +1,92 @@
 [
   {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "SRH vs DC", "points": 1058.5 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "SRH vs DC", "points": 975.5 }
-    ]
-  },
-  {
     "name": "Roktobeej",
     "matches": [
-      { "match": "SRH vs DC", "points": 961.5 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "SRH vs DC", "points": 922.5 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "SRH vs DC", "points": 915.5 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "SRH vs DC", "points": 913.5 }
+      { "match": "LSG vs RR", "points": 782 }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "SRH vs DC", "points": 890.5 }
+      { "match": "LSG vs RR", "points": 764 }
     ]
   },
   {
-    "name": "TeamTannyi",
+    "name": "hammers19",
     "matches": [
-      { "match": "SRH vs DC", "points": 885.5 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "SRH vs DC", "points": 858.5 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "SRH vs DC", "points": 858.5 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "SRH vs DC", "points": 835.5 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "SRH vs DC", "points": 835.5 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "SRH vs DC", "points": 815.5 }
+      { "match": "LSG vs RR", "points": 746.5 }
     ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "SRH vs DC", "points": 741.5 }
+      { "match": "LSG vs RR", "points": 741 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "LSG vs RR", "points": 708.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "LSG vs RR", "points": 696 }
     ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "SRH vs DC", "points": 736.5 }
+      { "match": "LSG vs RR", "points": 657.5 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "LSG vs RR", "points": 652 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "LSG vs RR", "points": 652 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "LSG vs RR", "points": 648 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "LSG vs RR", "points": 648 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "LSG vs RR", "points": 628 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "LSG vs RR", "points": 628 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "LSG vs RR", "points": 595 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "LSG vs RR", "points": 587 }
     ]
   }
 ]
