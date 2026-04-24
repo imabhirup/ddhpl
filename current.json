@@ -1,92 +1,86 @@
 [
   {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "LSG vs RR", "points": 782 }
-    ]
-  },
-  {
     "name": "Deadphool",
     "matches": [
-      { "match": "LSG vs RR", "points": 764 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "LSG vs RR", "points": 746.5 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "LSG vs RR", "points": 741 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "LSG vs RR", "points": 708.5 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "LSG vs RR", "points": 696 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "LSG vs RR", "points": 657.5 }
+      { "match": "MUM vs CHE", "points": 973 }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "LSG vs RR", "points": 652 }
+      { "match": "MUM vs CHE", "points": 937 }
     ]
   },
   {
-    "name": "srijonichallengers",
+    "name": "hammers19",
     "matches": [
-      { "match": "LSG vs RR", "points": 652 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "LSG vs RR", "points": 648 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "LSG vs RR", "points": 648 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "LSG vs RR", "points": 628 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "LSG vs RR", "points": 628 }
+      { "match": "MUM vs CHE", "points": 937 }
     ]
   },
   {
     "name": "Rockstar110823",
     "matches": [
-      { "match": "LSG vs RR", "points": 595 }
+      { "match": "MUM vs CHE", "points": 833.5 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 822.5 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 806.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 804.5 }
     ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "LSG vs RR", "points": 587 }
+      { "match": "MUM vs CHE", "points": 803.5 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 772.5 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 772.5 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 772.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 751.5 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 722.5 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "MUM vs CHE", "points": 722.5 }
     ]
   }
 ]
