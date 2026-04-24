@@ -1,86 +1,92 @@
 [
   {
-    "name": "Deadphool",
+    "name": "Petano_Party",
     "matches": [
-      { "match": "MUM vs CHE", "points": 973 }
+      { "match": "RCB vs GT", "points": 1032.5 }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "MUM vs CHE", "points": 937 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 937 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 833.5 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 822.5 }
+      { "match": "RCB vs GT", "points": 1019 }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "MUM vs CHE", "points": 806.5 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 804.5 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 803.5 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 772.5 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "MUM vs CHE", "points": 772.5 }
+      { "match": "RCB vs GT", "points": 979 }
     ]
   },
   {
     "name": "TeamTannyi",
     "matches": [
-      { "match": "MUM vs CHE", "points": 772.5 }
+      { "match": "RCB vs GT", "points": 977 }
     ]
   },
   {
-    "name": "2305Avengers",
+    "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "MUM vs CHE", "points": 751.5 }
+      { "match": "RCB vs GT", "points": 976.5 }
     ]
   },
   {
-    "name": "powerhitter11",
+    "name": "Rockstar110823",
     "matches": [
-      { "match": "MUM vs CHE", "points": 722.5 }
+      { "match": "RCB vs GT", "points": 964.5 }
     ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "MUM vs CHE", "points": 722.5 }
+      { "match": "RCB vs GT", "points": 936.5 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "RCB vs GT", "points": 936.5 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "RCB vs GT", "points": 914.5 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "RCB vs GT", "points": 908.5 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "RCB vs GT", "points": 865.5 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "RCB vs GT", "points": 813.5 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "RCB vs GT", "points": 797.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "RCB vs GT", "points": 737.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "RCB vs GT", "points": 722.5 }
     ]
   }
 ]
