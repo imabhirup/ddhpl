@@ -1,86 +1,92 @@
 [
   {
-    "name": "Petano_Party",
+    "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1389 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1383 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1356.5 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1336 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1331 }
+      { "match": "RAJ vs HYD", "points": 1309, "ampfactor": 2 }
     ]
   },
   {
     "name": "AllTimeWinner",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1301 }
+      { "match": "RAJ vs HYD", "points": 1295.5, "ampfactor": 2 }
     ]
   },
   {
-    "name": "abhijoy02",
+    "name": "_dev____",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1293 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1260 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1191.5 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "DC vs PBKS", "points": 1136 }
+      { "match": "RAJ vs HYD", "points": 1259.5, "ampfactor": 2 }
     ]
   },
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1113.5 }
+      { "match": "RAJ vs HYD", "points": 1228.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 1148, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 1111, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 1111, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 1095, "ampfactor": 2 }
     ]
   },
   {
     "name": "Rockstar110823",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1102.5 }
+      { "match": "RAJ vs HYD", "points": 1042, "ampfactor": 2 }
     ]
   },
   {
-    "name": "Bapekhyadanomayetarano",
+    "name": "abhijoy02",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1082 }
+      { "match": "RAJ vs HYD", "points": 1041.5, "ampfactor": 2 }
     ]
   },
   {
-    "name": "powerhitter11",
+    "name": "Pan_0_Tea",
     "matches": [
-      { "match": "DC vs PBKS", "points": 1080 }
+      { "match": "RAJ vs HYD", "points": 1037, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 1011, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 982, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 971.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "RAJ vs HYD", "points": 947, "ampfactor": 2 }
     ]
   }
 ]
