@@ -140,6 +140,10 @@
       {
         "match": "RCB vs GT",
         "points": 722.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1113.5
       }
     ]
   },
@@ -284,6 +288,10 @@
       {
         "match": "RCB vs GT",
         "points": 936.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1080
       }
     ]
   },
@@ -428,6 +436,10 @@
       {
         "match": "RCB vs GT",
         "points": 737.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1191.5
       }
     ]
   },
@@ -572,6 +584,10 @@
       {
         "match": "RCB vs GT",
         "points": 964.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1102.5
       }
     ]
   },
@@ -715,6 +731,10 @@
       },
       {
         "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
         "points": 0
       }
     ]
@@ -860,6 +880,10 @@
       {
         "match": "RCB vs GT",
         "points": 977
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 0
       }
     ]
   },
@@ -1004,6 +1028,10 @@
       {
         "match": "RCB vs GT",
         "points": 1019
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1356.5
       }
     ]
   },
@@ -1148,6 +1176,10 @@
       {
         "match": "RCB vs GT",
         "points": 976.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1082
       }
     ]
   },
@@ -1292,6 +1324,10 @@
       {
         "match": "RCB vs GT",
         "points": 914.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1331
       }
     ]
   },
@@ -1436,6 +1472,10 @@
       {
         "match": "RCB vs GT",
         "points": 1032.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1389
       }
     ]
   },
@@ -1580,6 +1620,10 @@
       {
         "match": "RCB vs GT",
         "points": 865.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1336
       }
     ]
   },
@@ -1724,6 +1768,10 @@
       {
         "match": "RCB vs GT",
         "points": 979
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1383
       }
     ]
   },
@@ -1868,6 +1916,10 @@
       {
         "match": "RCB vs GT",
         "points": 936.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1136
       }
     ]
   },
@@ -2011,6 +2063,10 @@
       },
       {
         "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
         "points": 0
       }
     ]
@@ -2156,6 +2212,10 @@
       {
         "match": "RCB vs GT",
         "points": 797.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1293
       }
     ]
   },
@@ -2300,6 +2360,10 @@
       {
         "match": "RCB vs GT",
         "points": 908.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1301
       }
     ]
   },
@@ -2443,6 +2507,10 @@
       },
       {
         "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
         "points": 0
       }
     ]
@@ -2588,6 +2656,10 @@
       {
         "match": "RCB vs GT",
         "points": 813.5
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 1260
       }
     ]
   },
@@ -2731,6 +2803,10 @@
       },
       {
         "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
         "points": 0
       }
     ]
