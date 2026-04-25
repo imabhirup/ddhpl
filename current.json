@@ -2,91 +2,85 @@
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "RCB vs GT", "points": 1032.5 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "RCB vs GT", "points": 1019 }
+      { "match": "DC vs PBKS", "points": 1389 }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "RCB vs GT", "points": 979 }
+      { "match": "DC vs PBKS", "points": 1383 }
     ]
   },
   {
-    "name": "TeamTannyi",
+    "name": "PaglaChidiXI",
     "matches": [
-      { "match": "RCB vs GT", "points": 977 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "RCB vs GT", "points": 976.5 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "RCB vs GT", "points": 964.5 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "RCB vs GT", "points": 936.5 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "RCB vs GT", "points": 936.5 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "RCB vs GT", "points": 914.5 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "RCB vs GT", "points": 908.5 }
+      { "match": "DC vs PBKS", "points": 1356.5 }
     ]
   },
   {
     "name": "hammers19",
     "matches": [
-      { "match": "RCB vs GT", "points": 865.5 }
+      { "match": "DC vs PBKS", "points": 1336 }
     ]
   },
   {
-    "name": "Roktobeej",
+    "name": "Deadphool",
     "matches": [
-      { "match": "RCB vs GT", "points": 813.5 }
+      { "match": "DC vs PBKS", "points": 1331 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1301 }
     ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "RCB vs GT", "points": 797.5 }
+      { "match": "DC vs PBKS", "points": 1293 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1260 }
     ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "RCB vs GT", "points": 737.5 }
+      { "match": "DC vs PBKS", "points": 1191.5 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1136 }
     ]
   },
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "RCB vs GT", "points": 722.5 }
+      { "match": "DC vs PBKS", "points": 1113.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1102.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1082 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "DC vs PBKS", "points": 1080 }
     ]
   }
 ]
