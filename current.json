@@ -1,92 +1,98 @@
 [
   {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1309, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1295.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1259.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1228.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1148, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1111, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1111, "ampfactor": 2 }
-    ]
-  },
-  {
     "name": "Petano_Party",
     "matches": [
-      { "match": "RAJ vs HYD", "points": 1095, "ampfactor": 2 }
+      { "match": "CSK vs GT", "points": 919.5 }
     ]
   },
   {
-    "name": "Rockstar110823",
+    "name": "powerhitter11",
     "matches": [
-      { "match": "RAJ vs HYD", "points": 1042, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1041.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1037, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 1011, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 982, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "RAJ vs HYD", "points": 971.5, "ampfactor": 2 }
+      { "match": "CSK vs GT", "points": 870 }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "RAJ vs HYD", "points": 947, "ampfactor": 2 }
+      { "match": "CSK vs GT", "points": 822.5 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "CSK vs GT", "points": 818.5 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "CSK vs GT", "points": 812.5 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "CSK vs GT", "points": 808.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "CSK vs GT", "points": 801.5 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "CSK vs GT", "points": 789.5 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "CSK vs GT", "points": 777.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "CSK vs GT", "points": 723.5 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "CSK vs GT", "points": 720.5 }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      { "match": "CSK vs GT", "points": 688.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "CSK vs GT", "points": 665 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "CSK vs GT", "points": 657.5 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "CSK vs GT", "points": 657.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "CSK vs GT", "points": 552.5 }
     ]
   }
 ]
