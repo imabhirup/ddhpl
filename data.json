@@ -149,6 +149,10 @@
         "match": "RAJ vs HYD",
         "points": 1228.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 723.5
       }
     ]
   },
@@ -302,6 +306,10 @@
         "match": "RAJ vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 870
       }
     ]
   },
@@ -455,6 +463,10 @@
         "match": "RAJ vs HYD",
         "points": 1111,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 665
       }
     ]
   },
@@ -608,6 +620,10 @@
         "match": "RAJ vs HYD",
         "points": 1042,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 801.5
       }
     ]
   },
@@ -761,6 +777,10 @@
         "match": "RAJ vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 0
       }
     ]
   },
@@ -914,6 +934,10 @@
         "match": "RAJ vs HYD",
         "points": 1148,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 657.5
       }
     ]
   },
@@ -1067,6 +1091,10 @@
         "match": "RAJ vs HYD",
         "points": 982,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 808.5
       }
     ]
   },
@@ -1220,6 +1248,10 @@
         "match": "RAJ vs HYD",
         "points": 1309,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 552.5
       }
     ]
   },
@@ -1373,6 +1405,10 @@
         "match": "RAJ vs HYD",
         "points": 947,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 822.5
       }
     ]
   },
@@ -1526,6 +1562,10 @@
         "match": "RAJ vs HYD",
         "points": 1095,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 919.5
       }
     ]
   },
@@ -1679,6 +1719,10 @@
         "match": "RAJ vs HYD",
         "points": 1011,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 812.5
       }
     ]
   },
@@ -1832,6 +1876,10 @@
         "match": "RAJ vs HYD",
         "points": 1111,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 720.5
       }
     ]
   },
@@ -1985,6 +2033,10 @@
         "match": "RAJ vs HYD",
         "points": 1037,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 818.5
       }
     ]
   },
@@ -2138,6 +2190,10 @@
         "match": "RAJ vs HYD",
         "points": 1259.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 688.5
       }
     ]
   },
@@ -2291,6 +2347,10 @@
         "match": "RAJ vs HYD",
         "points": 1041.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 789.5
       }
     ]
   },
@@ -2444,6 +2504,10 @@
         "match": "RAJ vs HYD",
         "points": 1295.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 657.5
       }
     ]
   },
@@ -2597,6 +2661,10 @@
         "match": "RAJ vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 0
       }
     ]
   },
@@ -2750,6 +2818,10 @@
         "match": "RAJ vs HYD",
         "points": 971.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 777.5
       }
     ]
   },
@@ -2903,6 +2975,10 @@
         "match": "RAJ vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 0
       }
     ]
   }
