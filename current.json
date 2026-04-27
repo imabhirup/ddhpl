@@ -2,97 +2,97 @@
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "CSK vs GT", "points": 919.5 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "CSK vs GT", "points": 870 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "CSK vs GT", "points": 822.5 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "CSK vs GT", "points": 818.5 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "CSK vs GT", "points": 812.5 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "CSK vs GT", "points": 808.5 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "CSK vs GT", "points": 801.5 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "CSK vs GT", "points": 789.5 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "CSK vs GT", "points": 777.5 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "CSK vs GT", "points": 723.5 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "CSK vs GT", "points": 720.5 }
+      { "match": "LKN vs KOL", "points": 853.5, "ampfactor": 2 }
     ]
   },
   {
     "name": "_dev____",
     "matches": [
-      { "match": "CSK vs GT", "points": 688.5 }
+      { "match": "LKN vs KOL", "points": 835, "ampfactor": 2 }
     ]
   },
   {
-    "name": "2305Avengers",
+    "name": "PaglaChidiXI",
     "matches": [
-      { "match": "CSK vs GT", "points": 665 }
+      { "match": "LKN vs KOL", "points": 770.5, "ampfactor": 2 }
     ]
   },
   {
     "name": "TeamTannyi",
     "matches": [
-      { "match": "CSK vs GT", "points": 657.5 }
+      { "match": "LKN vs KOL", "points": 714.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 712, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 679.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 676.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 674.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 639, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 610, "ampfactor": 2 }
     ]
   },
   {
     "name": "AllTimeWinner",
     "matches": [
-      { "match": "CSK vs GT", "points": 657.5 }
+      { "match": "LKN vs KOL", "points": 598, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 540, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 534, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 521, "ampfactor": 2 }
     ]
   },
   {
     "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "CSK vs GT", "points": 552.5 }
+      { "match": "LKN vs KOL", "points": 514.5, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "LKN vs KOL", "points": 491, "ampfactor": 2 }
     ]
   }
 ]
