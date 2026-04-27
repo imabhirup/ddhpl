@@ -2,97 +2,91 @@
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "LKN vs KOL", "points": 853.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 835, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 770.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 714.5, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 619 }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "LKN vs KOL", "points": 712, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 679.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 676.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 674.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 639, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 610, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 598, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 602.5 }
     ]
   },
   {
     "name": "Roktobeej",
     "matches": [
-      { "match": "LKN vs KOL", "points": 540, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 538.5 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "DC vs RCB", "points": 503.5 }
     ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "LKN vs KOL", "points": 534, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 502.5 }
     ]
   },
   {
-    "name": "2305Avengers",
+    "name": "AllTimeWinner",
     "matches": [
-      { "match": "LKN vs KOL", "points": 521, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "LKN vs KOL", "points": 514.5, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 502.5 }
     ]
   },
   {
     "name": "powerhitter11",
     "matches": [
-      { "match": "LKN vs KOL", "points": 491, "ampfactor": 2 }
+      { "match": "DC vs RCB", "points": 490 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "DC vs RCB", "points": 488.5 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "DC vs RCB", "points": 445.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "DC vs RCB", "points": 433.5 }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      { "match": "DC vs RCB", "points": 432.5 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "DC vs RCB", "points": 430.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "DC vs RCB", "points": 388 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "DC vs RCB", "points": 390.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "DC vs RCB", "points": 355.5 }
     ]
   }
 ]

@@ -153,6 +153,11 @@
       {
         "match": "CSK vs GT",
         "points": 723.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 674.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -310,6 +315,11 @@
       {
         "match": "CSK vs GT",
         "points": 870
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 491,
+        "ampfactor": 2
       }
     ]
   },
@@ -467,6 +477,11 @@
       {
         "match": "CSK vs GT",
         "points": 665
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 521,
+        "ampfactor": 2
       }
     ]
   },
@@ -624,6 +639,11 @@
       {
         "match": "CSK vs GT",
         "points": 801.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 610,
+        "ampfactor": 2
       }
     ]
   },
@@ -781,6 +801,11 @@
       {
         "match": "CSK vs GT",
         "points": 0
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -938,6 +963,11 @@
       {
         "match": "CSK vs GT",
         "points": 657.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 714.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1095,6 +1125,11 @@
       {
         "match": "CSK vs GT",
         "points": 808.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 770.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1252,6 +1287,11 @@
       {
         "match": "CSK vs GT",
         "points": 552.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 514.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1409,6 +1449,11 @@
       {
         "match": "CSK vs GT",
         "points": 822.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 712,
+        "ampfactor": 2
       }
     ]
   },
@@ -1566,6 +1611,11 @@
       {
         "match": "CSK vs GT",
         "points": 919.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 853.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1723,6 +1773,11 @@
       {
         "match": "CSK vs GT",
         "points": 812.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 679.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1880,6 +1935,11 @@
       {
         "match": "CSK vs GT",
         "points": 720.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 676.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2037,6 +2097,11 @@
       {
         "match": "CSK vs GT",
         "points": 818.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 639,
+        "ampfactor": 2
       }
     ]
   },
@@ -2194,6 +2259,11 @@
       {
         "match": "CSK vs GT",
         "points": 688.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 835,
+        "ampfactor": 2
       }
     ]
   },
@@ -2351,6 +2421,11 @@
       {
         "match": "CSK vs GT",
         "points": 789.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 534,
+        "ampfactor": 2
       }
     ]
   },
@@ -2508,6 +2583,11 @@
       {
         "match": "CSK vs GT",
         "points": 657.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 598,
+        "ampfactor": 2
       }
     ]
   },
@@ -2665,6 +2745,11 @@
       {
         "match": "CSK vs GT",
         "points": 0
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -2822,6 +2907,11 @@
       {
         "match": "CSK vs GT",
         "points": 777.5
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 540,
+        "ampfactor": 2
       }
     ]
   },
@@ -2979,6 +3069,11 @@
       {
         "match": "CSK vs GT",
         "points": 0
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   }
