@@ -166,6 +166,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 745.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1276.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -336,6 +341,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 735
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1137.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -506,6 +516,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 883.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 775.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -676,6 +691,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 875.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1126.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -846,6 +866,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 0
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1016,6 +1041,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 732.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 760.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1186,6 +1216,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 781
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1134.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1356,6 +1391,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 790.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 798,
+        "ampfactor": 2
       }
     ]
   },
@@ -1526,6 +1566,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 792.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 999.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1696,6 +1741,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 728.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1088,
+        "ampfactor": 2
       }
     ]
   },
@@ -1866,6 +1916,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 875.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 838.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2036,6 +2091,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 776.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 1018.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2206,6 +2266,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 841
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 914.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2376,6 +2441,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 744
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 744.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2546,6 +2616,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 777.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 844.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2716,6 +2791,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 777.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 850.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2886,6 +2966,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 0
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -3056,6 +3141,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 745.5
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 916,
+        "ampfactor": 2
       }
     ]
   },
@@ -3226,6 +3316,11 @@
       {
         "match": "PUN vs RAJ",
         "points": 0
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   }
