@@ -2,113 +2,97 @@
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1276.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1276.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "powerhitter11",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1137.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1137.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1134.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1134.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Rockstar110823",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1126.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1126.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1088 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1088, "ampfactor": 2 }
+    ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "MUM vs HYD", "points": 1018.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 1018.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "MUM vs HYD", "points": 999.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 999.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Roktobeej",
     "matches": [
-      { "match": "MUM vs HYD", "points": 916 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 916, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "MUM vs HYD", "points": 914.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 914.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "AllTimeWinner",
     "matches": [
-      { "match": "MUM vs HYD", "points": 850.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 850.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "MUM vs HYD", "points": 844.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 844.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "hammers19",
     "matches": [
-      { "match": "MUM vs HYD", "points": 838.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 838.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "Bapekhyadanomayetarano",
     "matches": [
-      { "match": "MUM vs HYD", "points": 798 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 798, "ampfactor": 2 }
+    ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "MUM vs HYD", "points": 775.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 775.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "TeamTannyi",
     "matches": [
-      { "match": "MUM vs HYD", "points": 760.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 760.5, "ampfactor": 2 }
+    ]
   },
   {
     "name": "_dev____",
     "matches": [
-      { "match": "MUM vs HYD", "points": 744.5 }
-    ],
-    "ampfactor": 2
+      { "match": "MUM vs HYD", "points": 744.5, "ampfactor": 2 }
+    ]
   }
 ]
