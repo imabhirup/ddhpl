@@ -171,6 +171,10 @@
         "match": "MUM vs HYD",
         "points": 1276.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 787.5
       }
     ]
   },
@@ -346,6 +350,10 @@
         "match": "MUM vs HYD",
         "points": 1137.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 887.5
       }
     ]
   },
@@ -521,6 +529,10 @@
         "match": "MUM vs HYD",
         "points": 775.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 849
       }
     ]
   },
@@ -696,6 +708,10 @@
         "match": "MUM vs HYD",
         "points": 1126.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 817
       }
     ]
   },
@@ -871,6 +887,10 @@
         "match": "MUM vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
       }
     ]
   },
@@ -1046,6 +1066,10 @@
         "match": "MUM vs HYD",
         "points": 760.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 878.5
       }
     ]
   },
@@ -1221,6 +1245,10 @@
         "match": "MUM vs HYD",
         "points": 1134.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 890
       }
     ]
   },
@@ -1396,6 +1424,10 @@
         "match": "MUM vs HYD",
         "points": 798,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 878.5
       }
     ]
   },
@@ -1571,6 +1603,10 @@
         "match": "MUM vs HYD",
         "points": 999.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 812
       }
     ]
   },
@@ -1746,6 +1782,10 @@
         "match": "MUM vs HYD",
         "points": 1088,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 773
       }
     ]
   },
@@ -1921,6 +1961,10 @@
         "match": "MUM vs HYD",
         "points": 838.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 901
       }
     ]
   },
@@ -2096,6 +2140,10 @@
         "match": "MUM vs HYD",
         "points": 1018.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 879.5
       }
     ]
   },
@@ -2271,6 +2319,10 @@
         "match": "MUM vs HYD",
         "points": 914.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 769
       }
     ]
   },
@@ -2446,6 +2498,10 @@
         "match": "MUM vs HYD",
         "points": 744.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
       }
     ]
   },
@@ -2621,6 +2677,10 @@
         "match": "MUM vs HYD",
         "points": 844.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 826
       }
     ]
   },
@@ -2796,6 +2856,10 @@
         "match": "MUM vs HYD",
         "points": 850.5,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 845
       }
     ]
   },
@@ -2971,6 +3035,10 @@
         "match": "MUM vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
       }
     ]
   },
@@ -3146,6 +3214,10 @@
         "match": "MUM vs HYD",
         "points": 916,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 806.5
       }
     ]
   },
@@ -3321,6 +3393,10 @@
         "match": "MUM vs HYD",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
       }
     ]
   }
