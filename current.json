@@ -1,92 +1,98 @@
 [
   {
-    "name": "iamabhi3",
+    "name": "abhijoy02",
     "matches": [
-      { "match": "GT vs RCB", "points": 787.5 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "GT vs RCB", "points": 901 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "GT vs RCB", "points": 890 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "GT vs RCB", "points": 887.5 }
+      { "match": "RAJ vs DEL", "points": 919 }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "GT vs RCB", "points": 879.5 }
+      { "match": "RAJ vs DEL", "points": 906.5 }
     ]
   },
   {
-    "name": "Bapekhyadanomayetarano",
+    "name": "hammers19",
     "matches": [
-      { "match": "GT vs RCB", "points": 878.5 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "GT vs RCB", "points": 878.5 }
+      { "match": "RAJ vs DEL", "points": 855 }
     ]
   },
   {
     "name": "2305Avengers",
     "matches": [
-      { "match": "GT vs RCB", "points": 849 }
+      { "match": "RAJ vs DEL", "points": 843 }
     ]
   },
   {
-    "name": "AllTimeWinner",
+    "name": "TeamTannyi",
     "matches": [
-      { "match": "GT vs RCB", "points": 845 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "GT vs RCB", "points": 826 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "GT vs RCB", "points": 817 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "GT vs RCB", "points": 812 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "GT vs RCB", "points": 806.5 }
+      { "match": "RAJ vs DEL", "points": 841 }
     ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "GT vs RCB", "points": 773 }
+      { "match": "RAJ vs DEL", "points": 814 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 794.5 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 782.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 754.5 }
     ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "GT vs RCB", "points": 769 }
+      { "match": "RAJ vs DEL", "points": 747.5 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 728 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 705.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 670.5 }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 669.5 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 655.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "RAJ vs DEL", "points": 630.5 }
     ]
   }
 ]
