@@ -8,23 +8,23 @@ function applyCompetitionRanks(data, scoreSelector) {
       player.rank = 1;
       return;
     }
-
     const currentScore = scoreSelector(player);
     const previousScore = scoreSelector(data[index - 1]);
-
     if (currentScore === previousScore) {
-      player.rank = data[index - 1].rank; // same rank for tied scores
+      player.rank = data[index - 1].rank;
     } else {
-      player.rank = index + 1; // skip rank automatically
+      player.rank = index + 1;
     }
   });
 }
 
 function loadData() {
   return fetch("./data.json?ts=" + Date.now())
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
     .then(data => {
-      // Calculate total points
       data.forEach(player => {
         player.total = player.matches?.reduce((sum, m) => {
           const factor = m.ampfactor ? m.ampfactor : 1;
@@ -32,7 +32,6 @@ function loadData() {
         }, 0) || 0;
       });
 
-      // Sort & rank
       data.sort((a, b) => b.total - a.total);
       applyCompetitionRanks(data, player => player.total);
 
@@ -51,10 +50,8 @@ function loadData() {
     });
 }
 
-/* HEADER (Dynamic) */
 function updateHeader(data) {
   const matchSet = new Set();
-
   data.forEach(p => {
     p.matches.forEach(m => matchSet.add(m.match));
   });
@@ -69,19 +66,30 @@ function updateHeader(data) {
     document.getElementById("update-bar").innerHTML =
       `Leaderboard updated after <b>${lastMatch}</b>`;
   }
+
+  // FIX DEF-004: Only show the Live badge when data explicitly signals a live match
+  const liveEl = document.getElementById("live-status");
+  if (liveEl) {
+    const isLive = data.some(p => p.isLive === true);
+    liveEl.style.display = isLive ? "inline" : "none";
+  }
 }
 
-/* Leaderboard */
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
+
+  // FIX DEF-008: empty-state message when no data
+  if (!data.length) {
+    container.innerHTML = '<div class="empty-state">No participant data available.</div>';
+    return;
+  }
 
   data.forEach(player => {
     const row = document.createElement("div");
     row.className = "row";
 
     const old = previousData.find(p => p.name === player.name);
-
     let movement = "";
     if (old) {
       if (player.rank < old.rank) movement = "⬆️";
@@ -93,9 +101,7 @@ function renderLeaderboard(data) {
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
         <span class="name">${player.name}</span>
       </div>
-
       <div class="points">${player.total.toLocaleString()}</div>
-
       <div class="rank">#${player.rank} ${movement}</div>
     `;
 
@@ -104,20 +110,16 @@ function renderLeaderboard(data) {
   });
 }
 
-/* Match rank */
 function getMatchRanks(matchName) {
   const players = [];
-
   globalData.forEach(player => {
     const match = player.matches.find(m => m.match === matchName);
     if (match) {
       players.push({ name: player.name, points: match.points });
     }
   });
-
   players.sort((a, b) => b.points - a.points);
   applyCompetitionRanks(players, player => player.points);
-
   return players;
 }
 
@@ -130,9 +132,29 @@ function getTooltipAttr(text) {
   return text ? `title="${text}"` : "";
 }
 
+function toNumber(value, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function getMatchFactor(match) {
+  return toNumber(match?.ampfactor, 1) || 1;
+}
+
+function formatHallPoints(value) {
+  return `${formatPoints(value)} pts`;
+}
+
+function calculateStdDev(values) {
+  if (!values.length) return Number.POSITIVE_INFINITY;
+  const avg = values.reduce((sum, value) => sum + value, 0) / values.length;
+  const variance = values.reduce((sum, value) => sum + Math.pow(value - avg, 2), 0) / values.length;
+  return Math.sqrt(variance);
+}
+
+// Legacy per-player consistency for the modal insights panel
 function calculateConsistency(points, options = {}) {
   const { minMatches = 1, ignoreZero = true } = options;
-
   const validPoints = (Array.isArray(points) ? points : [])
     .map((point) => toNumber(point, 0))
     .filter((point) => (ignoreZero ? point > 0 : true));
@@ -155,63 +177,68 @@ function calculateConsistency(points, options = {}) {
   };
 }
 
-
-function toNumber(value, fallback = 0) {
-  const number = Number(value);
-  return Number.isFinite(number) ? number : fallback;
-}
-
-function getMatchFactor(match) {
-  return toNumber(match?.ampfactor, 1) || 1;
-}
-
-function formatHallPoints(value) {
-  return `${formatPoints(value)} pts`;
-}
-
-function formatHallAverage(value) {
-  return `${formatPoints(value)} avg`;
-}
-
-function calculateStdDev(values) {
-  if (!values.length) return Number.POSITIVE_INFINITY;
-  const avg = values.reduce((sum, value) => sum + value, 0) / values.length;
-  const variance = values.reduce((sum, value) => sum + Math.pow(value - avg, 2), 0) / values.length;
-  return Math.sqrt(variance);
-}
-
-
+/*
+ * FIX DEF-001: Consistent Player
+ * New definition: the player who finishes in the TOP 5 most often across
+ * all matches they played (points > 0). Winner is determined by:
+ *   1. Highest top-5 finish % (top5Count / totalPlayed * 100)
+ *   2. Tiebreak: most absolute top-5 finishes
+ *   3. Tiebreak: earlier appearance in the data
+ * Minimum 5 played matches required to be eligible.
+ */
 function getConsistencyKing(playersData) {
   const players = Array.isArray(playersData) ? playersData : [];
-  const eligible = [];
+  const MIN_MATCHES = 5;
 
-  players.forEach((player, index) => {
-    const matches = Array.isArray(player?.matches) ? player.matches : [];
-    const validPoints = matches
-      .map((match) => toNumber(match?.points, 0))
-      .filter((points) => points > 0);
+  // Build per-match rank lookup for every match
+  const matchNames = new Set();
+  players.forEach(p => (p.matches || []).forEach(m => matchNames.add(m.match)));
 
-    if (validPoints.length < 5) return;
-
-    const consistencyStats = calculateConsistency(validPoints, { minMatches: 5, ignoreZero: true });
-    if (!consistencyStats) return;
-
-    eligible.push({
-      name: player?.name || "Unknown",
-      consistency: consistencyStats.consistency,
-      avg: consistencyStats.avg,
-      index
+  const matchRankMap = {}; // { matchName: { playerName: rank } }
+  matchNames.forEach(matchName => {
+    const participants = [];
+    players.forEach(p => {
+      const match = (p.matches || []).find(m => m.match === matchName);
+      if (match && match.points > 0) {
+        participants.push({ name: p.name, points: match.points });
+      }
     });
+    participants.sort((a, b) => b.points - a.points);
+    applyCompetitionRanks(participants, p => p.points);
+    matchRankMap[matchName] = {};
+    participants.forEach(p => { matchRankMap[matchName][p.name] = p.rank; });
+  });
+
+  // Score each player
+  const eligible = [];
+  players.forEach((player, index) => {
+    const matches = Array.isArray(player.matches) ? player.matches : [];
+    let played = 0;
+    let top5Count = 0;
+
+    matches.forEach(m => {
+      if (m.points > 0) {
+        played++;
+        const rank = matchRankMap[m.match]?.[player.name];
+        if (rank !== undefined && rank <= 5) top5Count++;
+      }
+    });
+
+    if (played < MIN_MATCHES) return;
+
+    const percentage = Math.round((top5Count / played) * 100);
+    eligible.push({ name: player.name, top5Count, totalPlayed: played, percentage, index });
   });
 
   if (!eligible.length) return null;
 
-  eligible.sort((a, b) => (b.consistency - a.consistency) || (b.avg - a.avg) || (a.index - b.index));
-  return {
-    name: eligible[0].name,
-    consistency: eligible[0].consistency,
-    avg: eligible[0].avg
-  };
+  eligible.sort((a, b) =>
+    (b.percentage - a.percentage) ||
+    (b.top5Count - a.top5Count) ||
+    (a.index - b.index)
+  );
+
+  return eligible[0];
 }
 
 function calculateHallOfFame(playersData) {
@@ -235,7 +262,6 @@ function calculateHallOfFame(playersData) {
     const positiveAvg = positiveMatches.length
       ? positiveMatches.reduce((sum, match) => sum + match.points, 0) / positiveMatches.length
       : Number.POSITIVE_INFINITY;
-
 
     return {
       index,
@@ -262,11 +288,8 @@ function calculateHallOfFame(playersData) {
         match: match.match,
         order: match.order
       };
-
       allMatches.push(record);
-      if (match.points > 0) {
-        positiveScoreMatches.push(record);
-      }
+      if (match.points > 0) positiveScoreMatches.push(record);
     });
   });
 
@@ -311,9 +334,10 @@ function calculateHallOfFame(playersData) {
     } : null,
     consistencyKing: consistencyKing ? {
       name: consistencyKing.name,
-      consistency: consistencyKing.consistency,
-      avg: consistencyKing.avg,
-      stat: `${consistencyKing.consistency}% consistent`
+      percentage: consistencyKing.percentage,
+      top5Count: consistencyKing.top5Count,
+      totalPlayed: consistencyKing.totalPlayed,
+      stat: `Top 5 in ${consistencyKing.top5Count}/${consistencyKing.totalPlayed} matches (${consistencyKing.percentage}%)`
     } : null,
     explosivePlayer: explosivePlayer ? {
       name: explosivePlayer.name,
@@ -381,36 +405,62 @@ function renderHallOfFame(playersData) {
   });
 }
 
-/* Modal */
 function openModal(player) {
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
   const matchesData = [...player.matches].reverse();
 
-  const allPoints = player.matches.map(m => m.points * (m.ampfactor || 1));
   const rawPoints = matchesData.map(m => m.points);
   const validPoints = matchesData
     .filter(m => m.points > 0)
     .map(m => m.points);
 
-  const avg = allPoints.length
-    ? allPoints.reduce((sum, point) => sum + point, 0) / allPoints.length
-    : 0;
+  // Bug 2 fix: avg = total weighted points ÷ total matches (including zeros)
+  const avg = player.matches.length ? player.total / player.matches.length : 0;
+
   const best = rawPoints.length ? Math.max(...rawPoints) : 0;
   const worst = validPoints.length ? Math.min(...validPoints) : 0;
-  const consistencyStats = calculateConsistency(rawPoints, { minMatches: 1, ignoreZero: true });
+
+  // Bug 1 fix: compute same top-5 % stat used in Hall of Fame
+  const playerConsistency = (() => {
+    const matchNames = new Set(globalData.flatMap(p => p.matches.map(m => m.match)));
+    const matchRankMap = {};
+    matchNames.forEach(matchName => {
+      const participants = [];
+      globalData.forEach(p => {
+        const match = p.matches.find(m => m.match === matchName);
+        if (match && match.points > 0) participants.push({ name: p.name, points: match.points });
+      });
+      participants.sort((a, b) => b.points - a.points);
+      applyCompetitionRanks(participants, p => p.points);
+      matchRankMap[matchName] = {};
+      participants.forEach(p => { matchRankMap[matchName][p.name] = p.rank; });
+    });
+    let played = 0, top5Count = 0;
+    player.matches.forEach(m => {
+      if (m.points > 0) {
+        played++;
+        const rank = matchRankMap[m.match]?.[player.name];
+        if (rank !== undefined && rank <= 5) top5Count++;
+      }
+    });
+    if (played === 0) return null;
+    return { top5Count, totalPlayed: played, percentage: Math.round((top5Count / played) * 100) };
+  })();
 
   const bestMatch = matchesData.find(m => m.points === best)?.match || "-";
   const worstMatch = matchesData.find(m => m.points === worst)?.match || "-";
-  const avgTooltip = "Average = Total points ÷ matches";
-  const consistencyTooltip = "Consistency = 100 - (SD / Avg × 100), using only matches with points > 0";
+  const avgTooltip = "Average = Total weighted points ÷ total matches";
+  // Bug 3 fix: tooltip only set when there is content; empty title suppressed via CSS
+  const consistencyTooltip = playerConsistency
+    ? `Top 5 finish in ${playerConsistency.top5Count}/${playerConsistency.totalPlayed} matches`
+    : "";
 
   let html = `
     <div class="modal-header">
       <h2>${player.name}</h2>
       <div class="total-points">${formatPoints(player.total)} pts</div>
     </div>
-
     <div class="analytics-section">
       <div class="analytics-card">
         <div class="analytics-title">🧠 Insights</div>
@@ -429,22 +479,19 @@ function openModal(player) {
           </div>
           <div class="insight-item" ${getTooltipAttr(consistencyTooltip)}>
             <span class="insight-label">⚡ Consistency</span>
-            <span class="insight-value">${consistencyStats ? `${consistencyStats.consistency}%` : "N/A"}</span>
+            <span class="insight-value">${playerConsistency ? `${playerConsistency.percentage}% (top 5)` : "N/A"}</span>
           </div>
         </div>
       </div>
     </div>
-
     <div class="matches-list">
   `;
 
   matchesData.forEach(m => {
     const ranks = getMatchRanks(m.match);
     const playerRank = ranks.find(p => p.name === player.name)?.rank;
-
     const factor = m.ampfactor || 1;
     const indvPoint = m.points * factor;
-
     const isBoosted = factor > 1;
 
     html += `
@@ -462,20 +509,15 @@ function openModal(player) {
   });
 
   html += `</div>`;
-
   content.innerHTML = html;
   modal.style.display = "flex";
-  requestAnimationFrame(() => {
-    modal.classList.add("open");
-  });
+  requestAnimationFrame(() => { modal.classList.add("open"); });
 }
 
 function closeModal() {
   const modal = document.getElementById("modal");
   modal.classList.remove("open");
-  setTimeout(() => {
-    modal.style.display = "none";
-  }, 180);
+  setTimeout(() => { modal.style.display = "none"; }, 180);
 }
 
 window.onclick = function(e) {
@@ -483,24 +525,44 @@ window.onclick = function(e) {
   if (e.target === modal) closeModal();
 };
 
-/* Refresh */
+// FIX DEF-003: Refresh with full error feedback
 function refreshData() {
   const btn = document.querySelector(".refresh-btn");
-
   btn.innerText = "⏳ Loading...";
   btn.disabled = true;
 
-  loadData().then(() => {
-    btn.innerText = "✅ Updated";
-
-    setTimeout(() => {
-      btn.innerText = "🔄 Refresh";
+  loadData()
+    .then(() => {
+      btn.innerText = "✅ Updated";
+      setTimeout(() => {
+        btn.innerText = "🔄 Refresh";
+        btn.disabled = false;
+      }, 1000);
+    })
+    .catch(err => {
+      console.error("Failed to refresh data:", err);
+      btn.innerText = "❌ Failed";
       btn.disabled = false;
-    }, 1000);
-  });
+      setTimeout(() => {
+        btn.innerText = "🔄 Refresh";
+      }, 2000);
+    });
 }
 
-loadData();
+// FIX DEF-006: Show user-friendly error state on initial load failure
+loadData().catch(err => {
+  console.error("Failed to load data:", err);
+  const container = document.getElementById("list");
+  if (container) {
+    container.innerHTML = `
+      <div class="empty-state" style="padding:2rem;text-align:center;color:#dc2626;">
+        ⚠️ Unable to load leaderboard data.<br>
+        <button onclick="refreshData()" style="margin-top:1rem;padding:8px 16px;border-radius:8px;border:none;background:#0284c7;color:white;cursor:pointer;font-size:14px;">
+          Try Again
+        </button>
+      </div>`;
+  }
+});
 
 
 function initHallOfFameCarousel() {
@@ -542,7 +604,6 @@ function initHallOfFameCarousel() {
       slideStep = cards[0]?.getBoundingClientRect().width || carousel.clientWidth;
       return;
     }
-
     slideStep = cards[1].offsetLeft - cards[0].offsetLeft;
   }
 
@@ -587,9 +648,7 @@ function initHallOfFameCarousel() {
 
   function startAutoRotate() {
     stopAutoRotate();
-    autoRotateTimer = setInterval(() => {
-      moveTo(currentIndex + 1);
-    }, 3000);
+    autoRotateTimer = setInterval(() => { moveTo(currentIndex + 1); }, 3000);
   }
 
   function stopAutoRotate() {
@@ -613,15 +672,8 @@ function initHallOfFameCarousel() {
     }
   });
 
-  prevBtn.addEventListener("click", () => {
-    moveTo(currentIndex - 1);
-    startAutoRotate();
-  });
-
-  nextBtn.addEventListener("click", () => {
-    moveTo(currentIndex + 1);
-    startAutoRotate();
-  });
+  prevBtn.addEventListener("click", () => { moveTo(currentIndex - 1); startAutoRotate(); });
+  nextBtn.addEventListener("click", () => { moveTo(currentIndex + 1); startAutoRotate(); });
 
   carousel.addEventListener("mouseenter", stopAutoRotate);
   carousel.addEventListener("mouseleave", startAutoRotate);
@@ -635,12 +687,9 @@ function initHallOfFameCarousel() {
   carousel.addEventListener("touchend", (event) => {
     const touchEndX = event.changedTouches[0].screenX;
     const delta = touchEndX - touchStartX;
-
     if (Math.abs(delta) < 30) return;
-
     if (delta < 0) moveTo(currentIndex + 1);
     else moveTo(currentIndex - 1);
-
     startAutoRotate();
   }, { passive: true });
 
@@ -651,11 +700,9 @@ function initHallOfFameCarousel() {
       applyPosition(false);
       return;
     }
-
     buildInfiniteTrack();
   });
 
   buildInfiniteTrack();
   startAutoRotate();
 }
-
