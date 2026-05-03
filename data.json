@@ -183,6 +183,11 @@
       {
         "match": "CHE vs MUM",
         "points": 499.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 765,
+        "ampfactor": 5
       }
     ]
   },
@@ -370,6 +375,11 @@
       {
         "match": "CHE vs MUM",
         "points": 445.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 784.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -557,6 +567,11 @@
       {
         "match": "CHE vs MUM",
         "points": 600.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 758.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -744,6 +759,11 @@
       {
         "match": "CHE vs MUM",
         "points": 582.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 845.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -931,6 +951,11 @@
       {
         "match": "CHE vs MUM",
         "points": 0
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 0,
+        "ampfactor": 5
       }
     ]
   },
@@ -1118,6 +1143,11 @@
       {
         "match": "CHE vs MUM",
         "points": 676.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 857.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -1305,6 +1335,11 @@
       {
         "match": "CHE vs MUM",
         "points": 769.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 841.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -1492,6 +1527,11 @@
       {
         "match": "CHE vs MUM",
         "points": 649.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 705.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -1679,6 +1719,11 @@
       {
         "match": "CHE vs MUM",
         "points": 652.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 820.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -1866,6 +1911,11 @@
       {
         "match": "CHE vs MUM",
         "points": 599.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 836,
+        "ampfactor": 5
       }
     ]
   },
@@ -2053,6 +2103,11 @@
       {
         "match": "CHE vs MUM",
         "points": 618.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 763.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -2240,6 +2295,11 @@
       {
         "match": "CHE vs MUM",
         "points": 586.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 893.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -2427,6 +2487,11 @@
       {
         "match": "CHE vs MUM",
         "points": 573.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 857,
+        "ampfactor": 5
       }
     ]
   },
@@ -2614,6 +2679,11 @@
       {
         "match": "CHE vs MUM",
         "points": 612.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 822,
+        "ampfactor": 5
       }
     ]
   },
@@ -2801,6 +2871,11 @@
       {
         "match": "CHE vs MUM",
         "points": 518.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 857.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -2988,6 +3063,11 @@
       {
         "match": "CHE vs MUM",
         "points": 628.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 813,
+        "ampfactor": 5
       }
     ]
   },
@@ -3175,6 +3255,11 @@
       {
         "match": "CHE vs MUM",
         "points": 0
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 848.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -3362,6 +3447,11 @@
       {
         "match": "CHE vs MUM",
         "points": 586.5
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 741.5,
+        "ampfactor": 5
       }
     ]
   },
@@ -3549,6 +3639,11 @@
       {
         "match": "CHE vs MUM",
         "points": 0
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 0,
+        "ampfactor": 5
       }
     ]
   }
