@@ -1,86 +1,86 @@
 [
   {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 749.5 }
-    ]
-  },
-  {
     "name": "Petano_Party",
     "matches": [
-      { "match": "GT vs PBKS", "points": 726.5 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 724.5 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 722.5 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 720.5 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 711.5 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 711.5 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 709.5 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "GT vs PBKS", "points": 703.5 }
+      { "match": "MUM vs LKN", "points": 1055 }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "GT vs PBKS", "points": 702.5 }
+      { "match": "MUM vs LKN", "points": 1022.5 }
     ]
   },
   {
-    "name": "powerhitter11",
+    "name": "Roktobeej",
     "matches": [
-      { "match": "GT vs PBKS", "points": 651.5 }
+      { "match": "MUM vs LKN", "points": 831 }
     ]
   },
   {
-    "name": "abhijoy02",
+    "name": "_dev____",
     "matches": [
-      { "match": "GT vs PBKS", "points": 638.5 }
+      { "match": "MUM vs LKN", "points": 826 }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "GT vs PBKS", "points": 638.5 }
+      { "match": "MUM vs LKN", "points": 825 }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 816.5 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 797.5 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 781.5 }
     ]
   },
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "GT vs PBKS", "points": 685.5 }
+      { "match": "MUM vs LKN", "points": 767.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 735 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 727.5 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 726.5 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 674 }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      { "match": "MUM vs LKN", "points": 633 }
     ]
   }
 ]
