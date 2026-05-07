@@ -200,6 +200,10 @@
       {
         "match": "DEL vs CHE",
         "points": 672.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 847.5
       }
     ]
   },
@@ -404,6 +408,10 @@
       {
         "match": "DEL vs CHE",
         "points": 601
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 0
       }
     ]
   },
@@ -608,6 +616,10 @@
       {
         "match": "DEL vs CHE",
         "points": 680.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 775.5
       }
     ]
   },
@@ -812,6 +824,10 @@
       {
         "match": "DEL vs CHE",
         "points": 638.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 939.5
       }
     ]
   },
@@ -1015,6 +1031,10 @@
       },
       {
         "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
         "points": 0
       }
     ]
@@ -1220,6 +1240,10 @@
       {
         "match": "DEL vs CHE",
         "points": 604.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 912.5
       }
     ]
   },
@@ -1424,6 +1448,10 @@
       {
         "match": "DEL vs CHE",
         "points": 585.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 889.5
       }
     ]
   },
@@ -1627,6 +1655,10 @@
       },
       {
         "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
         "points": 0
       }
     ]
@@ -1832,6 +1864,10 @@
       {
         "match": "DEL vs CHE",
         "points": 576
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 762.5
       }
     ]
   },
@@ -2036,6 +2072,10 @@
       {
         "match": "DEL vs CHE",
         "points": 631.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 948
       }
     ]
   },
@@ -2240,6 +2280,10 @@
       {
         "match": "DEL vs CHE",
         "points": 636.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 940.5
       }
     ]
   },
@@ -2444,6 +2488,10 @@
       {
         "match": "DEL vs CHE",
         "points": 659.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 939.5
       }
     ]
   },
@@ -2647,6 +2695,10 @@
       },
       {
         "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
         "points": 0
       }
     ]
@@ -2852,6 +2904,10 @@
       {
         "match": "DEL vs CHE",
         "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 0
       }
     ]
   },
@@ -3056,6 +3112,10 @@
       {
         "match": "DEL vs CHE",
         "points": 698
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 902.5
       }
     ]
   },
@@ -3260,6 +3320,10 @@
       {
         "match": "DEL vs CHE",
         "points": 698
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 975.5
       }
     ]
   },
@@ -3463,6 +3527,10 @@
       },
       {
         "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
         "points": 0
       }
     ]
@@ -3668,6 +3736,10 @@
       {
         "match": "DEL vs CHE",
         "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 856.5
       }
     ]
   },
@@ -3872,6 +3944,10 @@
       {
         "match": "DEL vs CHE",
         "points": 591.5
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 920.5
       }
     ]
   },
@@ -4076,6 +4152,10 @@
       {
         "match": "DEL vs CHE",
         "points": 582
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 946.5
       }
     ]
   }
