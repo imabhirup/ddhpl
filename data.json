@@ -192,6 +192,10 @@
       {
         "match": "GT vs PBKS",
         "points": 685.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 767.5
       }
     ]
   },
@@ -388,6 +392,10 @@
       {
         "match": "GT vs PBKS",
         "points": 651.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 0
       }
     ]
   },
@@ -584,6 +592,10 @@
       {
         "match": "GT vs PBKS",
         "points": 711.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 726.5
       }
     ]
   },
@@ -780,6 +792,10 @@
       {
         "match": "GT vs PBKS",
         "points": 703.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 735
       }
     ]
   },
@@ -975,6 +991,10 @@
       },
       {
         "match": "GT vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
         "points": 0
       }
     ]
@@ -1172,6 +1192,10 @@
       {
         "match": "GT vs PBKS",
         "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 0
       }
     ]
   },
@@ -1368,6 +1392,10 @@
       {
         "match": "GT vs PBKS",
         "points": 702.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 1022.5
       }
     ]
   },
@@ -1564,6 +1592,10 @@
       {
         "match": "GT vs PBKS",
         "points": 720.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 797.5
       }
     ]
   },
@@ -1760,6 +1792,10 @@
       {
         "match": "GT vs PBKS",
         "points": 711.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 781.5
       }
     ]
   },
@@ -1956,6 +1992,10 @@
       {
         "match": "GT vs PBKS",
         "points": 726.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 1055
       }
     ]
   },
@@ -2152,6 +2192,10 @@
       {
         "match": "GT vs PBKS",
         "points": 722.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 727.5
       }
     ]
   },
@@ -2348,6 +2392,10 @@
       {
         "match": "GT vs PBKS",
         "points": 638.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 825
       }
     ]
   },
@@ -2544,6 +2592,10 @@
       {
         "match": "GT vs PBKS",
         "points": 749.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 816.5
       }
     ]
   },
@@ -2740,6 +2792,10 @@
       {
         "match": "GT vs PBKS",
         "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 826
       }
     ]
   },
@@ -2936,6 +2992,10 @@
       {
         "match": "GT vs PBKS",
         "points": 638.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 633
       }
     ]
   },
@@ -3132,6 +3192,10 @@
       {
         "match": "GT vs PBKS",
         "points": 709.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 674
       }
     ]
   },
@@ -3327,6 +3391,10 @@
       },
       {
         "match": "GT vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
         "points": 0
       }
     ]
@@ -3524,6 +3592,10 @@
       {
         "match": "GT vs PBKS",
         "points": 724.5
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 831
       }
     ]
   }

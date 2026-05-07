@@ -1,86 +1,86 @@
 [
   {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 1055 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 1022.5 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 831 }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 826 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 825 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 816.5 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 797.5 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 781.5 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 767.5 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 735 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 727.5 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "MUM vs LKN", "points": 726.5 }
-    ]
-  },
-  {
     "name": "AllTimeWinner",
     "matches": [
-      { "match": "MUM vs LKN", "points": 674 }
+      { "match": "DEL vs CHE", "points": 698 }
     ]
   },
   {
     "name": "abhijoy02",
     "matches": [
-      { "match": "MUM vs LKN", "points": 633 }
+      { "match": "DEL vs CHE", "points": 698 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 680.5 }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 672.5 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 659.5 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 638.5 }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 636.5 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 631.5 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 604.5 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 601 }
+    ]
+  },
+  {
+    "name": "BapeKhyadanoMayeTarano",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 591.5 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 585.5 }
+    ]
+  },
+  {
+    "name": "Pan_O_Tea",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 582 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "DEL vs CHE", "points": 576 }
     ]
   }
 ]
