@@ -208,6 +208,11 @@
       {
         "match": "LKN vs BLR",
         "points": 824.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 561.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -420,6 +425,11 @@
       {
         "match": "LKN vs BLR",
         "points": 948.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -632,6 +642,11 @@
       {
         "match": "LKN vs BLR",
         "points": 788.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 428.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -844,6 +859,11 @@
       {
         "match": "LKN vs BLR",
         "points": 871
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 818,
+        "ampfactor": 2
       }
     ]
   },
@@ -1056,6 +1076,11 @@
       {
         "match": "LKN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1268,6 +1293,11 @@
       {
         "match": "LKN vs BLR",
         "points": 999.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1480,6 +1510,11 @@
       {
         "match": "LKN vs BLR",
         "points": 817
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 596.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -1692,6 +1727,11 @@
       {
         "match": "LKN vs BLR",
         "points": 1055
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1904,6 +1944,11 @@
       {
         "match": "LKN vs BLR",
         "points": 588
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 645.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2116,6 +2161,11 @@
       {
         "match": "LKN vs BLR",
         "points": 742
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 762,
+        "ampfactor": 2
       }
     ]
   },
@@ -2328,6 +2378,11 @@
       {
         "match": "LKN vs BLR",
         "points": 852.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 691.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2540,6 +2595,11 @@
       {
         "match": "LKN vs BLR",
         "points": 917
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 797.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2752,6 +2812,11 @@
       {
         "match": "LKN vs BLR",
         "points": 730
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 718,
+        "ampfactor": 2
       }
     ]
   },
@@ -2964,6 +3029,11 @@
       {
         "match": "LKN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -3176,6 +3246,11 @@
       {
         "match": "LKN vs BLR",
         "points": 1059.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -3388,6 +3463,11 @@
       {
         "match": "LKN vs BLR",
         "points": 880.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -3600,6 +3680,11 @@
       {
         "match": "LKN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -3812,6 +3897,228 @@
       {
         "match": "LKN vs BLR",
         "points": 977.5
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 796,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "BapeKhyadanoMayeTarano",
+    "matches": [
+      {
+        "match": "BLR vs HYD",
+        "points": 0
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 0
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 0
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RR",
+        "points": 0
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 0
+      },
+      {
+        "match": "RCB vs CSK",
+        "points": 0
+      },
+      {
+        "match": "RR vs MI",
+        "points": 0
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 0
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 0
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 0
+      },
+      {
+        "match": "CHE vs KOL",
+        "points": 0
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 0
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 0
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "SRH vs CSK",
+        "points": 0
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs LSG",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 0
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 0
+      },
+      {
+        "match": "LSG vs RR",
+        "points": 0
+      },
+      {
+        "match": "MUM vs CHE",
+        "points": 0
+      },
+      {
+        "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs HYD",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 0
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "DC vs RCB",
+        "points": 0
+      },
+      {
+        "match": "PUN vs RAJ",
+        "points": 0
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs DEL",
+        "points": 0
+      },
+      {
+        "match": "CHE vs MUM",
+        "points": 0
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 0,
+        "ampfactor": 5
+      },
+      {
+        "match": "GT vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 0
+      },
+      {
+        "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "LKN vs BLR",
+        "points": 0
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 756,
+        "ampfactor": 2
       }
     ]
   }
