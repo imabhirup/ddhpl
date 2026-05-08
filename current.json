@@ -1,92 +1,142 @@
 [
   {
-    "name": "abhijoy02",
+    "name": "Rockstar110823",
     "matches": [
-      { "match": "LKN vs BLR", "points": 1059.5 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 1055 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 999.5 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 977.5 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 948.5 }
+      {
+        "match": "DC vs KKR",
+        "points": 818,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "LKN vs BLR", "points": 917 }
+      {
+        "match": "DC vs KKR",
+        "points": 797.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
-    "name": "AllTimeWinner",
+    "name": "Roktobeej",
     "matches": [
-      { "match": "LKN vs BLR", "points": 880.5 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 871 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 852.5 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 824.5 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 817 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "LKN vs BLR", "points": 788.5 }
+      {
+        "match": "DC vs KKR",
+        "points": 796,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "LKN vs BLR", "points": 742 }
+      {
+        "match": "DC vs KKR",
+        "points": 762,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "BapeKhyadanoMayeTarano",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 756,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 747.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "LKN vs BLR", "points": 730 }
+      {
+        "match": "DC vs KKR",
+        "points": 718,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 691.5,
+        "ampfactor": 2
+      }
     ]
   },
   {
     "name": "Deadphool",
     "matches": [
-      { "match": "LKN vs BLR", "points": 588 }
+      {
+        "match": "DC vs KKR",
+        "points": 645.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 596.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 561.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "DC vs KKR",
+        "points": 428.5,
+        "ampfactor": 2
+      }
     ]
   }
 ]
