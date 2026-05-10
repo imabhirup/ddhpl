@@ -1,71 +1,10 @@
 [
   {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 818,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 797.5,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 796,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 762,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "BapeKhyadanoMayeTarano",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 756,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
     "name": "TeamTannyi",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 747.5,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 747.5,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 1092
       }
     ]
   },
@@ -73,9 +12,44 @@
     "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 747.5,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 1074
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1029.5
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1020
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1020
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 991
       }
     ]
   },
@@ -83,19 +57,26 @@
     "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 718,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 982
       }
     ]
   },
   {
-    "name": "hammers19",
+    "name": "abhijoy02",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 691.5,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 976
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 966.5
       }
     ]
   },
@@ -103,29 +84,8 @@
     "name": "Deadphool",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 645.5,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 596.5,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "DC vs KKR",
-        "points": 561.5,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 947
       }
     ]
   },
@@ -133,9 +93,53 @@
     "name": "2305Avengers",
     "matches": [
       {
-        "match": "DC vs KKR",
-        "points": 428.5,
-        "ampfactor": 2
+        "match": "RAJ vs GUJ",
+        "points": 906.5
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 903.5
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 903.5
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 889
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 868
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "RAJ vs GUJ",
+        "points": 815.5
       }
     ]
   }
