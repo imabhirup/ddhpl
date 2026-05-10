@@ -1,55 +1,10 @@
 [
   {
-    "name": "iamabhi3",
+    "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 798.5
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 797.5
-      }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 797.5
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 797.5
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 761.5
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 752
+        "match": "RCB vs MI",
+        "points": 793
       }
     ]
   },
@@ -57,53 +12,17 @@
     "name": "2305Avengers",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 745
+        "match": "RCB vs MI",
+        "points": 771
       }
     ]
   },
   {
-    "name": "Petano_Party",
+    "name": "iamabhi3",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 716.5
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 597
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 597
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 590.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "CHE vs LKN",
-        "points": 589
+        "match": "RCB vs MI",
+        "points": 727
       }
     ]
   },
@@ -111,17 +30,36 @@
     "name": "Deadphool",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 576
+        "match": "RCB vs MI",
+        "points": 724
       }
     ]
   },
   {
-    "name": "_dev____",
+    "name": "Bapekhyadanomayetarano",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 565
+        "match": "RCB vs MI",
+        "points": 673
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 654
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 650,
+        "ampfactor": 2
       }
     ]
   },
@@ -129,8 +67,53 @@
     "name": "powerhitter11",
     "matches": [
       {
-        "match": "CHE vs LKN",
-        "points": 561
+        "match": "RCB vs MI",
+        "points": 590
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 580
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 569
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 557
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 466
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "RCB vs MI",
+        "points": 457
       }
     ]
   }
