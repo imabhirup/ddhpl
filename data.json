@@ -213,6 +213,10 @@
         "match": "DC vs KKR",
         "points": 561.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 903.5
       }
     ]
   },
@@ -430,6 +434,10 @@
         "match": "DC vs KKR",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 966.5
       }
     ]
   },
@@ -647,6 +655,10 @@
         "match": "DC vs KKR",
         "points": 428.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 906.5
       }
     ]
   },
@@ -864,6 +876,10 @@
         "match": "DC vs KKR",
         "points": 818,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1020
       }
     ]
   },
@@ -1081,6 +1097,10 @@
         "match": "DC vs KKR",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 0
       }
     ]
   },
@@ -1298,6 +1318,10 @@
         "match": "DC vs KKR",
         "points": 747.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1092
       }
     ]
   },
@@ -1515,6 +1539,10 @@
         "match": "DC vs KKR",
         "points": 596.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 815.5
       }
     ]
   },
@@ -1732,6 +1760,10 @@
         "match": "DC vs KKR",
         "points": 756,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1029.5
       }
     ]
   },
@@ -1949,6 +1981,10 @@
         "match": "DC vs KKR",
         "points": 645.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 947
       }
     ]
   },
@@ -2166,6 +2202,10 @@
         "match": "DC vs KKR",
         "points": 762,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 903.5
       }
     ]
   },
@@ -2383,6 +2423,10 @@
         "match": "DC vs KKR",
         "points": 691.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 889
       }
     ]
   },
@@ -2600,6 +2644,10 @@
         "match": "DC vs KKR",
         "points": 797.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1020
       }
     ]
   },
@@ -2817,6 +2865,10 @@
         "match": "DC vs KKR",
         "points": 718,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 982
       }
     ]
   },
@@ -3034,6 +3086,10 @@
         "match": "DC vs KKR",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 868
       }
     ]
   },
@@ -3251,6 +3307,10 @@
         "match": "DC vs KKR",
         "points": 747.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 976
       }
     ]
   },
@@ -3468,6 +3528,10 @@
         "match": "DC vs KKR",
         "points": 747.5,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 1074
       }
     ]
   },
@@ -3685,6 +3749,10 @@
         "match": "DC vs KKR",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 0
       }
     ]
   },
@@ -3902,6 +3970,10 @@
         "match": "DC vs KKR",
         "points": 796,
         "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 991
       }
     ]
   }
