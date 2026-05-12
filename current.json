@@ -1,55 +1,10 @@
 [
   {
-    "name": "PaglaChidiXI",
+    "name": "_dev____",
     "matches": [
       {
-        "match": "RCB vs MI",
-        "points": 793
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 771
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 727
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 724
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 673
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 654
+        "match": "PUN vs DEL",
+        "points": 810
       }
     ]
   },
@@ -57,36 +12,8 @@
     "name": "Petano_Party",
     "matches": [
       {
-        "match": "RCB vs MI",
-        "points": 650,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 590
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 580
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "RCB vs MI",
-        "points": 569
+        "match": "PUN vs DEL",
+        "points": 809.5
       }
     ]
   },
@@ -94,8 +21,35 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "RCB vs MI",
-        "points": 557
+        "match": "PUN vs DEL",
+        "points": 782.5
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 773.5
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 770.5
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 761.5
       }
     ]
   },
@@ -103,8 +57,8 @@
     "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "RCB vs MI",
-        "points": 466
+        "match": "PUN vs DEL",
+        "points": 707.5
       }
     ]
   },
@@ -112,8 +66,53 @@
     "name": "abhijoy02",
     "matches": [
       {
-        "match": "RCB vs MI",
-        "points": 457
+        "match": "PUN vs DEL",
+        "points": 707.5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 682
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 674.5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 674.5
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 629.5
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "PUN vs DEL",
+        "points": 537.5
       }
     ]
   }
