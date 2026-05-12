@@ -225,6 +225,10 @@
       {
         "match": "RCB vs MI",
         "points": 727
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 770.5
       }
     ]
   },
@@ -454,6 +458,10 @@
       {
         "match": "RCB vs MI",
         "points": 590
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 537.5
       }
     ]
   },
@@ -683,6 +691,10 @@
       {
         "match": "RCB vs MI",
         "points": 771
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 0
       }
     ]
   },
@@ -912,6 +924,10 @@
       {
         "match": "RCB vs MI",
         "points": 580
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 682
       }
     ]
   },
@@ -1140,6 +1156,10 @@
       },
       {
         "match": "RCB vs MI",
+        "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
         "points": 0
       }
     ]
@@ -1370,6 +1390,10 @@
       {
         "match": "RCB vs MI",
         "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 0
       }
     ]
   },
@@ -1599,6 +1623,10 @@
       {
         "match": "RCB vs MI",
         "points": 793
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 674.5
       }
     ]
   },
@@ -1828,6 +1856,10 @@
       {
         "match": "RCB vs MI",
         "points": 673
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 0
       }
     ]
   },
@@ -2057,6 +2089,10 @@
       {
         "match": "RCB vs MI",
         "points": 724
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 773.5
       }
     ]
   },
@@ -2286,6 +2322,10 @@
       {
         "match": "RCB vs MI",
         "points": 650
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 809.5
       }
     ]
   },
@@ -2515,6 +2555,10 @@
       {
         "match": "RCB vs MI",
         "points": 557
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 782.5
       }
     ]
   },
@@ -2744,6 +2788,10 @@
       {
         "match": "RCB vs MI",
         "points": 654
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 761.5
       }
     ]
   },
@@ -2973,6 +3021,10 @@
       {
         "match": "RCB vs MI",
         "points": 569
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 674.5
       }
     ]
   },
@@ -3202,6 +3254,10 @@
       {
         "match": "RCB vs MI",
         "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 810
       }
     ]
   },
@@ -3431,6 +3487,10 @@
       {
         "match": "RCB vs MI",
         "points": 457
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 707.5
       }
     ]
   },
@@ -3660,6 +3720,10 @@
       {
         "match": "RCB vs MI",
         "points": 466
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 707.5
       }
     ]
   },
@@ -3888,6 +3952,10 @@
       },
       {
         "match": "RCB vs MI",
+        "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
         "points": 0
       }
     ]
@@ -4118,6 +4186,10 @@
       {
         "match": "RCB vs MI",
         "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 629.5
       }
     ]
   }
