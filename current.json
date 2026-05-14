@@ -1,55 +1,10 @@
 [
   {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 706.5
-      }
-    ]
-  },
-  {
     "name": "hammers19",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 692.5
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 680
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 667
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 641
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 615
+        "match": "BLR vs KOL",
+        "points": 1030
       }
     ]
   },
@@ -57,44 +12,26 @@
     "name": "_dev____",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 607
+        "match": "BLR vs KOL",
+        "points": 1014
       }
     ]
   },
   {
-    "name": "Petano_Party",
+    "name": "2305Avengers",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 604
+        "match": "BLR vs KOL",
+        "points": 999
       }
     ]
   },
   {
-    "name": "srijonichallengers",
+    "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 585
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 585
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "GUJ vs HYD",
-        "points": 582.5
+        "match": "BLR vs KOL",
+        "points": 980
       }
     ]
   },
@@ -102,17 +39,17 @@
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 582.5
+        "match": "BLR vs KOL",
+        "points": 970.5
       }
     ]
   },
   {
-    "name": "TeamTannyi",
+    "name": "srijonichallengers",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 582.5
+        "match": "BLR vs KOL",
+        "points": 952.5
       }
     ]
   },
@@ -120,17 +57,17 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 501.5
+        "match": "BLR vs KOL",
+        "points": 939.5
       }
     ]
   },
   {
-    "name": "Bapekhyadanomayetarano",
+    "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 477.5
+        "match": "BLR vs KOL",
+        "points": 938.5
       }
     ]
   },
@@ -138,8 +75,71 @@
     "name": "iamabhi3",
     "matches": [
       {
-        "match": "GUJ vs HYD",
-        "points": 452
+        "match": "BLR vs KOL",
+        "points": 929.5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 921
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 919
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 906
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 864.5
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 823.5
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 816
+      }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      {
+        "match": "BLR vs KOL",
+        "points": 678
       }
     ]
   }
