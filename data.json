@@ -229,6 +229,10 @@
       {
         "match": "PUN vs DEL",
         "points": 770.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 452
       }
     ]
   },
@@ -462,6 +466,10 @@
       {
         "match": "PUN vs DEL",
         "points": 537.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 706.5
       }
     ]
   },
@@ -695,6 +703,10 @@
       {
         "match": "PUN vs DEL",
         "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 615
       }
     ]
   },
@@ -928,6 +940,10 @@
       {
         "match": "PUN vs DEL",
         "points": 682
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
       }
     ]
   },
@@ -1160,6 +1176,10 @@
       },
       {
         "match": "PUN vs DEL",
+        "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
         "points": 0
       }
     ]
@@ -1394,6 +1414,10 @@
       {
         "match": "PUN vs DEL",
         "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
       }
     ]
   },
@@ -1627,6 +1651,10 @@
       {
         "match": "PUN vs DEL",
         "points": 674.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 667
       }
     ]
   },
@@ -1860,6 +1888,10 @@
       {
         "match": "PUN vs DEL",
         "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 477.5
       }
     ]
   },
@@ -2093,6 +2125,10 @@
       {
         "match": "PUN vs DEL",
         "points": 773.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 641
       }
     ]
   },
@@ -2326,6 +2362,10 @@
       {
         "match": "PUN vs DEL",
         "points": 809.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 604
       }
     ]
   },
@@ -2559,6 +2599,10 @@
       {
         "match": "PUN vs DEL",
         "points": 782.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 692.5
       }
     ]
   },
@@ -2792,6 +2836,10 @@
       {
         "match": "PUN vs DEL",
         "points": 761.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 585
       }
     ]
   },
@@ -3025,6 +3073,10 @@
       {
         "match": "PUN vs DEL",
         "points": 674.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 680
       }
     ]
   },
@@ -3258,6 +3310,10 @@
       {
         "match": "PUN vs DEL",
         "points": 810
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 607
       }
     ]
   },
@@ -3491,6 +3547,10 @@
       {
         "match": "PUN vs DEL",
         "points": 707.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 585
       }
     ]
   },
@@ -3724,6 +3784,10 @@
       {
         "match": "PUN vs DEL",
         "points": 707.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
       }
     ]
   },
@@ -3956,6 +4020,10 @@
       },
       {
         "match": "PUN vs DEL",
+        "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
         "points": 0
       }
     ]
@@ -4190,6 +4258,10 @@
       {
         "match": "PUN vs DEL",
         "points": 629.5
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 501.5
       }
     ]
   }
