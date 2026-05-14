@@ -1,19 +1,10 @@
 [
   {
-    "name": "_dev____",
+    "name": "powerhitter11",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 810
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 809.5
+        "match": "GUJ vs HYD",
+        "points": 706.5
       }
     ]
   },
@@ -21,62 +12,8 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 782.5
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 773.5
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 770.5
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 761.5
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 707.5
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 707.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "PUN vs DEL",
-        "points": 682
+        "match": "GUJ vs HYD",
+        "points": 692.5
       }
     ]
   },
@@ -84,8 +21,8 @@
     "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 674.5
+        "match": "GUJ vs HYD",
+        "points": 680
       }
     ]
   },
@@ -93,8 +30,89 @@
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 674.5
+        "match": "GUJ vs HYD",
+        "points": 667
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 641
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 615
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 607
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 604
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 585
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 585
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
+      }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 582.5
       }
     ]
   },
@@ -102,17 +120,26 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 629.5
+        "match": "GUJ vs HYD",
+        "points": 501.5
       }
     ]
   },
   {
-    "name": "powerhitter11",
+    "name": "Bapekhyadanomayetarano",
     "matches": [
       {
-        "match": "PUN vs DEL",
-        "points": 537.5
+        "match": "GUJ vs HYD",
+        "points": 477.5
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "GUJ vs HYD",
+        "points": 452
       }
     ]
   }
