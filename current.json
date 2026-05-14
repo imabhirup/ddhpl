@@ -1,73 +1,10 @@
 [
   {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 1030
-      }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 1014
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 999
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 980
-      }
-    ]
-  },
-  {
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 970.5
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 952.5
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 939.5
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 938.5
+        "match": "PBKS vs MI",
+        "points": 959
       }
     ]
   },
@@ -75,26 +12,8 @@
     "name": "iamabhi3",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 929.5
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 921
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "BLR vs KOL",
-        "points": 919
+        "match": "PBKS vs MI",
+        "points": 953.5
       }
     ]
   },
@@ -102,8 +21,8 @@
     "name": "Petano_Party",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 906
+        "match": "PBKS vs MI",
+        "points": 882.5
       }
     ]
   },
@@ -111,17 +30,35 @@
     "name": "powerhitter11",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 864.5
+        "match": "PBKS vs MI",
+        "points": 870.5
       }
     ]
   },
   {
-    "name": "abhijoy02",
+    "name": "srijonichallengers",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 823.5
+        "match": "PBKS vs MI",
+        "points": 859.5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 812
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 766
       }
     ]
   },
@@ -129,8 +66,26 @@
     "name": "Bapekhyadanomayetarano",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 816
+        "match": "PBKS vs MI",
+        "points": 748.5
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 748
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 746
       }
     ]
   },
@@ -138,8 +93,53 @@
     "name": "TeamTannyi",
     "matches": [
       {
-        "match": "BLR vs KOL",
-        "points": 678
+        "match": "PBKS vs MI",
+        "points": 746
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 724
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 722
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 709
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 637.5
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "PBKS vs MI",
+        "points": 604
       }
     ]
   }
