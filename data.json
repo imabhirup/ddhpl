@@ -1001,226 +1001,226 @@
       },
       {
         "match": "LSG vs DC",
-        "points": 621.5
+        "points": 570.5
       },
       {
         "match": "HYD vs KOL",
-        "points": 769,
+        "points": 735,
         "ampfactor": 2
       },
       {
         "match": "CSK vs PBKS",
-        "points": 890
+        "points": 745.5
       },
       {
         "match": "DC vs MI",
-        "points": 647.5,
+        "points": 569.5,
         "ampfactor": 2
       },
       {
         "match": "GT vs RR",
-        "points": 1111
+        "points": 1085.5
       },
       {
         "match": "HYD vs LKN",
-        "points": 652
+        "points": 725
       },
       {
         "match": "RCB vs CSK",
-        "points": 807
+        "points": 715
       },
       {
         "match": "RR vs MI",
-        "points": 706.5
+        "points": 626.5
       },
       {
         "match": "DEL vs GUJ",
-        "points": 864
+        "points": 788
       },
       {
         "match": "KKR vs LSG",
-        "points": 510
+        "points": 507
       },
       {
         "match": "RR vs RCB",
-        "points": 945,
+        "points": 920.5,
         "ampfactor": 2
       },
       {
         "match": "PUN vs HYD",
-        "points": 844
+        "points": 858.5
       },
       {
         "match": "CHE vs DEL",
-        "points": 934.5
+        "points": 875
       },
       {
         "match": "LKN vs GUJ",
-        "points": 845
+        "points": 801.5
       },
       {
         "match": "MI vs RCB",
-        "points": 926,
+        "points": 844.5,
         "ampfactor": 2
       },
       {
         "match": "HYD vs RAJ",
-        "points": 657.5
+        "points": 703.5
       },
       {
         "match": "CHE vs KOL",
-        "points": 852
+        "points": 810.5
       },
       {
         "match": "RCB vs LSG",
-        "points": 655
+        "points": 619.5
       },
       {
         "match": "MUM vs PUN",
-        "points": 702
+        "points": 676.5
       },
       {
         "match": "GT vs KKR",
-        "points": 792.5
+        "points": 820.5
       },
       {
         "match": "RCB vs DC",
-        "points": 897,
+        "points": 891.5,
         "ampfactor": 2
       },
       {
         "match": "SRH vs CSK",
-        "points": 779.5
+        "points": 851.5
       },
       {
         "match": "KKR vs RR",
-        "points": 845
+        "points": 771
       },
       {
         "match": "PBKS vs LSG",
-        "points": 1004,
+        "points": 1011.5,
         "ampfactor": 2
       },
       {
         "match": "GUJ vs MUM",
-        "points": 641.5
+        "points": 717.5
       },
       {
         "match": "SRH vs DC",
-        "points": 812
+        "points": 845
       },
       {
         "match": "LSG vs RR",
-        "points": 706.5
+        "points": 711.5
       },
       {
         "match": "MUM vs CHE",
-        "points": 755
+        "points": 777.5
       },
       {
         "match": "RCB vs GT",
-        "points": 827
+        "points": 863.5
       },
       {
         "match": "DC vs PBKS",
-        "points": 1161
+        "points": 1125.5
       },
       {
         "match": "RAJ vs HYD",
-        "points": 1063,
+        "points": 1211,
         "ampfactor": 2
       },
       {
         "match": "CSK vs GT",
-        "points": 757
+        "points": 746.5
       },
       {
         "match": "LKN vs KOL",
-        "points": 673,
+        "points": 596.5,
         "ampfactor": 2
       },
       {
         "match": "DC vs RCB",
-        "points": 501
+        "points": 508.5
       },
       {
         "match": "PUN vs RAJ",
-        "points": 877.5
+        "points": 812.5
       },
       {
         "match": "MUM vs HYD",
-        "points": 1100,
+        "points": 1192.5,
         "ampfactor": 2
       },
       {
         "match": "GT vs RCB",
-        "points": 846.5
+        "points": 872.5
       },
       {
         "match": "RAJ vs DEL",
-        "points": 794
+        "points": 781.5
       },
       {
         "match": "CHE vs MUM",
-        "points": 642.5
+        "points": 622.5
       },
       {
         "match": "KOL VS HYD",
-        "points": 823.5,
+        "points": 804.5,
         "ampfactor": 5
       },
       {
         "match": "GT vs PBKS",
-        "points": 780
+        "points": 730.5
       },
       {
         "match": "MUM vs LKN",
-        "points": 755.5
+        "points": 762.5
       },
       {
         "match": "DEL vs CHE",
-        "points": 723.5
+        "points": 713
       },
       {
         "match": "SRH vs PBKS",
-        "points": 831
+        "points": 852.5
       },
       {
         "match": "LKN vs BLR",
-        "points": 881.5
+        "points": 835.5
       },
       {
         "match": "DC vs KKR",
-        "points": 538,
+        "points": 564,
         "ampfactor": 2
       },
       {
         "match": "RAJ vs GUJ",
-        "points": 1019
+        "points": 987
       },
       {
         "match": "CHE vs LKN",
-        "points": 719.5
+        "points": 716.5
       },
       {
         "match": "RCB vs MI",
-        "points": 668.5
+        "points": 713.5
       },
       {
         "match": "PUN vs DEL",
-        "points": 701.5
+        "points": 735.5
       },
       {
         "match": "GUJ vs HYD",
-        "points": 567.5
+        "points": 621.5
       },
       {
         "match": "BLR vs KOL",
-        "points": 966
+        "points": 945
       },
       {
         "match": "PBKS vs MI",
-        "points": 886.5
+        "points": 928
       }
     ]
   }
