@@ -241,6 +241,11 @@
       {
         "match": "PBKS vs MI",
         "points": 953.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 953.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -486,6 +491,11 @@
       {
         "match": "PBKS vs MI",
         "points": 870.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 870.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -731,6 +741,11 @@
       {
         "match": "PBKS vs MI",
         "points": 748
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 748,
+        "ampfactor": 2
       }
     ]
   },
@@ -976,6 +991,11 @@
       {
         "match": "PBKS vs MI",
         "points": 959
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 959,
+        "ampfactor": 2
       }
     ]
   },
@@ -1221,6 +1241,11 @@
       {
         "match": "PBKS vs MI",
         "points": 0
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1466,6 +1491,11 @@
       {
         "match": "PBKS vs MI",
         "points": 746
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 746,
+        "ampfactor": 2
       }
     ]
   },
@@ -1711,6 +1741,11 @@
       {
         "match": "PBKS vs MI",
         "points": 812
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 812,
+        "ampfactor": 2
       }
     ]
   },
@@ -1956,6 +1991,11 @@
       {
         "match": "PBKS vs MI",
         "points": 748.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 748.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2201,6 +2241,11 @@
       {
         "match": "PBKS vs MI",
         "points": 766
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 766,
+        "ampfactor": 2
       }
     ]
   },
@@ -2446,6 +2491,11 @@
       {
         "match": "PBKS vs MI",
         "points": 882.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 882.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2691,6 +2741,11 @@
       {
         "match": "PBKS vs MI",
         "points": 722
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 722,
+        "ampfactor": 2
       }
     ]
   },
@@ -2936,6 +2991,11 @@
       {
         "match": "PBKS vs MI",
         "points": 859.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 859.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -3181,6 +3241,11 @@
       {
         "match": "PBKS vs MI",
         "points": 637.5
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 637.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -3426,6 +3491,11 @@
       {
         "match": "PBKS vs MI",
         "points": 604
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 604,
+        "ampfactor": 2
       }
     ]
   },
@@ -3671,6 +3741,11 @@
       {
         "match": "PBKS vs MI",
         "points": 724
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 724,
+        "ampfactor": 2
       }
     ]
   },
@@ -3916,6 +3991,11 @@
       {
         "match": "PBKS vs MI",
         "points": 746
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 746,
+        "ampfactor": 2
       }
     ]
   },
@@ -4161,6 +4241,11 @@
       {
         "match": "PBKS vs MI",
         "points": 0
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -4406,6 +4491,11 @@
       {
         "match": "PBKS vs MI",
         "points": 709
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 709,
+        "ampfactor": 2
       }
     ]
   }
