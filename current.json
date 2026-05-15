@@ -1,98 +1,98 @@
 [
   {
-    "name": "Rockstar110823",
+    "name": "abhijoy02",
     "matches": [
-      { "match": "LKN vs CHE", "points": 959, "ampfactor": 2 }
+      { "match": "LKN vs CHE", "points": 880, "ampfactor": 2 }
     ]
   },
   {
     "name": "iamabhi3",
     "matches": [
-      { "match": "LKN vs CHE", "points": 953.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 882.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 870.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 859.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 812, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 766, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 748.5, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 748, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 746, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 746, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 724, "ampfactor": 2 }
+      { "match": "LKN vs CHE", "points": 878, "ampfactor": 2 }
     ]
   },
   {
     "name": "hammers19",
     "matches": [
-      { "match": "LKN vs CHE", "points": 722, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 709, "ampfactor": 2 }
+      { "match": "LKN vs CHE", "points": 769, "ampfactor": 2 }
     ]
   },
   {
     "name": "Pan_0_Tea",
     "matches": [
-      { "match": "LKN vs CHE", "points": 637.5, "ampfactor": 2 }
+      { "match": "LKN vs CHE", "points": 751, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 743, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 696, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 696, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 690, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 664, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 664, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 627, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 596, "ampfactor": 2 }
     ]
   },
   {
     "name": "_dev____",
     "matches": [
-      { "match": "LKN vs CHE", "points": 604, "ampfactor": 2 }
+      { "match": "LKN vs CHE", "points": 592, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 588, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 524, "ampfactor": 2 }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      { "match": "LKN vs CHE", "points": 416.5, "ampfactor": 2 }
     ]
   }
 ]
