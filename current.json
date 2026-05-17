@@ -1,98 +1,128 @@
 [
   {
-    "name": "abhijoy02",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 880, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 878, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 769, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 751, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 743, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 696, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 696, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 690, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 664, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 664, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 627, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 596, "ampfactor": 2 }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      { "match": "LKN vs CHE", "points": 592, "ampfactor": 2 }
-    ]
-  },
-  {
     "name": "srijonichallengers",
     "matches": [
-      { "match": "LKN vs CHE", "points": 588, "ampfactor": 2 }
+      {
+        "match": "KOL vs GUJ",
+        "points": 1282.5
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1269.5
+      }
     ]
   },
   {
     "name": "PaglaChidiXI",
     "matches": [
-      { "match": "LKN vs CHE", "points": 524, "ampfactor": 2 }
+      {
+        "match": "KOL vs GUJ",
+        "points": 1259.5
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1250
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1242.5
+      }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1241.5
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1235.5
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1194.5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1194.5
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1155.5
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1140.5
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1114
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "KOL vs GUJ",
+        "points": 1103.5
+      }
     ]
   },
   {
     "name": "Petano_Party",
     "matches": [
-      { "match": "LKN vs CHE", "points": 416.5, "ampfactor": 2 }
+      {
+        "match": "KOL vs GUJ",
+        "points": 1019.5
+      }
     ]
   }
 ]
