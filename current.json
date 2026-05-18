@@ -1,82 +1,11 @@
 [
   {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 789.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 788
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 759.5
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 730
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 712.5
-      }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 700.5
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 678
-      }
-    ]
-  },
-  {
     "name": "Deadphool",
     "matches": [
       {
-        "match": "PUN vs BLR",
-        "points": 667
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 662
+        "match": "DEL vs RAJ",
+        "points": 1022,
+        "ampfactor": 2
       }
     ]
   },
@@ -84,17 +13,39 @@
     "name": "srijonichallengers",
     "matches": [
       {
-        "match": "PUN vs BLR",
-        "points": 657
+        "match": "DEL vs RAJ",
+        "points": 1013,
+        "ampfactor": 2
       }
     ]
   },
   {
-    "name": "Bapekhyadanomayetarano",
+    "name": "abhijoy02",
     "matches": [
       {
-        "match": "PUN vs BLR",
-        "points": 657
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "TeamTannyi",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
       }
     ]
   },
@@ -102,8 +53,79 @@
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "PUN vs BLR",
-        "points": 632
+        "match": "DEL vs RAJ",
+        "points": 965,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 933,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 928,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 898,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 887.5,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 886,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 886,
+        "ampfactor": 2
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "DEL vs RAJ",
+        "points": 862,
+        "ampfactor": 2
       }
     ]
   },
@@ -111,17 +133,9 @@
     "name": "iamabhi3",
     "matches": [
       {
-        "match": "PUN vs BLR",
-        "points": 623
-      }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "PUN vs BLR",
-        "points": 621
+        "match": "DEL vs RAJ",
+        "points": 754,
+        "ampfactor": 2
       }
     ]
   }
