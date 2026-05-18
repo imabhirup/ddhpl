@@ -254,6 +254,11 @@
       {
         "match": "PUN vs BLR",
         "points": 623
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 754,
+        "ampfactor": 2
       }
     ]
   },
@@ -512,6 +517,11 @@
       {
         "match": "PUN vs BLR",
         "points": 621
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -770,6 +780,11 @@
       {
         "match": "PUN vs BLR",
         "points": 662
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 933,
+        "ampfactor": 2
       }
     ]
   },
@@ -1028,6 +1043,11 @@
       {
         "match": "PUN vs BLR",
         "points": 788
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 898,
+        "ampfactor": 2
       }
     ]
   },
@@ -1286,6 +1306,11 @@
       {
         "match": "PUN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -1544,6 +1569,11 @@
       {
         "match": "PUN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
       }
     ]
   },
@@ -1802,6 +1832,11 @@
       {
         "match": "PUN vs BLR",
         "points": 632
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 965,
+        "ampfactor": 2
       }
     ]
   },
@@ -2060,6 +2095,11 @@
       {
         "match": "PUN vs BLR",
         "points": 657
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 886,
+        "ampfactor": 2
       }
     ]
   },
@@ -2318,6 +2358,11 @@
       {
         "match": "PUN vs BLR",
         "points": 667
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 1022,
+        "ampfactor": 2
       }
     ]
   },
@@ -2576,6 +2621,11 @@
       {
         "match": "PUN vs BLR",
         "points": 759.5
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 887.5,
+        "ampfactor": 2
       }
     ]
   },
@@ -2834,6 +2884,11 @@
       {
         "match": "PUN vs BLR",
         "points": 789.5
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 928,
+        "ampfactor": 2
       }
     ]
   },
@@ -3092,6 +3147,11 @@
       {
         "match": "PUN vs BLR",
         "points": 657
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 1013,
+        "ampfactor": 2
       }
     ]
   },
@@ -3350,6 +3410,11 @@
       {
         "match": "PUN vs BLR",
         "points": 712.5
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 886,
+        "ampfactor": 2
       }
     ]
   },
@@ -3608,6 +3673,11 @@
       {
         "match": "PUN vs BLR",
         "points": 700.5
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -3866,6 +3936,11 @@
       {
         "match": "PUN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
       }
     ]
   },
@@ -4124,6 +4199,11 @@
       {
         "match": "PUN vs BLR",
         "points": 678
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 1002,
+        "ampfactor": 2
       }
     ]
   },
@@ -4382,6 +4462,11 @@
       {
         "match": "PUN vs BLR",
         "points": 0
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 0,
+        "ampfactor": 2
       }
     ]
   },
@@ -4640,6 +4725,11 @@
       {
         "match": "PUN vs BLR",
         "points": 730
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 862,
+        "ampfactor": 2
       }
     ]
   }
