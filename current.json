@@ -1,81 +1,10 @@
 [
   {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 1022,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 1013,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 1002,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
     "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 1002,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "TeamTannyi",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 1002,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 965,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 933,
-        "ampfactor": 2
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "DEL vs RAJ",
-        "points": 928,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 843.5
       }
     ]
   },
@@ -83,39 +12,35 @@
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 898,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 839.5
       }
     ]
   },
   {
-    "name": "Petano_Party",
+    "name": "2305Avengers",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 887.5,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 813
       }
     ]
   },
   {
-    "name": "Pan_0_Tea",
+    "name": "srijonichallengers",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 886,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 805
       }
     ]
   },
   {
-    "name": "Bapekhyadanomayetarano",
+    "name": "hammers19",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 886,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 805
       }
     ]
   },
@@ -123,9 +48,44 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 862,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 802.5
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "CHE vs HYD",
+        "points": 797
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "CHE vs HYD",
+        "points": 788
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "CHE vs HYD",
+        "points": 786.5
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "CHE vs HYD",
+        "points": 782
       }
     ]
   },
@@ -133,9 +93,17 @@
     "name": "iamabhi3",
     "matches": [
       {
-        "match": "DEL vs RAJ",
-        "points": 754,
-        "ampfactor": 2
+        "match": "CHE vs HYD",
+        "points": 760.5
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "CHE vs HYD",
+        "points": 744.5
       }
     ]
   }
