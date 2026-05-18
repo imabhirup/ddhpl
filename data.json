@@ -250,6 +250,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1103.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 623
       }
     ]
   },
@@ -504,6 +508,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1194.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 621
       }
     ]
   },
@@ -758,6 +766,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1114
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 662
       }
     ]
   },
@@ -1012,6 +1024,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1194.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 788
       }
     ]
   },
@@ -1265,6 +1281,10 @@
       },
       {
         "match": "KOL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "PUN vs BLR",
         "points": 0
       }
     ]
@@ -1520,6 +1540,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1241.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 0
       }
     ]
   },
@@ -1774,6 +1798,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1259.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 632
       }
     ]
   },
@@ -2028,6 +2056,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1250
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 657
       }
     ]
   },
@@ -2282,6 +2314,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1235.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 667
       }
     ]
   },
@@ -2536,6 +2572,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1019.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 759.5
       }
     ]
   },
@@ -2790,6 +2830,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1242.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 789.5
       }
     ]
   },
@@ -3044,6 +3088,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1282.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 657
       }
     ]
   },
@@ -3298,6 +3346,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1155.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 712.5
       }
     ]
   },
@@ -3552,6 +3604,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 0
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 700.5
       }
     ]
   },
@@ -3806,6 +3862,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1269.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 0
       }
     ]
   },
@@ -4060,6 +4120,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 1140.5
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 678
       }
     ]
   },
@@ -4313,6 +4377,10 @@
       },
       {
         "match": "KOL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "PUN vs BLR",
         "points": 0
       }
     ]
@@ -4568,6 +4636,10 @@
       {
         "match": "KOL vs GUJ",
         "points": 0
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 730
       }
     ]
   }
