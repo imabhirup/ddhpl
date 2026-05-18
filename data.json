@@ -259,6 +259,10 @@
         "match": "DEL vs RAJ",
         "points": 754,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 760.5
       }
     ]
   },
@@ -522,6 +526,10 @@
         "match": "DEL vs RAJ",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -785,6 +793,10 @@
         "match": "DEL vs RAJ",
         "points": 933,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 813
       }
     ]
   },
@@ -1048,6 +1060,10 @@
         "match": "DEL vs RAJ",
         "points": 898,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 839.5
       }
     ]
   },
@@ -1311,6 +1327,10 @@
         "match": "DEL vs RAJ",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -1574,6 +1594,10 @@
         "match": "DEL vs RAJ",
         "points": 1002,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -1837,6 +1861,10 @@
         "match": "DEL vs RAJ",
         "points": 965,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 788
       }
     ]
   },
@@ -2100,6 +2128,10 @@
         "match": "DEL vs RAJ",
         "points": 886,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -2363,6 +2395,10 @@
         "match": "DEL vs RAJ",
         "points": 1022,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 797
       }
     ]
   },
@@ -2626,6 +2662,10 @@
         "match": "DEL vs RAJ",
         "points": 887.5,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 786.5
       }
     ]
   },
@@ -2889,6 +2929,10 @@
         "match": "DEL vs RAJ",
         "points": 928,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 805
       }
     ]
   },
@@ -3152,6 +3196,10 @@
         "match": "DEL vs RAJ",
         "points": 1013,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 805
       }
     ]
   },
@@ -3415,6 +3463,10 @@
         "match": "DEL vs RAJ",
         "points": 886,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 782
       }
     ]
   },
@@ -3678,6 +3730,10 @@
         "match": "DEL vs RAJ",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -3941,6 +3997,10 @@
         "match": "DEL vs RAJ",
         "points": 1002,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 744.5
       }
     ]
   },
@@ -4204,6 +4264,10 @@
         "match": "DEL vs RAJ",
         "points": 1002,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 843.5
       }
     ]
   },
@@ -4467,6 +4531,10 @@
         "match": "DEL vs RAJ",
         "points": 0,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
       }
     ]
   },
@@ -4730,6 +4798,10 @@
         "match": "DEL vs RAJ",
         "points": 862,
         "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 802.5
       }
     ]
   }
