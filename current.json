@@ -1,46 +1,10 @@
 [
   {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1254
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1249
-      }
-    ]
-  },
-  {
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "RAJ vs LKN",
-        "points": 1216
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1188.5
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1187.5
+        "match": "KOL vs MUM",
+        "points": 628.5
       }
     ]
   },
@@ -48,80 +12,8 @@
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "RAJ vs LKN",
-        "points": 1186.5
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1181.5
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1171.5
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1157
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1143.5
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1098
-      }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1079.5
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1075
-      }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      {
-        "match": "RAJ vs LKN",
-        "points": 1045
+        "match": "KOL vs MUM",
+        "points": 628
       }
     ]
   },
@@ -129,8 +21,98 @@
     "name": "iamabhi3",
     "matches": [
       {
-        "match": "RAJ vs LKN",
-        "points": 805
+        "match": "KOL vs MUM",
+        "points": 613
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 613
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 578.5
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 575
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 502.5
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 494
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 490
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 451
+      }
+    ]
+  },
+  {
+    "name": "Deadphool",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 435
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 425
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "KOL vs MUM",
+        "points": 410.5
       }
     ]
   }
