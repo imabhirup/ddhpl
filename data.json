@@ -263,6 +263,10 @@
       {
         "match": "CHE vs HYD",
         "points": 760.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 805
       }
     ]
   },
@@ -530,6 +534,10 @@
       {
         "match": "CHE vs HYD",
         "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1079.5
       }
     ]
   },
@@ -797,6 +805,10 @@
       {
         "match": "CHE vs HYD",
         "points": 813
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1098
       }
     ]
   },
@@ -1064,6 +1076,10 @@
       {
         "match": "CHE vs HYD",
         "points": 839.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1186.5
       }
     ]
   },
@@ -1330,6 +1346,10 @@
       },
       {
         "match": "CHE vs HYD",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
         "points": 0
       }
     ]
@@ -1598,6 +1618,10 @@
       {
         "match": "CHE vs HYD",
         "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 0
       }
     ]
   },
@@ -1865,6 +1889,10 @@
       {
         "match": "CHE vs HYD",
         "points": 788
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1216
       }
     ]
   },
@@ -2132,6 +2160,10 @@
       {
         "match": "CHE vs HYD",
         "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1075
       }
     ]
   },
@@ -2399,6 +2431,10 @@
       {
         "match": "CHE vs HYD",
         "points": 797
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1188.5
       }
     ]
   },
@@ -2666,6 +2702,10 @@
       {
         "match": "CHE vs HYD",
         "points": 786.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1171.5
       }
     ]
   },
@@ -2933,6 +2973,10 @@
       {
         "match": "CHE vs HYD",
         "points": 805
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1157
       }
     ]
   },
@@ -3200,6 +3244,10 @@
       {
         "match": "CHE vs HYD",
         "points": 805
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1249
       }
     ]
   },
@@ -3467,6 +3515,10 @@
       {
         "match": "CHE vs HYD",
         "points": 782
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1254
       }
     ]
   },
@@ -3734,6 +3786,10 @@
       {
         "match": "CHE vs HYD",
         "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1045
       }
     ]
   },
@@ -4001,6 +4057,10 @@
       {
         "match": "CHE vs HYD",
         "points": 744.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1181.5
       }
     ]
   },
@@ -4268,6 +4328,10 @@
       {
         "match": "CHE vs HYD",
         "points": 843.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1143.5
       }
     ]
   },
@@ -4534,6 +4598,10 @@
       },
       {
         "match": "CHE vs HYD",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
         "points": 0
       }
     ]
@@ -4802,6 +4870,10 @@
       {
         "match": "CHE vs HYD",
         "points": 802.5
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 1187.5
       }
     ]
   }
