@@ -1,28 +1,10 @@
 [
   {
-    "name": "AllTimeWinner",
+    "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 843.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "CHE vs HYD",
-        "points": 839.5
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "CHE vs HYD",
-        "points": 813
+        "match": "RAJ vs LKN",
+        "points": 1254
       }
     ]
   },
@@ -30,35 +12,8 @@
     "name": "srijonichallengers",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 805
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "CHE vs HYD",
-        "points": 805
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "CHE vs HYD",
-        "points": 802.5
-      }
-    ]
-  },
-  {
-    "name": "Deadphool",
-    "matches": [
-      {
-        "match": "CHE vs HYD",
-        "points": 797
+        "match": "RAJ vs LKN",
+        "points": 1249
       }
     ]
   },
@@ -66,35 +21,35 @@
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 788
+        "match": "RAJ vs LKN",
+        "points": 1216
       }
     ]
   },
   {
-    "name": "Petano_Party",
+    "name": "Deadphool",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 786.5
+        "match": "RAJ vs LKN",
+        "points": 1188.5
       }
     ]
   },
   {
-    "name": "Pan_0_Tea",
+    "name": "Roktobeej",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 782
+        "match": "RAJ vs LKN",
+        "points": 1187.5
       }
     ]
   },
   {
-    "name": "iamabhi3",
+    "name": "Rockstar110823",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 760.5
+        "match": "RAJ vs LKN",
+        "points": 1186.5
       }
     ]
   },
@@ -102,8 +57,80 @@
     "name": "abhijoy02",
     "matches": [
       {
-        "match": "CHE vs HYD",
-        "points": 744.5
+        "match": "RAJ vs LKN",
+        "points": 1181.5
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1171.5
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1157
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1143.5
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1098
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1079.5
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1075
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 1045
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "RAJ vs LKN",
+        "points": 805
       }
     ]
   }
