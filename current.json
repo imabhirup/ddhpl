@@ -1,28 +1,10 @@
 [
   {
-    "name": "AllTimeWinner",
+    "name": "2305Avengers",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 1031
-      }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 1020.5
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 1008.5
+        "match": "LKN vs PUN",
+        "points": 1129
       }
     ]
   },
@@ -30,44 +12,8 @@
     "name": "_dev____",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 884
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 891.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 876
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 875.5
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 924.5
+        "match": "LKN vs PUN",
+        "points": 1072
       }
     ]
   },
@@ -75,17 +21,8 @@
     "name": "srijonichallengers",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 992.5
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "HYD vs BLR",
-        "points": 743
+        "match": "LKN vs PUN",
+        "points": 1007
       }
     ]
   },
@@ -93,8 +30,17 @@
     "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 939
+        "match": "LKN vs PUN",
+        "points": 986.5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 944
       }
     ]
   },
@@ -102,8 +48,62 @@
     "name": "Bapekhyadanomayetarano",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 973
+        "match": "LKN vs PUN",
+        "points": 933
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 932.5
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 887.5
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 881.5
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 881.5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 832
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "LKN vs PUN",
+        "points": 792
       }
     ]
   },
@@ -111,8 +111,8 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 787.5
+        "match": "LKN vs PUN",
+        "points": 734
       }
     ]
   },
@@ -120,8 +120,8 @@
     "name": "Deadphool",
     "matches": [
       {
-        "match": "HYD vs BLR",
-        "points": 823.5
+        "match": "LKN vs PUN",
+        "points": 688
       }
     ]
   }

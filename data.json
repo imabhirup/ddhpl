@@ -275,6 +275,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 764
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 743
       }
     ]
   },
@@ -553,6 +557,10 @@
       },
       {
         "match": "GUJ vs CHE",
+        "points": 1020.5
+      },
+      {
+        "match": "HYD vs BLR",
         "points": 1020.5
       }
     ]
@@ -833,6 +841,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 826
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 891.5
       }
     ]
   },
@@ -1112,6 +1124,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 896
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 876
       }
     ]
   },
@@ -1390,6 +1406,10 @@
       },
       {
         "match": "GUJ vs CHE",
+        "points": 0
+      },
+      {
+        "match": "HYD vs BLR",
         "points": 0
       }
     ]
@@ -1670,6 +1690,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 0
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 0
       }
     ]
   },
@@ -1949,6 +1973,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 835
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 924.5
       }
     ]
   },
@@ -2227,6 +2255,10 @@
       },
       {
         "match": "GUJ vs CHE",
+        "points": 973
+      },
+      {
+        "match": "HYD vs BLR",
         "points": 973
       }
     ]
@@ -2507,6 +2539,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 873
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 823.5
       }
     ]
   },
@@ -2786,6 +2822,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 912.5
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 1008.5
       }
     ]
   },
@@ -3065,6 +3105,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 890
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 787.5
       }
     ]
   },
@@ -3344,6 +3388,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 930
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 992.5
       }
     ]
   },
@@ -3623,6 +3671,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 1082
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 939
       }
     ]
   },
@@ -3901,6 +3953,10 @@
       },
       {
         "match": "GUJ vs CHE",
+        "points": 884
+      },
+      {
+        "match": "HYD vs BLR",
         "points": 884
       }
     ]
@@ -4181,6 +4237,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 1038
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 0
       }
     ]
   },
@@ -4460,6 +4520,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 1038
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 1031
       }
     ]
   },
@@ -4738,6 +4802,10 @@
       },
       {
         "match": "GUJ vs CHE",
+        "points": 0
+      },
+      {
+        "match": "HYD vs BLR",
         "points": 0
       }
     ]
@@ -5018,6 +5086,10 @@
       {
         "match": "GUJ vs CHE",
         "points": 1018
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 875.5
       }
     ]
   }
