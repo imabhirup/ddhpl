@@ -122,7 +122,6 @@ function renderLeaderboard(data) {
       </div>
       <div class="points">${player.total.toLocaleString()}</div>
       <div class="points raw-points">${player.rawTotal.toLocaleString()}</div>
-      <div class="rank">#${player.rank} ${movement}</div>
     `;
 
     row.onclick = () => openModal(player);
