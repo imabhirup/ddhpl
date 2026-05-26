@@ -114,7 +114,12 @@
 
     <div class="leaderboard-header">
       <span>All Participants</span>
-      <span>Points</span>
+      <span id="sort-amp" class="sort-col sort-active" onclick="handleSort('total')" title="Sort by Amp Points">
+        ⚡ Pts (Amp)<span class="sort-arrow"> ▼</span>
+      </span>
+      <span id="sort-raw" class="sort-col" onclick="handleSort('rawTotal')" title="Sort by Base Points">
+        📊 Base Pts<span class="sort-arrow"> ⇅</span>
+      </span>
       <span>Rank</span>
     </div>
 

@@ -2,6 +2,9 @@ let previousData = [];
 let globalData = [];
 let hallCarouselInitialized = false;
 
+// Sorting state: column = 'total' | 'rawTotal', direction = 'desc' | 'asc'
+let sortState = { column: 'total', direction: 'desc' };
+
 function applyCompetitionRanks(data, scoreSelector) {
   data.forEach((player, index) => {
     if (index === 0) {
@@ -30,10 +33,14 @@ function loadData() {
           const factor = m.ampfactor ? m.ampfactor : 1;
           return sum + (m.points * factor);
         }, 0) || 0;
+        player.rawTotal = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
       });
 
       data.sort((a, b) => b.total - a.total);
       applyCompetitionRanks(data, player => player.total);
+
+      // Reset sort to default (amp points desc) on fresh load
+      sortState = { column: 'total', direction: 'desc' };
 
       globalData = data;
 
@@ -75,6 +82,15 @@ function updateHeader(data) {
   }
 }
 
+function getSortedData(data) {
+  const { column, direction } = sortState;
+  const sorted = [...data].sort((a, b) => {
+    const diff = direction === 'desc' ? b[column] - a[column] : a[column] - b[column];
+    return diff;
+  });
+  return sorted;
+}
+
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
@@ -82,10 +98,13 @@ function renderLeaderboard(data) {
   // FIX DEF-008: empty-state message when no data
   if (!data.length) {
     container.innerHTML = '<div class="empty-state">No participant data available.</div>';
+    updateSortIndicators();
     return;
   }
 
-  data.forEach(player => {
+  const sorted = getSortedData(data);
+
+  sorted.forEach(player => {
     const row = document.createElement("div");
     row.className = "row";
 
@@ -102,12 +121,42 @@ function renderLeaderboard(data) {
         <span class="name">${player.name}</span>
       </div>
       <div class="points">${player.total.toLocaleString()}</div>
+      <div class="points raw-points">${player.rawTotal.toLocaleString()}</div>
       <div class="rank">#${player.rank} ${movement}</div>
     `;
 
     row.onclick = () => openModal(player);
     container.appendChild(row);
   });
+
+  updateSortIndicators();
+}
+
+function updateSortIndicators() {
+  const { column, direction } = sortState;
+  const arrow = direction === 'desc' ? ' ▼' : ' ▲';
+
+  const ampHeader = document.getElementById("sort-amp");
+  const rawHeader = document.getElementById("sort-raw");
+
+  if (ampHeader) {
+    ampHeader.classList.toggle("sort-active", column === 'total');
+    ampHeader.querySelector(".sort-arrow").textContent = column === 'total' ? arrow : ' ⇅';
+  }
+  if (rawHeader) {
+    rawHeader.classList.toggle("sort-active", column === 'rawTotal');
+    rawHeader.querySelector(".sort-arrow").textContent = column === 'rawTotal' ? arrow : ' ⇅';
+  }
+}
+
+function handleSort(column) {
+  if (sortState.column === column) {
+    sortState.direction = sortState.direction === 'desc' ? 'asc' : 'desc';
+  } else {
+    sortState.column = column;
+    sortState.direction = 'desc';
+  }
+  renderLeaderboard(globalData);
 }
 
 function getMatchRanks(matchName) {
@@ -459,7 +508,16 @@ function openModal(player) {
   let html = `
     <div class="modal-header">
       <h2>${player.name}</h2>
-      <div class="total-points">${formatPoints(player.total)} pts</div>
+      <div class="modal-scores">
+        <div class="score-pill score-amp" title="Total points with amp factor applied">
+          <span class="score-pill-label">⚡ With Amp</span>
+          <span class="score-pill-value">${formatPoints(player.total)} pts</span>
+        </div>
+        <div class="score-pill score-raw" title="Total points without amp factor">
+          <span class="score-pill-label">📊 Base</span>
+          <span class="score-pill-value">${formatPoints(player.rawTotal)} pts</span>
+        </div>
+      </div>
     </div>
     <div class="analytics-section">
       <div class="analytics-card">
