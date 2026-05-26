@@ -218,8 +218,6 @@ body {
 }
 
 /* Leaderboard */
-
-
 .leaderboard {
   margin-top: 22px;
 }
@@ -402,9 +400,11 @@ body {
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   margin-bottom: 12px;
   padding-right: 24px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .modal-header h2 {
@@ -566,7 +566,7 @@ body {
 /* Leaderboard header */
 .leaderboard-header {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.5fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 0.5fr);
   padding: 10px;
   font-size: 12px;
   opacity: 0.7;
@@ -575,7 +575,7 @@ body {
 /* Row */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.5fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 0.5fr);
   align-items: center;
   background: white;
   padding: 14px;
@@ -625,7 +625,6 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
 }
-
 
 @media (max-width: 960px) {
   .hof-card {
@@ -679,8 +678,85 @@ body {
   .modal-header {
     align-items: flex-start;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
   }
+
+  .modal-scores {
+    flex-direction: row;
+  }
+}
+
+/* Sortable column headers */
+.sort-col {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s, opacity 0.15s;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.sort-col:hover {
+  opacity: 1;
+  color: #0284c7;
+}
+
+.sort-col.sort-active {
+  opacity: 1;
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.sort-arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+/* Raw (base) points column */
+.raw-points {
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Modal score pills */
+.modal-scores {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.score-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.score-pill-label {
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.75;
+  margin-bottom: 2px;
+}
+
+.score-pill-value {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.score-amp {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+}
+
+.score-raw {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
 }
 
 .empty-state {
