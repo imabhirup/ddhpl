@@ -625,6 +625,14 @@ loadData().catch(err => {
   }
 });
 
+// Sync initial toofani state to UI after DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.getElementById('toofani-checkbox');
+  if (checkbox) checkbox.checked = toofaniMode;
+  const header = document.querySelector('.leaderboard-header');
+  if (header && toofaniMode) header.classList.add('toofani-active');
+});
+
 
 function initHallOfFameCarousel() {
   const carousel = document.getElementById("hall-carousel");
