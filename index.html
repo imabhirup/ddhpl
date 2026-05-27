@@ -114,12 +114,15 @@
 
     <div class="leaderboard-header">
       <span>All Participants</span>
-      <span id="sort-amp" class="sort-col sort-active" onclick="handleSort('total')" title="Sort by Amp Points">
-        ⚡ Pts (Amp)<span class="sort-arrow"> ▼</span>
-      </span>
-      <span id="sort-raw" class="sort-col" onclick="handleSort('rawTotal')" title="Sort by Base Points">
-        📊 Base Pts<span class="sort-arrow"> ⇅</span>
-      </span>
+      <label class="toofani-toggle" title="Toofani Mode uses amp-factor multiplied scores">
+        <input type="checkbox" id="toofani-checkbox" onchange="handleToofaniToggle(this.checked)" />
+        <span class="toofani-track">
+          <span class="toofani-thumb"></span>
+        </span>
+        <span class="toofani-label" id="toofani-label">⚡ Toofani Mode</span>
+      </label>
+      <span>Points</span>
+      <span>Rank</span>
     </div>
 
     <div id="list"></div>
