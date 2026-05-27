@@ -1,7 +1,7 @@
 let previousData = [];
 let globalData = [];
 let hallCarouselInitialized = false;
-let toofaniMode = false;
+let toofaniMode = true;
 
 // Sorting state: direction = 'desc' | 'asc'
 let sortState = { column: 'total', direction: 'desc' };
