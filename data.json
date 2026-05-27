@@ -288,6 +288,11 @@
         "match": "MUM vs RAJ",
         "points": 644,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 784,
+        "ampfactor": 10
       }
     ]
   },
@@ -580,6 +585,11 @@
         "match": "MUM vs RAJ",
         "points": 0,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -872,6 +882,11 @@
         "match": "MUM vs RAJ",
         "points": 590,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 798.5,
+        "ampfactor": 10
       }
     ]
   },
@@ -1164,6 +1179,11 @@
         "match": "MUM vs RAJ",
         "points": 640,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 768,
+        "ampfactor": 10
       }
     ]
   },
@@ -1456,6 +1476,11 @@
         "match": "MUM vs RAJ",
         "points": 0,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -1748,6 +1773,11 @@
         "match": "MUM vs RAJ",
         "points": 0,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -2040,6 +2070,11 @@
         "match": "MUM vs RAJ",
         "points": 654,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 849,
+        "ampfactor": 10
       }
     ]
   },
@@ -2332,6 +2367,11 @@
         "match": "MUM vs RAJ",
         "points": 0,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -2624,6 +2664,11 @@
         "match": "MUM vs RAJ",
         "points": 711,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 700,
+        "ampfactor": 10
       }
     ]
   },
@@ -2916,6 +2961,11 @@
         "match": "MUM vs RAJ",
         "points": 720,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 732,
+        "ampfactor": 10
       }
     ]
   },
@@ -3208,6 +3258,11 @@
         "match": "MUM vs RAJ",
         "points": 640,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 823,
+        "ampfactor": 10
       }
     ]
   },
@@ -3500,6 +3555,11 @@
         "match": "MUM vs RAJ",
         "points": 697,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 775,
+        "ampfactor": 10
       }
     ]
   },
@@ -3792,6 +3852,11 @@
         "match": "MUM vs RAJ",
         "points": 530,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -4084,6 +4149,11 @@
         "match": "MUM vs RAJ",
         "points": 746,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 831,
+        "ampfactor": 10
       }
     ]
   },
@@ -4376,6 +4446,11 @@
         "match": "MUM vs RAJ",
         "points": 746,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 781,
+        "ampfactor": 10
       }
     ]
   },
@@ -4668,6 +4743,11 @@
         "match": "MUM vs RAJ",
         "points": 0,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
       }
     ]
   },
@@ -4960,6 +5040,11 @@
         "match": "MUM vs RAJ",
         "points": 647,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 829,
+        "ampfactor": 10
       }
     ]
   },
@@ -5252,6 +5337,308 @@
         "match": "MUM vs RAJ",
         "points": 708,
         "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 0,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadonomayetarano",
+    "matches": [
+      {
+        "match": "BLR vs HYD",
+        "points": 0
+      },
+      {
+        "match": "MUM vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "RR vs CSK",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs GT",
+        "points": 0
+      },
+      {
+        "match": "LSG vs DC",
+        "points": 0
+      },
+      {
+        "match": "HYD vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "DC vs MI",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RR",
+        "points": 0
+      },
+      {
+        "match": "HYD vs LKN",
+        "points": 0
+      },
+      {
+        "match": "RCB vs CSK",
+        "points": 0
+      },
+      {
+        "match": "RR vs MI",
+        "points": 0
+      },
+      {
+        "match": "DEL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "KKR vs LSG",
+        "points": 0
+      },
+      {
+        "match": "RR vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "PUN vs HYD",
+        "points": 0
+      },
+      {
+        "match": "CHE vs DEL",
+        "points": 0
+      },
+      {
+        "match": "LKN vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "MI vs RCB",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "HYD vs RAJ",
+        "points": 0
+      },
+      {
+        "match": "CHE vs KOL",
+        "points": 0
+      },
+      {
+        "match": "RCB vs LSG",
+        "points": 0
+      },
+      {
+        "match": "MUM vs PUN",
+        "points": 0
+      },
+      {
+        "match": "GT vs KKR",
+        "points": 0
+      },
+      {
+        "match": "RCB vs DC",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "SRH vs CSK",
+        "points": 0
+      },
+      {
+        "match": "KKR vs RR",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs LSG",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GUJ vs MUM",
+        "points": 0
+      },
+      {
+        "match": "SRH vs DC",
+        "points": 0
+      },
+      {
+        "match": "LSG vs RR",
+        "points": 0
+      },
+      {
+        "match": "MUM vs CHE",
+        "points": 0
+      },
+      {
+        "match": "RCB vs GT",
+        "points": 0
+      },
+      {
+        "match": "DC vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs HYD",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CSK vs GT",
+        "points": 0
+      },
+      {
+        "match": "LKN vs KOL",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "DC vs RCB",
+        "points": 0
+      },
+      {
+        "match": "PUN vs RAJ",
+        "points": 0
+      },
+      {
+        "match": "MUM vs HYD",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "GT vs RCB",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs DEL",
+        "points": 0
+      },
+      {
+        "match": "CHE vs MUM",
+        "points": 0
+      },
+      {
+        "match": "KOL VS HYD",
+        "points": 0,
+        "ampfactor": 5
+      },
+      {
+        "match": "GT vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "MUM vs LKN",
+        "points": 0
+      },
+      {
+        "match": "DEL vs CHE",
+        "points": 0
+      },
+      {
+        "match": "SRH vs PBKS",
+        "points": 0
+      },
+      {
+        "match": "LKN vs BLR",
+        "points": 0
+      },
+      {
+        "match": "DC vs KKR",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "RAJ vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "CHE vs LKN",
+        "points": 0
+      },
+      {
+        "match": "RCB vs MI",
+        "points": 0
+      },
+      {
+        "match": "PUN vs DEL",
+        "points": 0
+      },
+      {
+        "match": "GUJ vs HYD",
+        "points": 0
+      },
+      {
+        "match": "BLR vs KOL",
+        "points": 0
+      },
+      {
+        "match": "PBKS vs MI",
+        "points": 0
+      },
+      {
+        "match": "LKN vs CHE",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "KOL vs GUJ",
+        "points": 0
+      },
+      {
+        "match": "PUN vs BLR",
+        "points": 0
+      },
+      {
+        "match": "DEL vs RAJ",
+        "points": 0,
+        "ampfactor": 2
+      },
+      {
+        "match": "CHE vs HYD",
+        "points": 0
+      },
+      {
+        "match": "RAJ vs LKN",
+        "points": 0
+      },
+      {
+        "match": "KOL vs MUM",
+        "points": 0
+      },
+      {
+        "match": "GUJ vs CHE",
+        "points": 0
+      },
+      {
+        "match": "HYD vs BLR",
+        "points": 0
+      },
+      {
+        "match": "LKN vs PUN",
+        "points": 0
+      },
+      {
+        "match": "MUM vs RAJ",
+        "points": 0,
+        "ampfactor": 5
+      },
+      {
+        "match": "DEL vs KOL",
+        "points": 843,
+        "ampfactor": 10
       }
     ]
   }
