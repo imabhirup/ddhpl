@@ -1,8 +1,9 @@
 let previousData = [];
 let globalData = [];
 let hallCarouselInitialized = false;
+let toofaniMode = false;
 
-// Sorting state: column = 'total' | 'rawTotal', direction = 'desc' | 'asc'
+// Sorting state: direction = 'desc' | 'asc'
 let sortState = { column: 'total', direction: 'desc' };
 
 function applyCompetitionRanks(data, scoreSelector) {
@@ -40,7 +41,7 @@ function loadData() {
       applyCompetitionRanks(data, player => player.total);
 
       // Reset sort to default (amp points desc) on fresh load
-      sortState = { column: 'total', direction: 'desc' };
+      sortState = { column: toofaniMode ? 'total' : 'rawTotal', direction: 'desc' };
 
       globalData = data;
 
@@ -91,6 +92,17 @@ function getSortedData(data) {
   return sorted;
 }
 
+function handleToofaniToggle(isOn) {
+  toofaniMode = isOn;
+  sortState.column = isOn ? 'total' : 'rawTotal';
+  sortState.direction = 'desc';
+  renderLeaderboard(globalData);
+
+  // Visual flair on the header
+  const header = document.querySelector('.leaderboard-header');
+  if (header) header.classList.toggle('toofani-active', isOn);
+}
+
 function renderLeaderboard(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
@@ -98,15 +110,31 @@ function renderLeaderboard(data) {
   // FIX DEF-008: empty-state message when no data
   if (!data.length) {
     container.innerHTML = '<div class="empty-state">No participant data available.</div>';
-    updateSortIndicators();
     return;
   }
 
+  const activeColumn = toofaniMode ? 'total' : 'rawTotal';
   const sorted = getSortedData(data);
 
-  sorted.forEach(player => {
+  // Assign display ranks based on active score column
+  const rankedSorted = sorted.map((player, index) => {
+    let rank;
+    if (index === 0) {
+      rank = 1;
+    } else {
+      const prev = sorted[index - 1];
+      rank = player[activeColumn] === prev[activeColumn]
+        ? prev._displayRank
+        : index + 1;
+    }
+    player._displayRank = rank;
+    return player;
+  });
+
+  rankedSorted.forEach(player => {
     const row = document.createElement("div");
-    row.className = "row";
+    const rank = player._displayRank;
+    row.className = `row rank-row-${Math.min(rank, 4)}`;
 
     const old = previousData.find(p => p.name === player.name);
     let movement = "";
@@ -115,48 +143,24 @@ function renderLeaderboard(data) {
       else if (player.rank > old.rank) movement = "⬇️";
     }
 
+    const displayScore = toofaniMode ? player.total : player.rawTotal;
+    const rankLabel = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : `#${rank}`;
+
     row.innerHTML = `
       <div class="left">
         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
         <span class="name">${player.name}</span>
       </div>
-      <div class="points">${player.total.toLocaleString()}</div>
-      <div class="points raw-points">${player.rawTotal.toLocaleString()}</div>
+      <div class="points">${displayScore.toLocaleString()}</div>
+      <div class="rank-display">${rankLabel}</div>
     `;
 
     row.onclick = () => openModal(player);
     container.appendChild(row);
   });
-
-  updateSortIndicators();
 }
 
-function updateSortIndicators() {
-  const { column, direction } = sortState;
-  const arrow = direction === 'desc' ? ' ▼' : ' ▲';
 
-  const ampHeader = document.getElementById("sort-amp");
-  const rawHeader = document.getElementById("sort-raw");
-
-  if (ampHeader) {
-    ampHeader.classList.toggle("sort-active", column === 'total');
-    ampHeader.querySelector(".sort-arrow").textContent = column === 'total' ? arrow : ' ⇅';
-  }
-  if (rawHeader) {
-    rawHeader.classList.toggle("sort-active", column === 'rawTotal');
-    rawHeader.querySelector(".sort-arrow").textContent = column === 'rawTotal' ? arrow : ' ⇅';
-  }
-}
-
-function handleSort(column) {
-  if (sortState.column === column) {
-    sortState.direction = sortState.direction === 'desc' ? 'asc' : 'desc';
-  } else {
-    sortState.column = column;
-    sortState.direction = 'desc';
-  }
-  renderLeaderboard(globalData);
-}
 
 function getMatchRanks(matchName) {
   const players = [];
