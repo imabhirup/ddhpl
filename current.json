@@ -1,73 +1,11 @@
 [
   {
-    "name": "2305Avengers",
+    "name": "abhijoy02",
     "matches": [
       {
-        "match": "LKN vs PUN",
-        "points": 1129
-      }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 1072
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 1007
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 986.5
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 944
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 933
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 932.5
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 887.5
+        "match": "MUM vs RAJ",
+        "points": 746,
+        "ampfactor": 5
       }
     ]
   },
@@ -75,35 +13,9 @@
     "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "LKN vs PUN",
-        "points": 881.5
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 881.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 832
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "LKN vs PUN",
-        "points": 792
+        "match": "MUM vs RAJ",
+        "points": 746,
+        "ampfactor": 5
       }
     ]
   },
@@ -111,17 +23,109 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "LKN vs PUN",
-        "points": 734
+        "match": "MUM vs RAJ",
+        "points": 720,
+        "ampfactor": 5
       }
     ]
   },
   {
-    "name": "Deadphool",
+    "name": "Petano_Party",
     "matches": [
       {
-        "match": "LKN vs PUN",
-        "points": 688
+        "match": "MUM vs RAJ",
+        "points": 711,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "BapeKhyadanoMayeTarano",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 708,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 697,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 654,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 647,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 644,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 640,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 640,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 590,
+        "ampfactor": 5
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "MUM vs RAJ",
+        "points": 530,
+        "ampfactor": 5
       }
     ]
   }
