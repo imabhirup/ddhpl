@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>DDHPL Leaderboard</title>
-<link rel="stylesheet" href="styles.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DDHPL Leaderboard</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <div class="app">
 
   <!-- Header -->
@@ -16,6 +18,7 @@
       <h2>🏏 DDHPL T20 League</h2>
       <button onclick="refreshData()" class="refresh-btn">🔄 Refresh</button>
     </div>
+
     <div class="header-bottom">
       <p class="status" id="live-status" style="display:none;">🔴 Live</p>
       <p class="matches" id="matches-played"></p>
@@ -24,6 +27,7 @@
 
   <!-- Contest -->
   <section class="contest" aria-label="DDHPL Contest">
+
     <div class="hall-of-fame" aria-label="Hall of Fame">
       <div class="hall-header">
         <h3>🏆 Hall of Fame</h3>
@@ -32,6 +36,7 @@
           <button class="hall-nav next" id="hall-next" type="button" aria-label="Next achievement">▶</button>
         </div>
       </div>
+
       <div class="hall-carousel" id="hall-carousel">
         <div class="hall-track" id="hall-track">
           <article class="hof-card" id="achievement-champion" data-achievement="champion">
@@ -42,6 +47,7 @@
             <p class="hall-player" id="champion-name">--</p>
             <p class="hall-stat" id="champion-total">--</p>
           </article>
+
           <article class="hof-card" id="achievement-highest-score" data-achievement="highestScore">
             <div class="hof-top">
               <span class="hall-icon">⚡</span>
@@ -50,6 +56,7 @@
             <p class="hall-player" id="highest-score-name">--</p>
             <p class="hall-stat" id="highest-score-points">--</p>
           </article>
+
           <article class="hof-card" id="achievement-lowest-score" data-achievement="lowestScore">
             <div class="hof-top">
               <span class="hall-icon">🔻</span>
@@ -58,6 +65,7 @@
             <p class="hall-player" id="lowest-score-name">--</p>
             <p class="hall-stat" id="lowest-score-points">--</p>
           </article>
+
           <article class="hof-card" id="achievement-consistency-king" data-achievement="consistencyKing">
             <div class="hof-top">
               <span class="hall-icon">🔥</span>
@@ -66,6 +74,7 @@
             <p class="hall-player" id="consistency-king-name">--</p>
             <p class="hall-stat" id="consistency-king-stat">--</p>
           </article>
+
           <article class="hof-card" id="achievement-explosive-player" data-achievement="explosivePlayer">
             <div class="hof-top">
               <span class="hall-icon">💣</span>
@@ -74,6 +83,7 @@
             <p class="hall-player" id="explosive-player-name">--</p>
             <p class="hall-stat" id="explosive-player-count">--</p>
           </article>
+
           <article class="hof-card" id="achievement-lowest-performer" data-achievement="lowestPerformer">
             <div class="hof-top">
               <span class="hall-icon">😬</span>
@@ -82,6 +92,7 @@
             <p class="hall-player" id="lowest-performer-name">--</p>
             <p class="hall-stat" id="lowest-performer-stat">--</p>
           </article>
+
           <article class="hof-card" id="achievement-most-missed" data-achievement="mostMissed">
             <div class="hof-top">
               <span class="hall-icon">🚨</span>
@@ -100,18 +111,17 @@
 
   <!-- Leaderboard -->
   <div class="leaderboard">
+
     <div class="leaderboard-header">
       <span>All Participants</span>
-      <div class="toofani-toggle-wrap">
-        <span class="toofani-label">⚡ Toofani Mode</span>
-        <label class="toofani-switch" aria-label="Toggle Toofani Mode">
-          <input type="checkbox" id="toofani-toggle" onchange="toggleToofaniMode(this.checked)"/>
-          <span class="toofani-slider"></span>
-        </label>
-      </div>
-      <span>Points</span>
-      <span>Rank</span>
+      <span id="sort-amp" class="sort-col sort-active" onclick="handleSort('total')" title="Sort by Amp Points">
+        ⚡ Pts (Amp)<span class="sort-arrow"> ▼</span>
+      </span>
+      <span id="sort-raw" class="sort-col" onclick="handleSort('rawTotal')" title="Sort by Base Points">
+        📊 Base Pts<span class="sort-arrow"> ⇅</span>
+      </span>
     </div>
+
     <div id="list"></div>
   </div>
 
