@@ -1,71 +1,31 @@
 [
   {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 746,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 746,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 720,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 711,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "BapeKhyadanoMayeTarano",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 708,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 697,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "MUM vs RAJ",
-        "points": 654,
-        "ampfactor": 5
+        "match": "DEL vs KOL",
+        "points": 849,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadonomayetarano",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 843,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 831,
+        "ampfactor": 10
       }
     ]
   },
@@ -73,19 +33,9 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "MUM vs RAJ",
-        "points": 647,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 644,
-        "ampfactor": 5
+        "match": "DEL vs KOL",
+        "points": 829,
+        "ampfactor": 10
       }
     ]
   },
@@ -93,19 +43,9 @@
     "name": "srijonichallengers",
     "matches": [
       {
-        "match": "MUM vs RAJ",
-        "points": 640,
-        "ampfactor": 5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "MUM vs RAJ",
-        "points": 640,
-        "ampfactor": 5
+        "match": "DEL vs KOL",
+        "points": 823,
+        "ampfactor": 10
       }
     ]
   },
@@ -113,19 +53,69 @@
     "name": "2305Avengers",
     "matches": [
       {
-        "match": "MUM vs RAJ",
-        "points": 590,
-        "ampfactor": 5
+        "match": "DEL vs KOL",
+        "points": 798.5,
+        "ampfactor": 10
       }
     ]
   },
   {
-    "name": "_dev____",
+    "name": "iamabhi3",
     "matches": [
       {
-        "match": "MUM vs RAJ",
-        "points": 530,
-        "ampfactor": 5
+        "match": "DEL vs KOL",
+        "points": 784,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 781,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "Pan_0_Tea",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 775,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 768,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 732,
+        "ampfactor": 10
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "DEL vs KOL",
+        "points": 700,
+        "ampfactor": 10
       }
     ]
   }
