@@ -1,298 +1,765 @@
-// DDHPL Leaderboard Script
-// Toofani Mode: uses ampfactor-multiplied scores
-// Normal Mode: uses raw points only
+let previousData = [];
+let globalData = [];
+let hallCarouselInitialized = false;
 
-let allData = [];
-let currentData = [];
-let toofaniMode = false;
+// Sorting state: column = 'total' | 'rawTotal', direction = 'desc' | 'asc'
+let sortState = { column: 'total', direction: 'desc' };
 
-const DATA_URL = 'data.json';
-const CURRENT_URL = 'current.json';
-
-// ─── Boot ────────────────────────────────────────────────────────────────────
-async function init() {
-  await loadData();
-  setupHallCarousel();
+function applyCompetitionRanks(data, scoreSelector) {
+  data.forEach((player, index) => {
+    if (index === 0) {
+      player.rank = 1;
+      return;
+    }
+    const currentScore = scoreSelector(player);
+    const previousScore = scoreSelector(data[index - 1]);
+    if (currentScore === previousScore) {
+      player.rank = data[index - 1].rank;
+    } else {
+      player.rank = index + 1;
+    }
+  });
 }
 
-async function refreshData() {
-  await loadData();
+function loadData() {
+  return fetch("./data.json?ts=" + Date.now())
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(data => {
+      data.forEach(player => {
+        player.total = player.matches?.reduce((sum, m) => {
+          const factor = m.ampfactor ? m.ampfactor : 1;
+          return sum + (m.points * factor);
+        }, 0) || 0;
+        player.rawTotal = player.matches?.reduce((sum, m) => sum + m.points, 0) || 0;
+      });
+
+      data.sort((a, b) => b.total - a.total);
+      applyCompetitionRanks(data, player => player.total);
+
+      // Reset sort to default (amp points desc) on fresh load
+      sortState = { column: 'total', direction: 'desc' };
+
+      globalData = data;
+
+      updateHeader(data);
+      renderLeaderboard(data);
+      renderHallOfFame(data);
+
+      if (!hallCarouselInitialized) {
+        initHallOfFameCarousel();
+        hallCarouselInitialized = true;
+      }
+
+      previousData = JSON.parse(JSON.stringify(data));
+    });
 }
 
-// ─── Data Loading ─────────────────────────────────────────────────────────────
-async function loadData() {
-  try {
-    const [dataRes, currentRes] = await Promise.all([
-      fetch(DATA_URL),
-      fetch(CURRENT_URL).catch(() => null)
-    ]);
+function updateHeader(data) {
+  const matchSet = new Set();
+  data.forEach(p => {
+    p.matches.forEach(m => matchSet.add(m.match));
+  });
 
-    allData = await dataRes.json();
+  document.getElementById("matches-played").innerText =
+    matchSet.size + " Matches Played";
 
-    // Current match info
-    if (currentRes && currentRes.ok) {
-      const currentInfo = await currentRes.json();
-      showCurrentMatch(currentInfo);
+  const matches = [...matchSet];
+  const lastMatch = matches[matches.length - 1];
+
+  if (lastMatch) {
+    document.getElementById("update-bar").innerHTML =
+      `Leaderboard updated after <b>${lastMatch}</b>`;
+  }
+
+  // FIX DEF-004: Only show the Live badge when data explicitly signals a live match
+  const liveEl = document.getElementById("live-status");
+  if (liveEl) {
+    const isLive = data.some(p => p.isLive === true);
+    liveEl.style.display = isLive ? "inline" : "none";
+  }
+}
+
+function getSortedData(data) {
+  const { column, direction } = sortState;
+  const sorted = [...data].sort((a, b) => {
+    const diff = direction === 'desc' ? b[column] - a[column] : a[column] - b[column];
+    return diff;
+  });
+  return sorted;
+}
+
+function renderLeaderboard(data) {
+  const container = document.getElementById("list");
+  container.innerHTML = "";
+
+  // FIX DEF-008: empty-state message when no data
+  if (!data.length) {
+    container.innerHTML = '<div class="empty-state">No participant data available.</div>';
+    updateSortIndicators();
+    return;
+  }
+
+  const sorted = getSortedData(data);
+
+  sorted.forEach(player => {
+    const row = document.createElement("div");
+    row.className = "row";
+
+    const old = previousData.find(p => p.name === player.name);
+    let movement = "";
+    if (old) {
+      if (player.rank < old.rank) movement = "⬆️";
+      else if (player.rank > old.rank) movement = "⬇️";
     }
 
-    renderLeaderboard();
-    renderHallOfFame();
-    renderMatchCount();
-  } catch (err) {
-    console.error('Failed to load data:', err);
+    row.innerHTML = `
+      <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
+        <span class="name">${player.name}</span>
+      </div>
+      <div class="points">${player.total.toLocaleString()}</div>
+      <div class="points raw-points">${player.rawTotal.toLocaleString()}</div>
+    `;
+
+    row.onclick = () => openModal(player);
+    container.appendChild(row);
+  });
+
+  updateSortIndicators();
+}
+
+function updateSortIndicators() {
+  const { column, direction } = sortState;
+  const arrow = direction === 'desc' ? ' ▼' : ' ▲';
+
+  const ampHeader = document.getElementById("sort-amp");
+  const rawHeader = document.getElementById("sort-raw");
+
+  if (ampHeader) {
+    ampHeader.classList.toggle("sort-active", column === 'total');
+    ampHeader.querySelector(".sort-arrow").textContent = column === 'total' ? arrow : ' ⇅';
+  }
+  if (rawHeader) {
+    rawHeader.classList.toggle("sort-active", column === 'rawTotal');
+    rawHeader.querySelector(".sort-arrow").textContent = column === 'rawTotal' ? arrow : ' ⇅';
   }
 }
 
-// ─── Score Calculation ────────────────────────────────────────────────────────
-
-/** Total points without any ampfactor */
-function calcNormalTotal(player) {
-  return player.matches.reduce((sum, m) => sum + (m.points || 0), 0);
-}
-
-/** Total points with ampfactor applied */
-function calcToofaniTotal(player) {
-  return player.matches.reduce((sum, m) => {
-    const amp = m.ampfactor || 1;
-    return sum + (m.points || 0) * amp;
-  }, 0);
-}
-
-function getTotal(player) {
-  return toofaniMode ? calcToofaniTotal(player) : calcNormalTotal(player);
-}
-
-// ─── Toofani Toggle ───────────────────────────────────────────────────────────
-function toggleToofaniMode(isOn) {
-  toofaniMode = isOn;
-  renderLeaderboard();
-
-  // Visual flair when Toofani mode turns on
-  const header = document.querySelector('.leaderboard-header');
-  if (isOn) {
-    header.classList.add('toofani-active');
+function handleSort(column) {
+  if (sortState.column === column) {
+    sortState.direction = sortState.direction === 'desc' ? 'asc' : 'desc';
   } else {
-    header.classList.remove('toofani-active');
+    sortState.column = column;
+    sortState.direction = 'desc';
   }
+  renderLeaderboard(globalData);
 }
 
-// ─── Leaderboard Rendering ────────────────────────────────────────────────────
-function renderLeaderboard() {
-  const list = document.getElementById('list');
-  if (!list || allData.length === 0) return;
-
-  // Sort by current score mode descending
-  const sorted = [...allData].sort((a, b) => getTotal(b) - getTotal(a));
-
-  list.innerHTML = sorted.map((player, idx) => {
-    const rank = idx + 1;
-    const total = getTotal(player);
-    const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `#${rank}`;
-    const rankClass = rank <= 3 ? `rank-top rank-${rank}` : 'rank-normal';
-
-    return `
-      <div class="leaderboard-row ${rank <= 3 ? 'top-row' : ''}" onclick="openModal('${player.name}')">
-        <span class="player-name">${player.name}</span>
-        <span class="player-score">${formatScore(total)}</span>
-        <span class="player-rank ${rankClass}">${rankEmoji}</span>
-      </div>
-    `;
-  }).join('');
+function getMatchRanks(matchName) {
+  const players = [];
+  globalData.forEach(player => {
+    const match = player.matches.find(m => m.match === matchName);
+    if (match) {
+      players.push({ name: player.name, points: match.points });
+    }
+  });
+  players.sort((a, b) => b.points - a.points);
+  applyCompetitionRanks(players, player => player.points);
+  return players;
 }
 
-function formatScore(n) {
-  return Math.round(n).toLocaleString('en-IN');
+function formatPoints(value) {
+  const rounded = Math.round(value * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
 }
 
-// ─── Match Count ──────────────────────────────────────────────────────────────
-function renderMatchCount() {
-  if (allData.length === 0) return;
-  const matchCount = allData[0].matches.length;
-  const el = document.getElementById('matches-played');
-  if (el) el.textContent = `${matchCount} matches played`;
+function getTooltipAttr(text) {
+  return text ? `title="${text}"` : "";
 }
 
-// ─── Current Match (Live Status) ─────────────────────────────────────────────
-function showCurrentMatch(info) {
-  const liveStatus = document.getElementById('live-status');
-  const updateBar = document.getElementById('update-bar');
-
-  if (info && info.match) {
-    if (liveStatus) liveStatus.style.display = 'block';
-    if (updateBar) updateBar.textContent = `🔄 Last updated: ${info.match}${info.timestamp ? ' · ' + info.timestamp : ''}`;
-  }
+function toNumber(value, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
 }
 
-// ─── Hall of Fame ─────────────────────────────────────────────────────────────
-function renderHallOfFame() {
-  if (allData.length === 0) return;
+function getMatchFactor(match) {
+  return toNumber(match?.ampfactor, 1) || 1;
+}
 
-  // Champion — highest toofani total
-  const byToofani = [...allData].sort((a, b) => calcToofaniTotal(b) - calcToofaniTotal(a));
-  const champion = byToofani[0];
-  setHofCard('champion-name', 'champion-total', champion.name, formatScore(calcToofaniTotal(champion)) + ' pts');
+function formatHallPoints(value) {
+  return `${formatPoints(value)} pts`;
+}
 
-  // Highest single match score
-  let highestMatch = null, highestPlayer = '';
-  allData.forEach(p => {
-    p.matches.forEach(m => {
-      if (!highestMatch || m.points > highestMatch.points) {
-        highestMatch = m;
-        highestPlayer = p.name;
+function calculateStdDev(values) {
+  if (!values.length) return Number.POSITIVE_INFINITY;
+  const avg = values.reduce((sum, value) => sum + value, 0) / values.length;
+  const variance = values.reduce((sum, value) => sum + Math.pow(value - avg, 2), 0) / values.length;
+  return Math.sqrt(variance);
+}
+
+// Legacy per-player consistency for the modal insights panel
+function calculateConsistency(points, options = {}) {
+  const { minMatches = 1, ignoreZero = true } = options;
+  const validPoints = (Array.isArray(points) ? points : [])
+    .map((point) => toNumber(point, 0))
+    .filter((point) => (ignoreZero ? point > 0 : true));
+
+  if (validPoints.length < minMatches) return null;
+
+  const avg = validPoints.reduce((sum, point) => sum + point, 0) / validPoints.length;
+  if (!Number.isFinite(avg) || avg <= 0) return null;
+
+  const variance = validPoints.reduce((sum, point) => sum + Math.pow(point - avg, 2), 0) / validPoints.length;
+  const sd = Math.sqrt(variance);
+  const rawConsistency = 100 - ((sd / avg) * 100);
+  const clampedConsistency = Math.max(0, Math.min(100, rawConsistency));
+
+  return {
+    consistency: Math.round(clampedConsistency),
+    avg,
+    sd,
+    count: validPoints.length
+  };
+}
+
+/*
+ * FIX DEF-001: Consistent Player
+ * New definition: the player who finishes in the TOP 5 most often across
+ * all matches they played (points > 0). Winner is determined by:
+ *   1. Highest top-5 finish % (top5Count / totalPlayed * 100)
+ *   2. Tiebreak: most absolute top-5 finishes
+ *   3. Tiebreak: earlier appearance in the data
+ * Minimum 5 played matches required to be eligible.
+ */
+function getConsistencyKing(playersData) {
+  const players = Array.isArray(playersData) ? playersData : [];
+  const MIN_MATCHES = 5;
+
+  // Build per-match rank lookup for every match
+  const matchNames = new Set();
+  players.forEach(p => (p.matches || []).forEach(m => matchNames.add(m.match)));
+
+  const matchRankMap = {}; // { matchName: { playerName: rank } }
+  matchNames.forEach(matchName => {
+    const participants = [];
+    players.forEach(p => {
+      const match = (p.matches || []).find(m => m.match === matchName);
+      if (match && match.points > 0) {
+        participants.push({ name: p.name, points: match.points });
       }
     });
+    participants.sort((a, b) => b.points - a.points);
+    applyCompetitionRanks(participants, p => p.points);
+    matchRankMap[matchName] = {};
+    participants.forEach(p => { matchRankMap[matchName][p.name] = p.rank; });
   });
-  if (highestMatch) {
-    setHofCard('highest-score-name', 'highest-score-points', highestPlayer, `${highestMatch.points} (${highestMatch.match})`);
-  }
 
-  // Lowest single match score (non-zero)
-  let lowestMatch = null, lowestPlayer = '';
-  allData.forEach(p => {
-    p.matches.forEach(m => {
-      if (m.points > 0 && (!lowestMatch || m.points < lowestMatch.points)) {
-        lowestMatch = m;
-        lowestPlayer = p.name;
+  // Score each player
+  const eligible = [];
+  players.forEach((player, index) => {
+    const matches = Array.isArray(player.matches) ? player.matches : [];
+    let played = 0;
+    let top5Count = 0;
+
+    matches.forEach(m => {
+      if (m.points > 0) {
+        played++;
+        const rank = matchRankMap[m.match]?.[player.name];
+        if (rank !== undefined && rank <= 5) top5Count++;
       }
     });
+
+    if (played < MIN_MATCHES) return;
+
+    const percentage = Math.round((top5Count / played) * 100);
+    eligible.push({ name: player.name, top5Count, totalPlayed: played, percentage, index });
   });
-  if (lowestMatch) {
-    setHofCard('lowest-score-name', 'lowest-score-points', lowestPlayer, `${lowestMatch.points} (${lowestMatch.match})`);
-  }
 
-  // Consistency King — lowest variance (std dev) across non-zero matches
-  const consistencyScores = allData.map(p => {
-    const pts = p.matches.filter(m => m.points > 0).map(m => m.points);
-    if (pts.length === 0) return { name: p.name, stddev: Infinity };
-    const mean = pts.reduce((a, b) => a + b, 0) / pts.length;
-    const variance = pts.reduce((a, b) => a + (b - mean) ** 2, 0) / pts.length;
-    return { name: p.name, stddev: Math.sqrt(variance) };
-  }).sort((a, b) => a.stddev - b.stddev);
-  const consistencyKing = consistencyScores[0];
-  setHofCard('consistency-king-name', 'consistency-king-stat', consistencyKing.name, `σ ${Math.round(consistencyKing.stddev)}`);
+  if (!eligible.length) return null;
 
-  // Explosive Player — most matches with ampfactor
-  const explosiveCounts = allData.map(p => ({
-    name: p.name,
-    count: p.matches.filter(m => m.ampfactor && m.ampfactor > 1).length
-  })).sort((a, b) => b.count - a.count);
-  const explosive = explosiveCounts[0];
-  setHofCard('explosive-player-name', 'explosive-player-count', explosive.name, `${explosive.count} boosted matches`);
+  eligible.sort((a, b) =>
+    (b.percentage - a.percentage) ||
+    (b.top5Count - a.top5Count) ||
+    (a.index - b.index)
+  );
 
-  // Lowest Performer — lowest toofani total
-  const lowestPerformer = byToofani[byToofani.length - 1];
-  setHofCard('lowest-performer-name', 'lowest-performer-stat', lowestPerformer.name, formatScore(calcToofaniTotal(lowestPerformer)) + ' pts');
-
-  // Most Missed Matches
-  const missedCounts = allData.map(p => ({
-    name: p.name,
-    count: p.matches.filter(m => m.points === 0).length
-  })).sort((a, b) => b.count - a.count);
-  const mostMissed = missedCounts[0];
-  setHofCard('most-missed-name', 'most-missed-stat', mostMissed.name, `${mostMissed.count} missed`);
+  return eligible[0];
 }
 
-function setHofCard(nameId, statId, name, stat) {
-  const nameEl = document.getElementById(nameId);
-  const statEl = document.getElementById(statId);
-  if (nameEl) nameEl.textContent = name;
-  if (statEl) statEl.textContent = stat;
-}
+function calculateHallOfFame(playersData) {
+  const players = Array.isArray(playersData) ? playersData : [];
 
-// ─── Hall Carousel ────────────────────────────────────────────────────────────
-let hallIndex = 0;
+  const stats = players.map((player, index) => {
+    const matches = Array.isArray(player?.matches) ? player.matches : [];
+    const normalized = matches.map((match, matchIndex) => ({
+      order: matchIndex,
+      match: match?.match || "Unknown Match",
+      points: toNumber(match?.points, 0),
+      ampfactor: getMatchFactor(match)
+    }));
 
-function setupHallCarousel() {
-  const track = document.getElementById('hall-track');
-  const prevBtn = document.getElementById('hall-prev');
-  const nextBtn = document.getElementById('hall-next');
-  if (!track) return;
+    const weightedTotal = normalized.reduce((sum, match) => sum + (match.points * match.ampfactor), 0);
+    const avgAll = normalized.length
+      ? normalized.reduce((sum, match) => sum + match.points, 0) / normalized.length
+      : 0;
 
-  const cards = track.querySelectorAll('.hof-card');
-  const total = cards.length;
+    const positiveMatches = normalized.filter((match) => match.points > 0);
+    const positiveAvg = positiveMatches.length
+      ? positiveMatches.reduce((sum, match) => sum + match.points, 0) / positiveMatches.length
+      : Number.POSITIVE_INFINITY;
 
-  function updateCarousel() {
-    track.style.transform = `translateX(-${hallIndex * 100}%)`;
-  }
+    return {
+      index,
+      name: player?.name || "Unknown",
+      matches: normalized,
+      weightedTotal,
+      avgAll,
+      positiveMatches,
+      positiveAvg,
+      explosiveCount: normalized.filter((match) => match.points >= 900).length,
+      missedCount: normalized.filter((match) => match.points === 0).length
+    };
+  });
 
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      hallIndex = (hallIndex - 1 + total) % total;
-      updateCarousel();
+  const allMatches = [];
+  const positiveScoreMatches = [];
+
+  stats.forEach((player) => {
+    player.matches.forEach((match) => {
+      const record = {
+        playerIndex: player.index,
+        playerName: player.name,
+        points: match.points,
+        match: match.match,
+        order: match.order
+      };
+      allMatches.push(record);
+      if (match.points > 0) positiveScoreMatches.push(record);
     });
-  }
+  });
 
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      hallIndex = (hallIndex + 1) % total;
-      updateCarousel();
-    });
-  }
+  const champion = [...stats]
+    .sort((a, b) => (b.weightedTotal - a.weightedTotal) || (b.avgAll - a.avgAll) || (a.index - b.index))[0];
+
+  const highestScore = [...allMatches]
+    .sort((a, b) => (b.points - a.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
+
+  const lowestScore = [...positiveScoreMatches]
+    .sort((a, b) => (a.points - b.points) || (a.playerIndex - b.playerIndex) || (a.order - b.order))[0];
+
+  const consistencyKing = getConsistencyKing(playersData);
+
+  const explosivePlayer = [...stats]
+    .sort((a, b) => (b.explosiveCount - a.explosiveCount) || (a.index - b.index))[0];
+
+  const lowestPerformer = stats
+    .filter((player) => Number.isFinite(player.positiveAvg))
+    .sort((a, b) => (a.positiveAvg - b.positiveAvg) || (a.index - b.index))[0];
+
+  const mostMissed = [...stats]
+    .sort((a, b) => (b.missedCount - a.missedCount) || (a.index - b.index))[0];
+
+  return {
+    champion: champion ? {
+      name: champion.name,
+      total: champion.weightedTotal,
+      stat: formatHallPoints(champion.weightedTotal)
+    } : null,
+    highestScore: highestScore ? {
+      name: highestScore.playerName,
+      points: highestScore.points,
+      match: highestScore.match,
+      stat: `${formatHallPoints(highestScore.points)} (${highestScore.match})`
+    } : null,
+    lowestScore: lowestScore ? {
+      name: lowestScore.playerName,
+      points: lowestScore.points,
+      match: lowestScore.match,
+      stat: `${formatHallPoints(lowestScore.points)} (${lowestScore.match})`
+    } : null,
+    consistencyKing: consistencyKing ? {
+      name: consistencyKing.name,
+      percentage: consistencyKing.percentage,
+      top5Count: consistencyKing.top5Count,
+      totalPlayed: consistencyKing.totalPlayed,
+      stat: `Top 5 in ${consistencyKing.top5Count}/${consistencyKing.totalPlayed} matches (${consistencyKing.percentage}%)`
+    } : null,
+    explosivePlayer: explosivePlayer ? {
+      name: explosivePlayer.name,
+      count: explosivePlayer.explosiveCount,
+      stat: `${explosivePlayer.explosiveCount} scores > 900`
+    } : null,
+    lowestPerformer: lowestPerformer ? {
+      name: lowestPerformer.name,
+      avg: lowestPerformer.positiveAvg,
+      stat: `avg ${formatPoints(lowestPerformer.positiveAvg)} pts`
+    } : null,
+    mostMissed: mostMissed ? {
+      name: mostMissed.name,
+      missedCount: mostMissed.missedCount,
+      stat: `${mostMissed.missedCount} missed matches`
+    } : null
+  };
 }
 
-// ─── Modal ────────────────────────────────────────────────────────────────────
-function openModal(name) {
-  const player = allData.find(p => p.name === name);
-  if (!player) return;
+function renderHallOfFame(playersData) {
+  const hallData = calculateHallOfFame(playersData);
 
-  const normalTotal = calcNormalTotal(player);
-  const toofaniTotal = calcToofaniTotal(player);
+  const cardMap = [
+    { key: "champion", playerSelector: "#champion-name", statSelector: "#champion-total" },
+    { key: "highestScore", playerSelector: "#highest-score-name", statSelector: "#highest-score-points" },
+    { key: "lowestScore", playerSelector: "#lowest-score-name", statSelector: "#lowest-score-points" },
+    { key: "consistencyKing", playerSelector: "#consistency-king-name", statSelector: "#consistency-king-stat" },
+    { key: "explosivePlayer", playerSelector: "#explosive-player-name", statSelector: "#explosive-player-count" },
+    { key: "lowestPerformer", playerSelector: "#lowest-performer-name", statSelector: "#lowest-performer-stat" },
+    { key: "mostMissed", playerSelector: "#most-missed-name", statSelector: "#most-missed-stat" }
+  ];
 
-  const matchRows = player.matches.map((m, i) => {
-    const amp = m.ampfactor || 1;
-    const boosted = m.points * amp;
-    return `
-      <tr class="${m.points === 0 ? 'missed' : ''}">
-        <td>${i + 1}</td>
-        <td>${m.match}</td>
-        <td>${m.points}</td>
-        <td>${amp > 1 ? `<span class="amp-badge">×${amp}</span>` : '—'}</td>
-        <td>${amp > 1 ? boosted : m.points}</td>
-      </tr>
-    `;
-  }).join('');
+  cardMap.forEach(({ key, playerSelector, statSelector }) => {
+    const result = hallData[key];
+    const cards = document.querySelectorAll(`[data-achievement="${key}"]`);
 
-  const content = document.getElementById('modal-content');
-  content.innerHTML = `
-    <h2>${name}</h2>
-    <div class="modal-totals">
-      <div class="modal-total-card">
-        <span class="total-label">Normal Score</span>
-        <span class="total-value">${formatScore(normalTotal)}</span>
-      </div>
-      <div class="modal-total-card toofani">
-        <span class="total-label">⚡ Toofani Score</span>
-        <span class="total-value">${formatScore(toofaniTotal)}</span>
+    cards.forEach((card) => {
+      const playerEl = card.querySelector('.hall-player');
+      const statEl = card.querySelector('.hall-stat');
+
+      if (!result) {
+        card.style.visibility = "hidden";
+        card.style.opacity = "0";
+        card.setAttribute("aria-hidden", "true");
+        return;
+      }
+
+      card.style.visibility = "visible";
+      card.style.opacity = "1";
+      if (playerEl) playerEl.textContent = result.name;
+      if (statEl) statEl.textContent = result.stat;
+    });
+
+    const primaryPlayerEl = document.querySelector(playerSelector);
+    const primaryStatEl = document.querySelector(statSelector);
+
+    if (!result) {
+      if (primaryPlayerEl) primaryPlayerEl.textContent = "--";
+      if (primaryStatEl) primaryStatEl.textContent = "--";
+      return;
+    }
+
+    if (primaryPlayerEl) primaryPlayerEl.textContent = result.name;
+    if (primaryStatEl) primaryStatEl.textContent = result.stat;
+  });
+}
+
+function openModal(player) {
+  const modal = document.getElementById("modal");
+  const content = document.getElementById("modal-content");
+  const matchesData = [...player.matches].reverse();
+
+  const rawPoints = matchesData.map(m => m.points);
+  const validPoints = matchesData
+    .filter(m => m.points > 0)
+    .map(m => m.points);
+
+  // Bug 2 fix: avg = total weighted points ÷ total matches (including zeros)
+  const avg = player.matches.length ? player.total / player.matches.length : 0;
+
+  const best = rawPoints.length ? Math.max(...rawPoints) : 0;
+  const worst = validPoints.length ? Math.min(...validPoints) : 0;
+
+  // Bug 1 fix: compute same top-5 % stat used in Hall of Fame
+  const playerConsistency = (() => {
+    const matchNames = new Set(globalData.flatMap(p => p.matches.map(m => m.match)));
+    const matchRankMap = {};
+    matchNames.forEach(matchName => {
+      const participants = [];
+      globalData.forEach(p => {
+        const match = p.matches.find(m => m.match === matchName);
+        if (match && match.points > 0) participants.push({ name: p.name, points: match.points });
+      });
+      participants.sort((a, b) => b.points - a.points);
+      applyCompetitionRanks(participants, p => p.points);
+      matchRankMap[matchName] = {};
+      participants.forEach(p => { matchRankMap[matchName][p.name] = p.rank; });
+    });
+    let played = 0, top5Count = 0;
+    player.matches.forEach(m => {
+      if (m.points > 0) {
+        played++;
+        const rank = matchRankMap[m.match]?.[player.name];
+        if (rank !== undefined && rank <= 5) top5Count++;
+      }
+    });
+    if (played === 0) return null;
+    return { top5Count, totalPlayed: played, percentage: Math.round((top5Count / played) * 100) };
+  })();
+
+  const bestMatch = matchesData.find(m => m.points === best)?.match || "-";
+  const worstMatch = matchesData.find(m => m.points === worst)?.match || "-";
+  const avgTooltip = "Average = Total weighted points ÷ total matches";
+  // Bug 3 fix: tooltip only set when there is content; empty title suppressed via CSS
+  const consistencyTooltip = playerConsistency
+    ? `Top 5 finish in ${playerConsistency.top5Count}/${playerConsistency.totalPlayed} matches`
+    : "";
+
+  let html = `
+    <div class="modal-header">
+      <h2>${player.name}</h2>
+      <div class="modal-scores">
+        <div class="score-pill score-amp" title="Total points with amp factor applied">
+          <span class="score-pill-label">⚡ With Amp</span>
+          <span class="score-pill-value">${formatPoints(player.total)} pts</span>
+        </div>
+        <div class="score-pill score-raw" title="Total points without amp factor">
+          <span class="score-pill-label">📊 Base</span>
+          <span class="score-pill-value">${formatPoints(player.rawTotal)} pts</span>
+        </div>
       </div>
     </div>
-    <table class="match-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Match</th>
-          <th>Points</th>
-          <th>Amp</th>
-          <th>Boosted</th>
-        </tr>
-      </thead>
-      <tbody>${matchRows}</tbody>
-    </table>
+    <div class="analytics-section">
+      <div class="analytics-card">
+        <div class="analytics-title">🧠 Insights</div>
+        <div class="insights-grid">
+          <div class="insight-item">
+            <span class="insight-label">🔥 Best</span>
+            <span class="insight-value">${formatPoints(best)} (${bestMatch})</span>
+          </div>
+          <div class="insight-item">
+            <span class="insight-label">❄️ Worst</span>
+            <span class="insight-value">${formatPoints(worst)} (${worstMatch})</span>
+          </div>
+          <div class="insight-item" ${getTooltipAttr(avgTooltip)}>
+            <span class="insight-label">🎯 Avg</span>
+            <span class="insight-value">${formatPoints(avg)} pts</span>
+          </div>
+          <div class="insight-item" ${getTooltipAttr(consistencyTooltip)}>
+            <span class="insight-label">⚡ Consistency</span>
+            <span class="insight-value">${playerConsistency ? `${playerConsistency.percentage}% (top 5)` : "N/A"}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="matches-list">
   `;
 
-  const modal = document.getElementById('modal');
-  modal.style.display = 'flex';
+  matchesData.forEach(m => {
+    const ranks = getMatchRanks(m.match);
+    const playerRank = ranks.find(p => p.name === player.name)?.rank;
+    const factor = m.ampfactor || 1;
+    const indvPoint = m.points * factor;
+    const isBoosted = factor > 1;
+
+    html += `
+      <div class="match-card ${isBoosted ? 'boosted' : ''}">
+        <div class="match-title">
+          🏏 ${m.match}
+          ${isBoosted ? `<span class="amp-badge">${factor}x</span>` : ''}
+        </div>
+        <div class="match-info">
+          <span class="rank-badge">Rank #${playerRank}</span>
+          <span class="match-points">${formatPoints(indvPoint)} pts</span>
+        </div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  content.innerHTML = html;
+  modal.style.display = "flex";
+  requestAnimationFrame(() => { modal.classList.add("open"); });
 }
 
 function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'none';
+  const modal = document.getElementById("modal");
+  modal.classList.remove("open");
+  setTimeout(() => { modal.style.display = "none"; }, 180);
 }
 
-// Close modal on background click
-document.addEventListener('click', function (e) {
-  const modal = document.getElementById('modal');
+window.onclick = function(e) {
+  const modal = document.getElementById("modal");
   if (e.target === modal) closeModal();
+};
+
+// FIX DEF-003: Refresh with full error feedback
+function refreshData() {
+  const btn = document.querySelector(".refresh-btn");
+  btn.innerText = "⏳ Loading...";
+  btn.disabled = true;
+
+  loadData()
+    .then(() => {
+      btn.innerText = "✅ Updated";
+      setTimeout(() => {
+        btn.innerText = "🔄 Refresh";
+        btn.disabled = false;
+      }, 1000);
+    })
+    .catch(err => {
+      console.error("Failed to refresh data:", err);
+      btn.innerText = "❌ Failed";
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.innerText = "🔄 Refresh";
+      }, 2000);
+    });
+}
+
+// FIX DEF-006: Show user-friendly error state on initial load failure
+loadData().catch(err => {
+  console.error("Failed to load data:", err);
+  const container = document.getElementById("list");
+  if (container) {
+    container.innerHTML = `
+      <div class="empty-state" style="padding:2rem;text-align:center;color:#dc2626;">
+        ⚠️ Unable to load leaderboard data.<br>
+        <button onclick="refreshData()" style="margin-top:1rem;padding:8px 16px;border-radius:8px;border:none;background:#0284c7;color:white;cursor:pointer;font-size:14px;">
+          Try Again
+        </button>
+      </div>`;
+  }
 });
 
-// ─── Start ────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', init);
+
+function initHallOfFameCarousel() {
+  const carousel = document.getElementById("hall-carousel");
+  const track = document.getElementById("hall-track");
+  const prevBtn = document.getElementById("hall-prev");
+  const nextBtn = document.getElementById("hall-next");
+
+  if (!carousel || !track || !prevBtn || !nextBtn) return;
+
+  const originalSlides = Array.from(track.children);
+  if (!originalSlides.length) return;
+
+  let slidesPerView = 3;
+  let currentIndex = 0;
+  let autoRotateTimer = null;
+  let slideStep = 0;
+  let touchStartX = 0;
+
+  function getSlidesPerView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 960) return 2;
+    return 3;
+  }
+
+  function markAccessibility() {
+    const cards = Array.from(track.children);
+    cards.forEach((card, index) => {
+      const activeStart = currentIndex;
+      const activeEnd = currentIndex + slidesPerView - 1;
+      const isVisible = index >= activeStart && index <= activeEnd;
+      card.setAttribute("aria-hidden", isVisible ? "false" : "true");
+    });
+  }
+
+  function calculateSlideStep() {
+    const cards = track.children;
+    if (cards.length < 2) {
+      slideStep = cards[0]?.getBoundingClientRect().width || carousel.clientWidth;
+      return;
+    }
+    slideStep = cards[1].offsetLeft - cards[0].offsetLeft;
+  }
+
+  function applyPosition(withTransition = true) {
+    track.style.transition = withTransition ? "transform 0.45s ease" : "none";
+    track.style.transform = `translateX(-${currentIndex * slideStep}px)`;
+    markAccessibility();
+  }
+
+  function buildInfiniteTrack() {
+    track.querySelectorAll(".clone-slide").forEach((clone) => clone.remove());
+
+    slidesPerView = getSlidesPerView();
+    const cloneCount = Math.min(slidesPerView, originalSlides.length);
+
+    const headClones = originalSlides.slice(0, cloneCount).map((slide) => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add("clone-slide");
+      clone.removeAttribute("id");
+      return clone;
+    });
+
+    const tailClones = originalSlides.slice(-cloneCount).map((slide) => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add("clone-slide");
+      clone.removeAttribute("id");
+      return clone;
+    });
+
+    tailClones.forEach((clone) => track.insertBefore(clone, track.firstChild));
+    headClones.forEach((clone) => track.appendChild(clone));
+
+    currentIndex = cloneCount;
+    calculateSlideStep();
+    applyPosition(false);
+  }
+
+  function moveTo(nextIndex) {
+    currentIndex = nextIndex;
+    applyPosition(true);
+  }
+
+  function startAutoRotate() {
+    stopAutoRotate();
+    autoRotateTimer = setInterval(() => { moveTo(currentIndex + 1); }, 3000);
+  }
+
+  function stopAutoRotate() {
+    if (!autoRotateTimer) return;
+    clearInterval(autoRotateTimer);
+    autoRotateTimer = null;
+  }
+
+  track.addEventListener("transitionend", () => {
+    const cloneCount = Math.min(slidesPerView, originalSlides.length);
+    const maxOriginalIndex = cloneCount + originalSlides.length - 1;
+
+    if (currentIndex > maxOriginalIndex) {
+      currentIndex = cloneCount;
+      applyPosition(false);
+    }
+
+    if (currentIndex < cloneCount) {
+      currentIndex = maxOriginalIndex;
+      applyPosition(false);
+    }
+  });
+
+  prevBtn.addEventListener("click", () => { moveTo(currentIndex - 1); startAutoRotate(); });
+  nextBtn.addEventListener("click", () => { moveTo(currentIndex + 1); startAutoRotate(); });
+
+  carousel.addEventListener("mouseenter", stopAutoRotate);
+  carousel.addEventListener("mouseleave", startAutoRotate);
+  carousel.addEventListener("focusin", stopAutoRotate);
+  carousel.addEventListener("focusout", startAutoRotate);
+
+  carousel.addEventListener("touchstart", (event) => {
+    touchStartX = event.changedTouches[0].screenX;
+  }, { passive: true });
+
+  carousel.addEventListener("touchend", (event) => {
+    const touchEndX = event.changedTouches[0].screenX;
+    const delta = touchEndX - touchStartX;
+    if (Math.abs(delta) < 30) return;
+    if (delta < 0) moveTo(currentIndex + 1);
+    else moveTo(currentIndex - 1);
+    startAutoRotate();
+  }, { passive: true });
+
+  window.addEventListener("resize", () => {
+    const nextSlidesPerView = getSlidesPerView();
+    if (nextSlidesPerView === slidesPerView) {
+      calculateSlideStep();
+      applyPosition(false);
+      return;
+    }
+    buildInfiniteTrack();
+  });
+
+  buildInfiniteTrack();
+  startAutoRotate();
+}
