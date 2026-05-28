@@ -1,91 +1,11 @@
 [
   {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 989
-      }
-    ]
-  },
-  {
-    "name": "powerhitter11",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 986
-      }
-    ]
-  },
-  {
     "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "BLR vs GUJ",
-        "points": 920.5
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 910
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 880
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 857
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 859.5
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 841.5
-      }
-    ]
-  },
-  {
-    "name": "Rockstar110823",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 841.5
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 827
+        "match": "HYD vs RAJ",
+        "points": 1200.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -93,8 +13,39 @@
     "name": "_dev____",
     "matches": [
       {
-        "match": "BLR vs GUJ",
-        "points": 825
+        "match": "HYD vs RAJ",
+        "points": 1190.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1153,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1150,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1145,
+        "ampfactor": 4
       }
     ]
   },
@@ -102,17 +53,9 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "BLR vs GUJ",
-        "points": 796.5
-      }
-    ]
-  },
-  {
-    "name": "Petano_Party",
-    "matches": [
-      {
-        "match": "BLR vs GUJ",
-        "points": 775
+        "match": "HYD vs RAJ",
+        "points": 1136.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -120,8 +63,79 @@
     "name": "abhijoy02",
     "matches": [
       {
-        "match": "BLR vs GUJ",
-        "points": 718
+        "match": "HYD vs RAJ",
+        "points": 1083.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1058.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1058.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1031.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 1009.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 985,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 972.5,
+        "ampfactor": 4
+      }
+    ]
+  },
+  {
+    "name": "2305Avengers",
+    "matches": [
+      {
+        "match": "HYD vs RAJ",
+        "points": 970.5,
+        "ampfactor": 4
       }
     ]
   }
