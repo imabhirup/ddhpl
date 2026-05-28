@@ -1,81 +1,19 @@
 [
   {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 849,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadonomayetarano",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 843,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 831,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 829,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
-    "name": "srijonichallengers",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 823,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
     "name": "2305Avengers",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 798.5,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 989
       }
     ]
   },
   {
-    "name": "iamabhi3",
+    "name": "powerhitter11",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 784,
-        "ampfactor": 10
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "DEL vs KOL",
-        "points": 781,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 986
       }
     ]
   },
@@ -83,19 +21,17 @@
     "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 775,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 920.5
       }
     ]
   },
   {
-    "name": "Rockstar110823",
+    "name": "iamabhi3",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 768,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 910
       }
     ]
   },
@@ -103,9 +39,71 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 732,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 880
+      }
+    ]
+  },
+  {
+    "name": "AllTimeWinner",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 857
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 859.5
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 841.5
+      }
+    ]
+  },
+  {
+    "name": "Rockstar110823",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 841.5
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 827
+      }
+    ]
+  },
+  {
+    "name": "_dev____",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 825
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 796.5
       }
     ]
   },
@@ -113,9 +111,17 @@
     "name": "Petano_Party",
     "matches": [
       {
-        "match": "DEL vs KOL",
-        "points": 700,
-        "ampfactor": 10
+        "match": "BLR vs GUJ",
+        "points": 775
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 718
       }
     ]
   }
