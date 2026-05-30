@@ -1,101 +1,21 @@
 [
   {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1200.5,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "_dev____",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1190.5,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "hammers19",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1153,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1150,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1145,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "Roktobeej",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1136.5,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "abhijoy02",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1083.5,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
-    "name": "AllTimeWinner",
-    "matches": [
-      {
-        "match": "SRH vs RAJ",
-        "points": 1058.5,
-        "ampfactor": 4
-      }
-    ]
-  },
-  {
     "name": "srijonichallengers",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 1058.5,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 1207,
+        "ampfactor": 20
       }
     ]
   },
   {
-    "name": "Petano_Party",
+    "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 1031.5,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 1200,
+        "ampfactor": 20
       }
     ]
   },
@@ -103,9 +23,59 @@
     "name": "PaglaChidiXI",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 1009.5,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 1188,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1162,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "Roktobeej",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1153,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "iamabhi3",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1142,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "Petano_Party",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1103,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "hammers19",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1094.5,
+        "ampfactor": 20
       }
     ]
   },
@@ -113,19 +83,29 @@
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 985,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 1066,
+        "ampfactor": 20
       }
     ]
   },
   {
-    "name": "powerhitter11",
+    "name": "AllTimeWinner",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 972.5,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 1024,
+        "ampfactor": 20
+      }
+    ]
+  },
+  {
+    "name": "abhijoy02",
+    "matches": [
+      {
+        "match": "GUJ vs RAJ",
+        "points": 1024,
+        "ampfactor": 20
       }
     ]
   },
@@ -133,9 +113,9 @@
     "name": "2305Avengers",
     "matches": [
       {
-        "match": "SRH vs RAJ",
-        "points": 970.5,
-        "ampfactor": 4
+        "match": "GUJ vs RAJ",
+        "points": 928.5,
+        "ampfactor": 20
       }
     ]
   }
