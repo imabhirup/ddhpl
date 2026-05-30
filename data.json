@@ -297,6 +297,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 910
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1150,
+        "ampfactor": 4
       }
     ]
   },
@@ -598,6 +603,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 986
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 972.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -899,6 +909,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 989
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 970.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -1200,6 +1215,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 841.5
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 985,
+        "ampfactor": 4
       }
     ]
   },
@@ -1501,6 +1521,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 0
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 0,
+        "ampfactor": 4
       }
     ]
   },
@@ -1802,6 +1827,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 0
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 0,
+        "ampfactor": 4
       }
     ]
   },
@@ -2103,6 +2133,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 827
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1009.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -2404,6 +2439,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 0
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 0,
+        "ampfactor": 4
       }
     ]
   },
@@ -2705,6 +2745,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 775
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1031.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -3006,6 +3051,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 880
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1153,
+        "ampfactor": 4
       }
     ]
   },
@@ -3307,6 +3357,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 841.5
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1058.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -3608,6 +3663,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 920.5
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1200.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -3909,6 +3969,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 825
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1190.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -4210,6 +4275,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 718
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1083.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -4511,6 +4581,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 857
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1058.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -4812,6 +4887,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 0
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 0,
+        "ampfactor": 4
       }
     ]
   },
@@ -5113,6 +5193,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 796.5
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1136.5,
+        "ampfactor": 4
       }
     ]
   },
@@ -5414,6 +5499,11 @@
       {
         "match": "BLR vs GUJ",
         "points": 859.5
+      },
+      {
+        "match": "SRH vs RAJ",
+        "points": 1145,
+        "ampfactor": 4
       }
     ]
   }
