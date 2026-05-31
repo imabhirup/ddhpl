@@ -1,41 +1,11 @@
 [
   {
-    "name": "srijonichallengers",
+    "name": "2305Avengers",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1207,
-        "ampfactor": 20
-      }
-    ]
-  },
-  {
-    "name": "Pan_0_Tea",
-    "matches": [
-      {
-        "match": "GUJ vs RAJ",
-        "points": 1200,
-        "ampfactor": 20
-      }
-    ]
-  },
-  {
-    "name": "PaglaChidiXI",
-    "matches": [
-      {
-        "match": "GUJ vs RAJ",
-        "points": 1188,
-        "ampfactor": 20
-      }
-    ]
-  },
-  {
-    "name": "Bapekhyadanomayetarano",
-    "matches": [
-      {
-        "match": "GUJ vs RAJ",
-        "points": 1162,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 809,
+        "ampfactor": 200
       }
     ]
   },
@@ -43,19 +13,9 @@
     "name": "Roktobeej",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1153,
-        "ampfactor": 20
-      }
-    ]
-  },
-  {
-    "name": "iamabhi3",
-    "matches": [
-      {
-        "match": "GUJ vs RAJ",
-        "points": 1142,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 797,
+        "ampfactor": 200
       }
     ]
   },
@@ -63,9 +23,19 @@
     "name": "Petano_Party",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1103,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 771.5,
+        "ampfactor": 200
+      }
+    ]
+  },
+  {
+    "name": "PaglaChidiXI",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 764,
+        "ampfactor": 200
       }
     ]
   },
@@ -73,9 +43,39 @@
     "name": "hammers19",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1094.5,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 729.5,
+        "ampfactor": 200
+      }
+    ]
+  },
+  {
+    "name": "powerhitter11",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 720,
+        "ampfactor": 200
+      }
+    ]
+  },
+  {
+    "name": "srijonichallengers",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 689.5,
+        "ampfactor": 200
+      }
+    ]
+  },
+  {
+    "name": "Bapekhyadanomayetarano",
+    "matches": [
+      {
+        "match": "BLR vs GUJ",
+        "points": 661.5,
+        "ampfactor": 200
       }
     ]
   },
@@ -83,39 +83,29 @@
     "name": "Rockstar110823",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1066,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 656.5,
+        "ampfactor": 200
       }
     ]
   },
   {
-    "name": "AllTimeWinner",
+    "name": "iamabhi3",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1024,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 625.5,
+        "ampfactor": 200
       }
     ]
   },
   {
-    "name": "abhijoy02",
+    "name": "Pan_0_Tea",
     "matches": [
       {
-        "match": "GUJ vs RAJ",
-        "points": 1024,
-        "ampfactor": 20
-      }
-    ]
-  },
-  {
-    "name": "2305Avengers",
-    "matches": [
-      {
-        "match": "GUJ vs RAJ",
-        "points": 928.5,
-        "ampfactor": 20
+        "match": "BLR vs GUJ",
+        "points": 605,
+        "ampfactor": 200
       }
     ]
   }
